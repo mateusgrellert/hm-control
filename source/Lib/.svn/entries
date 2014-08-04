@@ -1,0 +1,46 @@
+10
+
+dir
+4006
+https://hevc.hhi.fraunhofer.de/svn/svn_HEVCSoftware/tags/HM-14.0/source/Lib
+https://hevc.hhi.fraunhofer.de/svn/svn_HEVCSoftware
+
+
+
+2014-04-03T15:00:27.457460Z
+3902
+suehring
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ce97f6c2-8f86-0410-b44d-af84b13ec34f
+
+TLibCommon
+dir
+
+TLibVideoIO
+dir
+
+TLibEncoder
+dir
+
+libmd5
+dir
+
+TAppCommon
+dir
+
+TLibDecoder
+dir
+

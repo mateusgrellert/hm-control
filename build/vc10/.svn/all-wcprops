@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/svn_HEVCSoftware/!svn/ver/3904/tags/HM-14.0/build/vc10
+END
+TAppCommon_vc10.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/svn_HEVCSoftware/!svn/ver/3904/tags/HM-14.0/build/vc10/TAppCommon_vc10.vcxproj
+END
+TLibDecoder_vc10.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/svn_HEVCSoftware/!svn/ver/3904/tags/HM-14.0/build/vc10/TLibDecoder_vc10.vcxproj
+END
+TLibVideoIO_vc10.vcxproj.filters
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/svn_HEVCSoftware/!svn/ver/3904/tags/HM-14.0/build/vc10/TLibVideoIO_vc10.vcxproj.filters
+END
+TAppDecoder_vc10.vcxproj.filters
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/svn_HEVCSoftware/!svn/ver/3904/tags/HM-14.0/build/vc10/TAppDecoder_vc10.vcxproj.filters
+END
+TLibEncoder_vc10.vcxproj.filters
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/svn_HEVCSoftware/!svn/ver/3904/tags/HM-14.0/build/vc10/TLibEncoder_vc10.vcxproj.filters
+END
+TLibCommon_vc10.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/svn_HEVCSoftware/!svn/ver/3904/tags/HM-14.0/build/vc10/TLibCommon_vc10.vcxproj
+END
+TAppCommon_vc10.vcxproj.filters
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/svn_HEVCSoftware/!svn/ver/3904/tags/HM-14.0/build/vc10/TAppCommon_vc10.vcxproj.filters
+END
+TAppEncoder_vc10.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/svn_HEVCSoftware/!svn/ver/3904/tags/HM-14.0/build/vc10/TAppEncoder_vc10.vcxproj
+END
+TLibDecoder_vc10.vcxproj.filters
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/svn_HEVCSoftware/!svn/ver/3904/tags/HM-14.0/build/vc10/TLibDecoder_vc10.vcxproj.filters
+END
+TLibVideoIO_vc10.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/svn_HEVCSoftware/!svn/ver/3904/tags/HM-14.0/build/vc10/TLibVideoIO_vc10.vcxproj
+END
+TAppDecoder_vc10.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/svn_HEVCSoftware/!svn/ver/3904/tags/HM-14.0/build/vc10/TAppDecoder_vc10.vcxproj
+END
+TLibCommon_vc10.vcxproj.filters
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/svn_HEVCSoftware/!svn/ver/3904/tags/HM-14.0/build/vc10/TLibCommon_vc10.vcxproj.filters
+END
+TLibEncoder_vc10.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/svn_HEVCSoftware/!svn/ver/3904/tags/HM-14.0/build/vc10/TLibEncoder_vc10.vcxproj
+END
+TAppEncoder_vc10.vcxproj.filters
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/svn_HEVCSoftware/!svn/ver/3904/tags/HM-14.0/build/vc10/TAppEncoder_vc10.vcxproj.filters
+END
