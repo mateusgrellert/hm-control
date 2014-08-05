@@ -1,97 +1,80 @@
 from HM_setup import *
 import os
 
-def initialPhase(App, configurationMap, initialPeriod):
+def initialPhase(App, initialPeriod):
 	print '## Starting Phase ###'
 
-	run(App, ' --BipredSearchRange=8 --SearchRange=80 ', initialPeriod)
+	run(App, ' --SearchRange = 128 --BipredSearchRange=8 ', initialPeriod)
 	[initComputation, RDNP] = parseOutput(start=True)
-	configurationMap[' --BipredSearchRange=8 --SearchRange=80 '] = [initComputation, RDNP]
 
+	#print '\tInital Time: ',  ("%.2f" % initComputation), '\tRDNP: ',  ("%.2f" % RDNP)
 	return initComputation
 
-def testingPhase(App, configurationMap, testingPeriod, targetComputation, currComp):
+def testingPhase(App, testingPeriod, targetComputation, currComp):
 	print '## Testing Phase ###'
 	bestComputation = 999999
 	bestRDNP = -1.0
+	acum_config =  ''
+	
+	increase_th = 0.9
+	decrease_th = 1.1
 
-	safe_zone = 0.2
-	combine_th = safe_zone
-	split_th = -safe_zone
-	stable_th = 0.05
+	params = getConfigs()
+	increase_comp = False
+	stable = False
+	decrease_comp = True
+	runComp = False
+	config = ''
+	while (not runComp):
 
-	stable_flag = False
-	combine_flag = False
-	split_flag = False
-	train_flag = False
-	scaleUp_flag = False
-	scaleDown_flag = False
-	run_ended = False
-	parameters = getParameters()
-	idx = 0
+		if increase_comp:
+			curr_param = getWorstRDNP(params)
+			if curr_param in config:
+				config = removeParam(config, curr_param, params)
+			else:
+				config = scaleUp(config, curr_param, params)
 
-	config = ' '
-	while not run_ended:
-
-		if combine_flag:
-			while parameters[idx] in currParams:
-				idx += 1
+		elif decrease_comp:
+			curr_param = getBestRDNP(params)
+			if curr_param not in config:
+				config = addParam(config, curr_param, params)
+			elif notFullyTrained(params):
+				curr_param = getWorstRDNP(params)
+				[config, curr_param] = switchParam(config, curr_param, params)
+			else:
+				config = scaleDown(config, curr_param, params)
 			
-			currParams = parameters[idx % len(parameters)]
-			config = combineConfigs(currParam, config)
-
-
-		elif scaleUp_flag:
-			config = upScaleParameters(config)
-
-		elif scaleDown_flag:
-			config = downScaleParameters(config)
-
-		elif split_flag:
-			config = splitConfig(config)
-
-		while (config in configurationMap.keys()):
-			error = (configurationMap[config][0]/targetComputation - 1.0)
-			if error <= split_th:
-				splitConfig
-		
 		print config
 
-		run_ended = run(App, config, testingPeriod)
-		configurationMap[config] = parseOutput()
-			
-		testComputation = configurationMap[config][0]
-		RDNP = configurationMap[config][1]
-
-		rate = testComputation/currComp
-		if compRateTable[p
-		error = (testComputation/targetComputation - 1.0)
-		delta = (testComputation - targetComputation)
-		print ('%.2f\t%.2f\t%.2f' % (testComputation, targetComputation, error))
-
-		combine_flag = (error >= combine_th)
-		split_flag = (error <= split_th)
-		stable_flag = abs(error) <= stable_th
-		scaleDown_flag = not(combine_flag or split_flag or stable_flag) and (error > 0)				
-		scaleUp_flag = not(combine_flag or split_flag or stable_flag) and (error <= 0)
+		if notFullyTrained(params) and not stable:
+			runComp = run(App, config, 4)
+		else:
+			runComp = run(App, config, testingPeriod)
 
 
-		"""if scaleDown_flag or scaleUp_flag:
-			if RDNP < bestRDNP:
-				config = bestConfig
-			else:
-				bestConfig = config
-				bestRDNP = RDNP"""
+		[comp, RDNP] = parseOutput()
+		updateParamTable(params, curr_param, comp, RDNP)
+		
+		print ('%.2f' % (comp/targetComputation))
+		
+		increase_comp = False
+		decrease_comp = False
 
-	print '## Run Ended ###'
+		if (comp/targetComputation) <= increase_th:
+			increase_comp = True
+		elif (comp/targetComputation) >= decrease_th:
+			decrease_comp = True
+		stable = not(increase_comp) and not(decrease_comp)
+
+	return
 
 
 
-initComputation = initialPhase(App, configurationMap, initialPeriod)
 
-targetComputation = initComputation*0.5
+initComputation = initialPhase(App, initialPeriod)
+targetComputation = initComputation*0.6
 
-testingPhase(App, configurationMap,testingPeriod, targetComputation, initComputation)
+testingPhase(App,testingPeriod, targetComputation, initComputation)
 
 wrapUp()
 
