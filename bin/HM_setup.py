@@ -1,8 +1,9 @@
 import os
+import operator
 
 def run(binary, config, period):
 	global stepsTaken
-	initConfig = '-c ../cfg/encoder_randomaccess_main.cfg -c /Users/mateusgrellert/hm-cfgs/BQSquare.cfg --IntraPeriod=-1 '
+	initConfig = '-c ../cfg/encoder_randomaccess_main.cfg -c /home/grellert/hm-cfgs/cropped/BQSquare.cfg --IntraPeriod=-1 '
 
 	#print  (binary + ' ' + config + ' --FramesToBeEncoded=' + str(period) + ' --FrameSkip=' + str(stepsTaken) + ' > HM_out.txt')
 	os.system(binary + ' ' + initConfig + config + ' --FramesToBeEncoded=' + str(period) + ' --FrameSkip=' + str(stepsTaken) + ' > HM_out.txt 2> dummy.txt')
@@ -144,20 +145,10 @@ def updateParamTable(params, curr_param, comp, RDNP):
 	params[curr_param][-2:] = [comp, RDNP]
 
 def getBestRDNP(params):
-	bestRDNP = -999.0
-	for p, vet in params.items():
-		if vet[-1] > bestRDNP:
-			best_param = p
-
-	return best_param
+	return sorted(params.items(), key=lambda x: x[1][-1], reverse=True)
 
 def getWorstRDNP(params):
-	worstRDNP = 999.0
-	for p, vet in params.items():
-		if vet[-1] < worstRDNP and vet[-1] != -1:
-			worst_param = p
-
-	return worst_param
+	return sorted(params.items(), key=lambda x: x[1][-1])
 
 def notFullyTrained(params):
 	for p,val in params.items():

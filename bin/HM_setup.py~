@@ -1,4 +1,5 @@
 import os
+import operator
 
 def run(binary, config, period):
 	global stepsTaken
@@ -37,7 +38,7 @@ def parseOutput(start=False):
 	#print '\tRDNP :', calculatePerformanceFactor(bitrate/framesCounted, psnr/framesCounted), '\tTime:', time/framesCounted
 	
 	RDNP = calculatePerformanceFactor(bitrate/framesCounted, psnr/framesCounted)
-
+	#print ("%.2f" % (time/framesCounted))
 	return [time/framesCounted, RDNP]
 
 def updateMinMaxTable(psnr, bitrate):
@@ -60,21 +61,13 @@ def calculatePerformanceFactor(avg_br, avg_psnr):
 	
 	return (norm_br*weight_br+norm_psnr*weight_psnr)
 
-def getParameters():
+def getConfigs():
 	f = open('configs.inp','r')
-	params = []
+	cfgs = {}
 	for l in f.readlines():
-		params.append(l.split()[0])
-
-	f.close()
-	return params
-
-def getMinMaxStep(param):
-	f = open('configs.inp','r')
-	for l in f.readlines():
-		if param in l:
-			f.close()
-			return l.split()[1:]
+		param = l.split()[0]
+		cfgs[param] = l.split()[1:] + [ -1.0, -1.0] # max min step comp RDNP
+	return cfgs
 
 def wrapUp():
 	#os.system('rm -rf logs; mkdir logs')
@@ -83,42 +76,86 @@ def wrapUp():
 
 
 
-def combineConfigs(param,config):
-	[minv, maxv, step] = getMinMaxStep(param)
-	config = '--' + param + '='+ maxv + ' ' + config
-	config = ' '.join(sorted(config.split()))
+def addParam(config, curr_param, params):
+	[maxv, minv, step] = params[curr_param][:3]
+	val = str(int(maxv) - int(step))
+	config = config + ' ' + ('--' + curr_param + '=' + val)
 	return config
 
-def splitConfig(config):
-	config = ' '.join(config.split()[:-1])
-	return config
+def scaleUp(config, curr_param, params):
+	tokens = config.split()
+	[maxv, minv, step] = params[curr_param][:3]
+	new_config = ''
 
-def downScaleParameters(config):
-	values = config.split()
-	while(n_tries < len(values):
-		n_tries += 1
-		i =  math.randint(0,len(values)-1)
-		[par,val] = values[i].split('=')
-		[minv, maxv, step] = getMinMaxStep(par.strip('--'))
-		if val > minv:
-			val = str(int(val) - int(step))
-			values[i] = par + '=' + val
-			return ' '.join(values)
-	return ' '.join(values)
-	
-def upScaleParameters(config):
-	values = config.split()
-	while(n_tries < len(values):
-		n_tries += 1
-		i =  math.randint(0,len(values)-1)
-		[par,val] = values[i].split('=')
-		[minv, maxv, step] = getMinMaxStep(par.strip('--'))
-		if val < maxv:
-			val = str(int(val) + int(step))
-			values[i] = par + '=' + val
-			return ' '.join(values)
-	return ' '.join(values)
+	for t in tokens:
+		if curr_param in t:
+			val = int(t.split('=')[1])
+			if val < int(maxv):
+				val += int(step)
+			t = t.split('=')[0] + '=' + str(val)
+		new_config = new_config + ' ' + t
+	return new_config
 
+
+def removeParam(config, curr_param, params):
+	tokens = config.split()
+	new_config = ''
+	for t in tokens:
+		if curr_param not in t:
+			new_config = new_config + ' ' + t
+
+	return new_config
+
+def scaleDown(config, curr_param, params):
+	tokens = config.split()
+	[maxv, minv, step] = params[curr_param][:3]
+	new_config = ''
+
+	for t in tokens:
+		if curr_param in t:
+			val = int(t.split('=')[1])
+			if val > int(minv):
+				val -= int(step)
+			t = t.split('=')[0] + '=' + str(val)
+		new_config = new_config + ' ' + t
+	return new_config
+
+
+def switchParam(config, curr_param, params):
+	tokens = config.split()
+	new_config = ''
+
+	for p, val in params.items():
+		if val[-1] == -1.0:
+				config = addParam('', p, params)
+				return [config, p]
+
+
+	for t in tokens:
+		if curr_param in t:
+			for p, val in params.items():
+				if val[-1] == -1.0:
+					switch = p
+					t = '--' + p + '=' + str(int(val[0]) - int(val[2]))
+
+		new_config = new_config + ' ' + t
+	return [new_config, switch]
+
+def updateParamTable(params, curr_param, comp, RDNP):
+	params[curr_param][-2:] = [comp, RDNP]
+
+def getBestRDNP(params):
+	return sorted(params.items(), key=lambda x: x[1][-1], reverse=True)
+
+def getWorstRDNP(params):
+	return sorted(params.items(), key=lambda x: x[1][-1])
+
+def notFullyTrained(params):
+	for p,val in params.items():
+		if val[-1] == -1.0:
+			return True
+
+	return False
 
 ## Controller Setup for HEVC Model Simulation #####
 App = './TAppEncoderStatic'
@@ -131,7 +168,6 @@ numSteps = 240
 
 ## Helping Data Structures for Normalization #####
 minMaxTable = {'psnr' : [99999999.0, -1.0], 'bitrate' : [99999999.0, -1.0]}
-configurationMap = {}
 
 
 

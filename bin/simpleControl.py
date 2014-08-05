@@ -25,25 +25,40 @@ def testingPhase(App, testingPeriod, targetComputation, currComp):
 	decrease_comp = True
 	runComp = False
 	config = ''
+	old_config = ''
+
 	while (not runComp):
+		best_params = getBestRDNP(params)
+		worst_params = getWorstRDNP(params)
+		idx = 0
 
-		if increase_comp:
-			curr_param = getWorstRDNP(params)
-			if curr_param in config:
-				config = removeParam(config, curr_param, params)
+		while increase_comp:
+			increase_comp = False
+			curr_param = worst_params[idx]
+
+			if curr_param in old_config:
+				config = removeParam(old_config, curr_param, params)
 			else:
-				config = scaleUp(config, curr_param, params)
+				config = scaleUp(old_config, curr_param, params)
+				if config == old_config:
+					increase_comp = True
+			idx += 1
 
-		elif decrease_comp:
-			curr_param = getBestRDNP(params)
-			if curr_param not in config:
-				config = addParam(config, curr_param, params)
+		while decrease_comp:
+			decrease_comp = False
+			curr_param = best_params[idx][0]
+
+			if curr_param not in old_config:
+				config = addParam(old_config, curr_param, params)
 			elif notFullyTrained(params):
 				curr_param = getWorstRDNP(params)
-				[config, curr_param] = switchParam(config, curr_param, params)
+				[config, curr_param] = switchParam(old_config, curr_param, params)
 			else:
-				config = scaleDown(config, curr_param, params)
-			
+				config = scaleDown(old_config, curr_param, params)
+				if config == old_config:
+					decrease_comp = True
+			idx += 1			
+
 		print config
 
 		if notFullyTrained(params) and not stable:
@@ -59,6 +74,7 @@ def testingPhase(App, testingPeriod, targetComputation, currComp):
 		
 		increase_comp = False
 		decrease_comp = False
+		old_config = config
 
 		if (comp/targetComputation) <= increase_th:
 			increase_comp = True
