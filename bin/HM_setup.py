@@ -34,11 +34,8 @@ def parseOutput(start=False):
 
 			framesCounted += 1.0
 	
-	#print '## Avg. Outputs:\n\tPSNR: ',psnr/framesCounted, '\tbitrate: ', bitrate/framesCounted,
-	#print '\tRDNP :', calculatePerformanceFactor(bitrate/framesCounted, psnr/framesCounted), '\tTime:', time/framesCounted
-	
 	RDNP = calculatePerformanceFactor(bitrate/framesCounted, psnr/framesCounted)
-	#print ("%.2f" % (time/framesCounted))
+
 	return [time/framesCounted, RDNP]
 
 def updateMinMaxTable(psnr, bitrate):
@@ -48,9 +45,7 @@ def updateMinMaxTable(psnr, bitrate):
 	minMaxTable['psnr'][1] = max(psnr, minMaxTable['psnr'][1])
 	minMaxTable['bitrate'][0] = min(bitrate, minMaxTable['bitrate'][0])
 	minMaxTable['bitrate'][1] = max(bitrate, minMaxTable['bitrate'][1])
-	
-	#print '## MinMax table values:\n\tPSNR:', minMaxTable['psnr'][0] , ' ' , minMaxTable['psnr'][1] 
-	#print '\tbitrate:', minMaxTable['bitrate'][0] , ' ' , minMaxTable['bitrate'][1] 
+
 
 def calculatePerformanceFactor(avg_br, avg_psnr):
 	weight_br = 0.5
@@ -70,8 +65,6 @@ def getConfigs():
 	return cfgs
 
 def wrapUp():
-	#os.system('rm -rf logs; mkdir logs')
-	#os.system('mv *.log logs')
 	os.system('sh cleanup.sh')
 
 
@@ -141,21 +134,7 @@ def switchParam(config, curr_param, params):
 		new_config = new_config + ' ' + t
 	return [new_config, switch]
 
-def updateParamTable(params, curr_param, comp, RDNP):
-	params[curr_param][-2:] = [comp, RDNP]
 
-def getBestRDNP(params):
-	return sorted(params.items(), key=lambda x: x[1][-1], reverse=True)
-
-def getWorstRDNP(params):
-	return sorted(params.items(), key=lambda x: x[1][-1])
-
-def notFullyTrained(params):
-	for p,val in params.items():
-		if val[-1] == -1.0:
-			return True
-
-	return False
 
 ## Controller Setup for HEVC Model Simulation #####
 App = './TAppEncoderStatic'
@@ -164,7 +143,7 @@ initialPeriod = 8
 testingPeriod = 8
 runningPeriod = 8
 stepsTaken = 0
-numSteps = 240
+numSteps = 300
 
 ## Helping Data Structures for Normalization #####
 minMaxTable = {'psnr' : [99999999.0, -1.0], 'bitrate' : [99999999.0, -1.0]}

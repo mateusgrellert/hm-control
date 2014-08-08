@@ -3,6 +3,3 @@ QuadtreeTUMaxDepthInter 3 1 1
 BipredSearchRange 8 0 2
 HadamardME 1 0 1
 AMP 1 0 1
-SAO 1 0 1
-RDO 1 0 1
-
