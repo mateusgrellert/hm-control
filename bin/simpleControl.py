@@ -4,7 +4,7 @@ import os
 def initialPhase(App, initialPeriod):
 	print '## Starting Phase ###'
 
-	run(App, ' --SearchRange = 128 --BipredSearchRange=8 ', initialPeriod)
+	run(App, ' ', initialPeriod)
 	[initComputation, RDNP] = parseOutput(start=True)
 
 	#print '\tInital Time: ',  ("%.2f" % initComputation), '\tRDNP: ',  ("%.2f" % RDNP)
@@ -19,18 +19,19 @@ def testingPhase(App, testingPeriod, targetComputation, currComp):
 	negative_tol = 0.9
 	positive_tol = 1.1
 
-	params = getConfigs()
+	paramLUT = buildParamLUT()
 	configs = {}
-	increase_comp = False
+	increase_comp = (targetComputation > currComp)
+	decrease_comp = not(increase_comp)
 	stable = False
-	decrease_comp = True
 	runComp = False
 	config = ''
 	old_config = ''
+	prev_comp = currComp
 
 	while (not runComp):
-		best_params = getBestRDNP(params)
-		worst_params = getWorstRDNP(params)
+		best_params = getBestRDNP(paramLUT)
+		worst_params = getWorstRDNP(paramLUT)
 		idx = 0
 
 		while increase_comp:
@@ -38,12 +39,12 @@ def testingPhase(App, testingPeriod, targetComputation, currComp):
 			curr_param = worst_params[idx][0]
 
 			if curr_param in old_config:
-				config = removeParam(old_config, curr_param, params)
-			elif notFullyTrained(params):
-				curr_param = getWorstRDNP(params)
-				[config, curr_param] = switchParam(old_config, curr_param, params)
+				config = removeParam(old_config, curr_param, paramLUT)
+			elif notFullyTrained(paramLUT):
+				curr_param = getWorstRDNP(paramLUT)
+				[config, curr_param] = switchParam(old_config, curr_param, paramLUT)
 			else:
-				config = scaleUp(old_config, curr_param, params)
+				config = scaleUp(old_config, curr_param, paramLUT)
 				if config == old_config:
 					increase_comp = True
 			idx += 1
@@ -53,18 +54,18 @@ def testingPhase(App, testingPeriod, targetComputation, currComp):
 			curr_param = best_params[idx][0]
 
 			if curr_param not in old_config:
-				config = addParam(old_config, curr_param, params)
-			elif notFullyTrained(params):
-				curr_param = getWorstRDNP(params)
-				[config, curr_param] = switchParam(old_config, curr_param, params)
+				config = addParam(old_config, curr_param, paramLUT)
+			elif notFullyTrained(paramLUT):
+				curr_param = getWorstRDNP(paramLUT)
+				[config, curr_param] = switchParam(old_config, curr_param, paramLUT)
 			else:
-				config = scaleDown(old_config, curr_param, params)
+				config = scaleDown(old_config, curr_param, paramLUT)
 				if config == old_config:
 					decrease_comp = True
 			idx += 1			
 
 
-		if notFullyTrained(params) and not stable:
+		if notFullyTrained(paramLUT) and not stable:
 			period = testingPeriod
 		else:
 			period = testingPeriod
@@ -73,7 +74,10 @@ def testingPhase(App, testingPeriod, targetComputation, currComp):
 
 		config = ' '.join(sorted(config.split()))
 		[comp, RDNP] = parseOutput()
-		updateParamTable(params, curr_param, comp, RDNP)
+
+		deltaT = comp/prev_comp*1.0
+
+		updateParamTable(paramLUT, curr_param, config, deltaT, RDNP)
 		updateConfigsTable(configs, config, comp, RDNP)
 
 		#print ('%.2f\t%.2f\t%d\t%.2f' % (comp,targetComputation,period, RDNP))
@@ -81,6 +85,8 @@ def testingPhase(App, testingPeriod, targetComputation, currComp):
 		increase_comp = False
 		decrease_comp = False
 		old_config = config
+		prev_comp = comp
+		prev_RDNP = RDNP
 
 		if (comp) <= targetComputation*negative_tol:
 			increase_comp = True
@@ -92,8 +98,9 @@ def testingPhase(App, testingPeriod, targetComputation, currComp):
 	return
 
 
-def updateParamTable(params, curr_param, comp, RDNP):
-	params[curr_param][-2:] = [comp, RDNP]
+def updateParamTable(params, curr_param, config, deltaT, RDNP):
+	val = getParamValueInConfig(config)
+	params[curr_param][val] = [deltaT, RDNP]
 
 def updateConfigsTable(configs, config, comp, RDNP):
 	if config not in configs.keys():
@@ -101,10 +108,10 @@ def updateConfigsTable(configs, config, comp, RDNP):
 		print ('%s\t%.2f\t%.2f' % (config, comp, RDNP))
 
 def getBestRDNP(params):
-	return sorted(params.items(), key=lambda x: x[1][-1], reverse=True)
+	return sorted(params.items(), key=lambda x: x[1][-1].items()[1][-1][-1], reverse=True)
 
 def getWorstRDNP(params):
-	return sorted(params.items(), key=lambda x: x[1][-1])
+	return sorted(params.items(), key=lambda  x: x[1][-1].items()[1][-1][-1])
 
 def notFullyTrained(params):
 	for p,val in params.items():

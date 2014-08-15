@@ -1,12 +1,14 @@
 import os
 import operator
+import math
 
 def run(binary, config, period):
 	global stepsTaken
-	initConfig = '-c ../cfg/encoder_randomaccess_main.cfg -c /home/grellert/hm-cfgs/cropped/BQSquare.cfg --IntraPeriod=-1 '
+	initConfig = '-c ../cfg/encoder_randomaccess_main.cfg -c /home/grellert/hm-cfgs/cropped/BasketballPass.cfg --IntraPeriod=-1 '
 
-	#print  (binary + ' ' + config + ' --FramesToBeEncoded=' + str(period) + ' --FrameSkip=' + str(stepsTaken) + ' > HM_out.txt')
-	os.system(binary + ' ' + initConfig + config + ' --FramesToBeEncoded=' + str(period) + ' --FrameSkip=' + str(stepsTaken) + ' > HM_out.txt 2> dummy.txt')
+	line = binary + ' ' + initConfig + config + ' --FramesToBeEncoded=' + str(period) + ' --FrameSkip=' + str(stepsTaken) + ' > HM_out.txt 2> dummy.txt'
+	#print line
+	os.system(line)
 	os.system('cat HM_out.txt >> HM_out.log')
 	stepsTaken += period
 	if stepsTaken > numSteps:
@@ -14,6 +16,12 @@ def run(binary, config, period):
 	else:
 		return False
 
+
+def getParamValueInConfig(param, config):
+	tokens = config.split()
+	for t in tokens:
+		if param in t:
+			return int(t.split('=')[-1])
 
 def parseOutput(start=False):
 	f = open('HM_out.txt','r')
@@ -56,13 +64,20 @@ def calculatePerformanceFactor(avg_br, avg_psnr):
 	
 	return (norm_br*weight_br+norm_psnr*weight_psnr)
 
-def getConfigs():
+def buildParamLUT():
 	f = open('configs.inp','r')
-	cfgs = {}
+	paramLUT = {}
 	for l in f.readlines():
-		param = l.split()[0]
-		cfgs[param] = l.split()[1:] + [ -1.0, -1.0] # max min step comp RDNP
-	return cfgs
+		if len(l) < 3: continue
+		[param, minv, maxv] = l.split()
+		paramLUT[param] = {}
+		step = (int(maxv) - int(minv)*1.0)/(n_levels-1)
+
+		for i in range(0, n_levels):
+			val = (int(minv)+i*step)
+			val = (int(round(val,0)))
+			paramLUT[param][val] = [-1.0, -1.0]
+	return paramLUT
 
 def wrapUp():
 	os.system('sh cleanup.sh')
@@ -144,6 +159,7 @@ testingPeriod = 8
 runningPeriod = 8
 stepsTaken = 0
 numSteps = 300
+n_levels = 4
 
 ## Helping Data Structures for Normalization #####
 minMaxTable = {'psnr' : [99999999.0, -1.0], 'bitrate' : [99999999.0, -1.0]}
