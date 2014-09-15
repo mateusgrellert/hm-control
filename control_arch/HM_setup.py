@@ -152,7 +152,7 @@ def switchParam(config, curr_param, params):
 
 
 ## Controller Setup for HEVC Model Simulation #####
-App = './TAppEncoderStatic'
+App = '../bin/TAppEncoderStatic'
 
 initialPeriod = 8
 testingPeriod = 8
