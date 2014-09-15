@@ -1,8 +1,0 @@
-MaxPartitionDepth 1 4
-QuadtreeTUMaxDepthInter 1 3
-BipredSearchRange 0 6
-HadamardME 0 1
-AMP 0 1
-SAO 0 1
-RDO 0 1
-
