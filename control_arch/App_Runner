@@ -1,5 +1,0 @@
-import HEVC_Model
-import os
-
-class App_Runner:
-

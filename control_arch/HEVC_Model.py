@@ -2,26 +2,24 @@ import os
 import operator
 import math
 
-class HEVC_Model:
+class App:
 	def __init__(self):
 		self.App = '../bin/TAppEncoderStatic'
 
 		self.period = 8
-		self.stepsTaken = 0
 		self.numSteps = 300
-		self.initConfig = '-c ../cfg/encoder_lowdelay_main.cfg -c /home/grellert/hm-cfgs/cropped/BasketballPass.cfg --IntraPeriod=-1 '
+		self.initConfig = '-c ../cfg/encoder_lowdelay_main.cfg '
 
 
-	def run(self, config, period):
-		line = self.App + ' ' + self.initConfig + config + ' --FramesToBeEncoded=' + str(period) + ' --FrameSkip=' + str(self.stepsTaken) + ' > HM_out.txt 2> HM_warn.txt'
+	def run(self, inp, cfg, period):
+		line = self.App + ' ' + self.initConfig + ' -c /home/grellert/hm-cfgs/cropped/' + inp + ' ' + ' '.join(cfg)
+		line += ' --IntraPeriod=-1 --FramesToBeEncoded=' + str(period)
+		line += ' > HM_out.txt 2> HM_warn.txt'
 		os.system(line)
 		os.system('cat HM_out.txt >> HM_out.log')
-		self.stepsTaken += period
-		if self.stepsTaken > self.numSteps:
-			return False
-		else:
-			return True
+		#self.stepsTaken += period
 
+		
 	def parseOutput(self,start=False):
 		f = open('HM_out.txt','r')
 		time = bitrate = psnr = framesCounted = y_psnr = u_psnr = v_psnr = 0.0
@@ -41,9 +39,9 @@ class HEVC_Model:
 
 				framesCounted += 1.0
 	
-		RDNP = calculatePerformance(bitrate/framesCounted, psnr/framesCounted)
+		#RDNP = self.calculatePerformance(bitrate/framesCounted, psnr/framesCounted)
 
-		return [time/framesCounted, RDNP]
+		return [time, psnr/framesCounted, bitrate/framesCounted]
 
 	def calculatePerformance(self,avg_br, avg_psnr):
 		weight_br = 0.5
@@ -59,4 +57,7 @@ class HEVC_Model:
 	
 	def splitParam(self,param):
 		return (param.strip('--').split('='))
+
+	def getOutputNames(self):
+		return ['Time', 'PSNR', 'Bitrate']
 

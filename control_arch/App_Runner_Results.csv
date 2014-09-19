@@ -1,0 +1,46 @@
+	RaceHorses_832x448_30.yuv			BasketballDrill_832x448_50.yuv			BQMall_832x448_60.yuv			PartyScene_832x448_50.yuv		
+	Time 	PSNR 	Bitrate 	Time 	PSNR 	Bitrate 	Time 	PSNR 	Bitrate 	Time 	PSNR 	Bitrate 
+c0	148.15 	37.96 	3829.74 	96.00 	40.00 	1360.36 	99.17 	39.67 	1769.39 	131.87 	38.00 	3930.64 	
+preset=veryslow	39.60 	37.95 	3831.95 	24.54 	39.94 	1356.17 	25.37 	39.61 	1772.86 	29.56 	37.96 	3932.63 	
+preset=slower	19.35 	38.12 	3985.72 	12.31 	40.03 	1504.45 	11.92 	39.75 	1949.96 	14.78 	38.13 	4249.59 	
+preset=slow	11.37 	38.06 	4123.61 	7.29 	39.97 	1644.33 	7.17 	39.73 	2042.73 	8.57 	38.06 	4347.77 	
+preset=medium	4.90 	38.16 	4428.72 	3.82 	39.76 	1800.88 	3.42 	39.71 	2298.72 	4.12 	38.17 	5081.99 	
+preset=fast	4.10 	38.21 	4567.06 	2.91 	39.70 	1859.48 	2.73 	39.69 	2330.79 	3.41 	38.13 	5214.24 	
+preset=faster	2.88 	38.13 	4703.58 	2.08 	39.62 	1916.27 	2.01 	39.59 	2372.30 	2.26 	38.02 	5250.91 	
+preset=veryfast	1.69 	37.52 	4561.23 	1.18 	38.97 	1907.59 	1.15 	39.05 	2323.71 	1.30 	37.14 	5115.73 	
+preset=superfast	0.87 	37.28 	4749.09 	0.62 	39.09 	2340.64 	0.58 	39.10 	2722.50 	0.64 	36.09 	4680.71 	
+preset=ultrafast	0.52 	36.60 	6719.48 	0.39 	38.76 	3524.89 	0.40 	38.57 	4262.04 	0.42 	35.49 	9792.66 	
+
+
+
+	RaceHorses_832x448_30.yuv			BasketballDrill_832x448_50.yuv			BQMall_832x448_60.yuv			PartyScene_832x448_50.yuv		
+	Time 	PSNR 	Bitrate 	Time 	PSNR 	Bitrate 	Time 	PSNR 	Bitrate 	Time 	PSNR 	Bitrate 
+preset=veryslow	0.73 	0.00 	-0.00 	0.74 	0.00 	0.00 	0.74 	0.00 	-0.00 	0.78 	0.00 	-0.00 	
+preset=slower	0.87 	-0.00 	-0.04 	0.87 	-0.00 	-0.11 	0.88 	-0.00 	-0.10 	0.89 	-0.00 	-0.08 	
+preset=slow	0.92 	-0.00 	-0.08 	0.92 	0.00 	-0.21 	0.93 	-0.00 	-0.15 	0.94 	-0.00 	-0.11 	
+preset=medium	0.97 	-0.01 	-0.16 	0.96 	0.01 	-0.32 	0.97 	-0.00 	-0.30 	0.97 	-0.00 	-0.29 	
+preset=fast	0.97 	-0.01 	-0.19 	0.97 	0.01 	-0.37 	0.97 	-0.00 	-0.32 	0.97 	-0.00 	-0.33 	
+preset=faster	0.98 	-0.00 	-0.23 	0.98 	0.01 	-0.41 	0.98 	0.00 	-0.34 	0.98 	-0.00 	-0.34 	
+preset=veryfast	0.99 	0.01 	-0.19 	0.99 	0.03 	-0.40 	0.99 	0.02 	-0.31 	0.99 	0.02 	-0.30 	
+preset=superfast	0.99 	0.02 	-0.24 	0.99 	0.02 	-0.72 	0.99 	0.01 	-0.54 	1.00 	0.05 	-0.19 	
+preset=ultrafast	1.00 	0.04 	-0.75 	1.00 	0.03 	-1.59 	1.00 	0.03 	-1.41 	1.00 	0.07 	-1.49 	
+
+
+
+
+
+
+
+
+
+
+c0	['--preset placebo']
+c1	--preset veryslow
+c2	--preset slower
+c3	--preset slow
+c4	--preset medium
+c5	--preset fast
+c6	--preset faster
+c7	--preset veryfast
+c8	--preset superfast
+c9	--preset ultrafast

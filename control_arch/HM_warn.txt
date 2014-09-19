@@ -1,3 +1,4 @@
+Unknown option: `preset' (value:`ultrafast')
 ******************************************************************
 ** WARNING: --SEIDecodedPictureHash is now disabled by default. **
 **          Automatic verification of decoded pictures by a     **

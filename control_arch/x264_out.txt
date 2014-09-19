@@ -1,0 +1,13 @@
+yuv [info]: 832x448p 0:0 @ 25/1 fps (cfr)
+x264 [info]: using cpu capabilities: none!
+x264 [info]: profile Constrained Baseline, level 3.0
+[0.8%] 1/120 frames, 64.29 fps, 33254.40 kb/s, eta 0:00:01  [58.3%] 70/120 frames, 259.79 fps, 9753.35 kb/s, eta 0:00:00                                                                                 x264 [info]: frame I:1     Avg QP:20.00  size:166272  PSNR Mean Y:41.89 U:43.13 V:43.59 Avg:42.33 Global:42.33
+x264 [info]: frame P:119   Avg QP:26.30  size: 47978  PSNR Mean Y:34.52 U:37.10 V:37.42 Avg:35.25 Global:35.18
+x264 [info]: mb I  I16..4: 100.0%  0.0%  0.0%
+x264 [info]: mb P  I16..4:  3.1%  0.0%  0.0%  P16..4: 92.4%  0.0%  0.0%  0.0%  0.0%    skip: 4.5%
+x264 [info]: coded y,uvDC,uvAC intra: 85.9% 81.2% 64.9% inter: 79.7% 37.1% 19.1%
+x264 [info]: i16 v,h,dc,p: 30% 24% 35% 10%
+x264 [info]: i8c dc,h,v,p: 41% 19% 30%  9%
+x264 [info]: PSNR Mean Y:34.585 U:37.147 V:37.469 Avg:35.314 Global:35.205 kb/s:9792.66
+
+encoded 120 frames, 282.88 fps, 9792.66 kb/s
