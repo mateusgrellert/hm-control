@@ -3,9 +3,13 @@ import operator
 import math
 
 class App:
-	def __init__(self):
-		self.App = '../bin/TAppEncoderStatic'
+	def __init__(self, valgrind = False):
+		if valgrind:
+			self.App = 'valgrind --tool=cachegrind --log-file=valgrind.out ../bin/TAppEncoderStatic'
+		else:
+			self.App = '../bin/TAppEncoderStatic'
 
+		self.valgrind = valgrind
 		self.period = 8
 		self.numSteps = 300
 		self.initConfig = '-c ../cfg/encoder_lowdelay_main.cfg '
@@ -22,26 +26,47 @@ class App:
 		
 	def parseOutput(self,start=False):
 		f = open('HM_out.txt','r')
-		time = bitrate = psnr = framesCounted = y_psnr = u_psnr = v_psnr = 0.0
+		f2 = open('HM_warn.txt','r')
+		count = 0
+		psnr_count = False
 
-		for l in f.readlines():
-			if 'B-SLICE' in l or 'P-SLICE' in l:
-				tok = l.split()
-				time += float(tok[tok.index('[ET')+1])
-				bitrate += float(tok[tok.index('bits')-1])
-				y_psnr = float(tok[tok.index('[Y')+1])
-				u_psnr = float(tok[tok.index('U')+1])
-				v_psnr = float(tok[tok.index('V')+1])
-				psnr += (4*y_psnr+u_psnr+v_psnr)/6.0
-			
-				if start:
-					updateMinMaxTable((4*y_psnr+u_psnr+v_psnr)/6.0, float(tok[tok.index('bits')-1]))
+		for l in (f.readlines() + f2.readlines()):
+			if 'Total Time' in l:
+				time = float(l.split()[2])
+			elif 'Bytes written to file' in l:
+				bitrate = float(l.split('(')[1].split()[0])
+			elif 'SUMMARY' in l:
+				psnr_count = True
+			elif count == 3:
+				y_psnr = float(l.split()[3])
+				u_psnr = float(l.split()[4])
+				v_psnr = float(l.split()[5])
+				psnr = (4*y_psnr+u_psnr+v_psnr)/6.0
 
-				framesCounted += 1.0
+			if psnr_count:
+				count += 1
+
+		if self.valgrind:
+			valg = open('valgrind.out','r')
+			for l in valg.readlines():
+				if 'D   refs:' in l:
+					rd_refs = float(l.split('(')[1].split()[0].replace(',',''))
+					wr_refs = float(l.split('+')[1].split()[0].replace(',',''))
+				elif 'D1  misses:' in l:
+					rd_misses = float(l.split('(')[1].split()[0].replace(',',''))
+					wr_misses = float(l.split('+')[1].split()[0].replace(',',''))
+				elif 'LL refs' in l:
+					LL_rd_refs = float(l.split('(')[1].split()[0].replace(',',''))
+					LL_wr_refs = float(l.split('+')[1].split()[0].replace(',',''))
+				elif 'LL misses' in l:
+					LL_rd_misses = float(l.split('(')[1].split()[0].replace(',',''))
+					LL_wr_misses = float(l.split('+')[1].split()[0].replace(',',''))
 	
 		#RDNP = self.calculatePerformance(bitrate/framesCounted, psnr/framesCounted)
-
-		return [time, psnr/framesCounted, bitrate/framesCounted]
+		if self.valgrind:
+			return [time, psnr, bitrate, rd_misses, wr_misses, LL_rd_misses, LL_wr_misses]
+		else:
+			return [time, psnr, bitrate]
 
 	def calculatePerformance(self,avg_br, avg_psnr):
 		weight_br = 0.5
@@ -59,5 +84,8 @@ class App:
 		return (param.strip('--').split('='))
 
 	def getOutputNames(self):
-		return ['Time', 'PSNR', 'Bitrate']
+		if self.valgrind:
+			return ['Time', 'PSNR', 'Bitrate', 'L1 RD Misses', 'L1 WR Misses','LL RD Misses', 'LL WR Misses']
+		else:
+			return ['Time', 'PSNR', 'Bitrate']
 

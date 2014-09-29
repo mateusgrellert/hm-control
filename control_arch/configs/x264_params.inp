@@ -1,0 +1,9 @@
+5
+me dia hex umh esa tesa
+merange 8-64
+ref 1-5
+trellis 0 1 2
+weightp 0 1 2
+partitions none p8x8 p4x4 b8x8 all
+bframes 0-4
+b-adapt 0-2

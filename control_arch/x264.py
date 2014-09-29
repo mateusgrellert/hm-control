@@ -3,12 +3,16 @@ import operator
 import math
 
 class App:
-	def __init__(self):
-		self.App = '../x264'
+	def __init__(self, valgrind = False):
+		if valgrind:
+			self.App = 'valgrind --tool=cachegrind --log-file=valgrind.out ../x264'
+		else:
+			self.App = '../x264'
+		self.valgrind = valgrind
 
 		self.period = 8
 		self.numSteps = 300
-		self.initConfig = '--preset placebo --psnr --no-asm --aq-mode 0 --no-psy --no-scenecut'
+		self.initConfig = '--profile high --psnr --no-asm --aq-mode 0 --no-psy --no-scenecut'
 
 
 	def run(self, inp, cfg, period):
@@ -23,26 +27,46 @@ class App:
 	def parseOutput(self):
 		f = open('x264_out.txt','r')
 
-		last3_lines = f.readlines()[-3:]
-		psnr_line = last3_lines[0]
-		time_bitrate_line = last3_lines[2]
-		n_frames = int(time_bitrate_line.split()[1])
-		fps = float(time_bitrate_line.split()[3])
-		bitrate = float(time_bitrate_line.split()[5])
-		for t in psnr_line.split():
-			if 'Y:' in t:
-				y_psnr = float(t.split(':')[-1])
-			elif 'U:' in t:
-				u_psnr = float(t.split(':')[-1])
-			elif 'V:' in t:
-				v_psnr = float(t.split(':')[-1])
-			
+		for l in f.readlines():
+			if 'x264 [info]: PSNR Mean' in l:
+				for t in l.split():
+					if 'Y:' in t:
+						y_psnr = float(t.split(':')[-1])
+					elif 'U:' in t:
+						u_psnr = float(t.split(':')[-1])
+					elif 'V:' in t:
+						v_psnr = float(t.split(':')[-1])
+			elif 'encoded' in l:
+				n_frames = int(l.split()[1])
+				fps = float(l.split()[3])
+				bitrate = float(l.split()[5])
+		
+		if self.valgrind:
+			valg = open('valgrind.out','r')
+			for l in valg.readlines():
+				if 'D   refs:' in l:
+					rd_refs = float(l.split('(')[1].split()[0].replace(',',''))
+					wr_refs = float(l.split('+')[1].split()[0].replace(',',''))
+				elif 'D1  misses:' in l:
+					rd_misses = float(l.split('(')[1].split()[0].replace(',',''))
+					wr_misses = float(l.split('+')[1].split()[0].replace(',',''))
+				elif 'LL refs' in l:
+					LL_rd_refs = float(l.split('(')[1].split()[0].replace(',',''))
+					LL_wr_refs = float(l.split('+')[1].split()[0].replace(',',''))
+				elif 'LL misses' in l:
+					LL_rd_misses = float(l.split('(')[1].split()[0].replace(',',''))
+					LL_wr_misses = float(l.split('+')[1].split()[0].replace(',',''))
+
+
 		psnr = (4*y_psnr+u_psnr+v_psnr)/6.0
 		time = n_frames/fps	
 	
 		#RDNP = self.calculatePerformance(bitrate/framesCounted, psnr/framesCounted)
 
-		return [time, psnr, bitrate]
+		if self.valgrind:
+			return [time, psnr, bitrate, rd_misses, wr_misses, LL_rd_misses, LL_wr_misses]
+		else:
+			return [time, psnr, bitrate]
 
 	def calculatePerformance(self,avg_br, avg_psnr):
 		weight_br = 0.5
@@ -60,5 +84,8 @@ class App:
 		return (param.strip('--').split(' '))
 
 	def getOutputNames(self):
-		return ['Time', 'PSNR', 'Bitrate']
+		if self.valgrind:
+			return ['Time', 'PSNR', 'Bitrate', 'L1 RD Misses', 'L1 WR Misses','LL RD Misses', 'LL WR Misses']
+		else:
+			return ['Time', 'PSNR', 'Bitrate']
 

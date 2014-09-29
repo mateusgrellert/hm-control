@@ -1,9 +1,10 @@
 import os
 import importlib
+import re
 
 class App_Runner:
 
-	def __init__(self, mod, configp, inputp):
+	def __init__(self, mod, configp, inputp, valgrind):
 		self.config_path = configp
 		self.input_path = inputp
 		self.paramTable = {}
@@ -17,7 +18,7 @@ class App_Runner:
 		self.inputVet = []
 
 		module = importlib.import_module(mod)
-		self.App = module.App()
+		self.App = module.App(valgrind)
 
 		self.buildParamTable()
 		self.makeInputVector()
@@ -26,27 +27,33 @@ class App_Runner:
 		f = open(self.config_path,'r')
 		file_lines = f.readlines()
 		self.numLevels = int(file_lines[0])
+		int_conv = True
 		for l in file_lines[1:]:
 			if len(l) < 3: continue #skip empty lines
 
 			param = l.split()[0]
 			self.paramTable[param] = []
-			values = l.split()[1:]
+			if len(l.split()) > 1:
+				values = l.split()[1:]
 
-			if '-' in values[0]:
-				[minv, maxv] = values[0].split('-')
-				step = (int(maxv) - int(minv)*1.0)/(self.numLevels-1)
+				if re.search(r'[0-9].*-[0-9].*',values[0]):
+					[minv, maxv] = values[0].split('-')
+					step = (float(maxv) - float(minv)*1.0)/(self.numLevels-1)
+					if '.' in values[0]:
+						int_conv = False
+					vals = []
+					for i in range(0, self.numLevels):
+						val = float(minv)+i*step
+						if int_conv:
+							val = self.round_to(val,0.5)
+						vals.append(str(val))
+					self.paramTable[param] = vals
 
-				vals = []
-				for i in range(0, self.numLevels):
-					val = int(minv)+i*step
-					val = int(self.round_to(val,0.5))
-					vals.append(str(val))
-				self.paramTable[param] = vals
-
+				else:
+					for v in values:
+						self.paramTable[param].append(v)
 			else:
-				for v in values:
-					self.paramTable[param].append(v)
+				self.paramTable[param] = ''
 
 		print self.paramTable
 
@@ -62,7 +69,10 @@ class App_Runner:
 	def buildFirstConfig(self):
 		cfg = []
 		for p in self.paramTable:
-			cfg.append(self.App.makeParam(p, str(self.paramTable[p][-1])))
+			if isinstance(self.paramTable[p], list):
+				cfg.append(self.App.makeParam(p, str(self.paramTable[p][-1])))
+			else:
+				cfg.append(self.App.makeParam(p, ''))
 		return cfg
 
 
@@ -71,13 +81,16 @@ class App_Runner:
 		cfg = self.buildFirstConfig()
 		print ' '.join(cfg)
 		ref_tuple = []
+		out_tuple = []
 
 		for inp in self.inputVet:
 			self.App.run(inp,cfg,period)
-			ref_tuple.append(self.App.parseOutput())
+			output = self.App.parseOutput()
+			out_tuple.append(output)
+			ref_tuple.append(output)
 
-		self.outputVector.append(ref_tuple)
-		self.cfgVector.append(cfg)
+		self.outputVector.append(out_tuple)
+		self.cfgVector.append(' '.join(cfg))
 		self.switchVector.append('c0')
 
 		while True:
@@ -90,8 +103,11 @@ class App_Runner:
 			sense_tuple = []
 			for inp in self.inputVet:
 				self.App.run(inp, cfg,period)
-				output_tuple.append(self.App.parseOutput())
-				sense_tuple.append(self.calcSensitivity(ref_tuple[self.inputVet.index(inp)], self.App.parseOutput()))
+				output = self.App.parseOutput()
+				output_tuple.append(output)
+				sense_tuple.append(self.calcSensitivity(ref_tuple[self.inputVet.index(inp)], output))
+				if mode == 'cumulative':
+					ref_tuple[self.inputVet.index(inp)] = output
 
 			self.outputVector.append(output_tuple)
 			self.sensitivityVector.append(sense_tuple)
@@ -113,17 +129,20 @@ class App_Runner:
 			for i in self.paramTable[p][::-1]:
 				if self.paramTable[p].index(i) < self.paramTable[p].index(v):
 					if i.isdigit():
-						self.deltaParam = 1.0-(int(i)/(self.paramTable[p][-1]*1.0))
+						self.deltaParam = 1.0-(float(i)/(float(self.paramTable[p][-1])*1.0))
 					else:
 						self.deltaParam = 1.0/self.numLevels
 
-					cfg[replace_idx] = cfg[replace_idx].replace(v, i, 1)
+					cfg[replace_idx] = self.replace_last(cfg[replace_idx], v, i)
 					self.lastSwitch = p + '=' + i
 				
 					return cfg
 
 			if mode == 'single':
-				cfg[replace_idx] = cfg[replace_idx].replace(v, self.paramTable[p][-1], 1)
+				if isinstance(self.paramTable[p], list):
+					cfg[replace_idx] = self.replace_last(cfg[replace_idx],v, self.paramTable[p][-1])
+				else:
+					cfg[replace_idx] = self.replace_last(cfg[replace_idx], p, '')
 
 			self.paramSkip += 1
 		return False
@@ -145,7 +164,7 @@ class App_Runner:
 	def calcSensitivity(self, ref_tuple, new_tuple):
 		sense_vet = []
 		for a,b in zip(ref_tuple, new_tuple): 
-			delta_out = (1.0-(b/(a*1.0)))
+			delta_out = (1.0-(float(b)/(float(a)*1.0)))
 			sense_vet.append(delta_out)
 
 		return sense_vet
@@ -184,6 +203,10 @@ class App_Runner:
 
 	def round_to(self,n, precision):
 		correction = 0.5 if n >= 0 else -0.5
-		return int( n/precision+correction ) * precision
+		return int(int( n/precision+correction ) * precision)
 
+
+	def replace_last(self, source_string, replace_what, replace_with):
+		head, sep, tail = source_string.rpartition(replace_what)
+		return head + replace_with + tail
 			
