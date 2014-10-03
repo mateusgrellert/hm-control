@@ -9,7 +9,7 @@ class App:
 		else:
 			self.App = '../x264'
 		self.valgrind = valgrind
-
+		self.name = 'x264'
 		self.period = 8
 		self.numSteps = 300
 		self.initConfig = '--profile high --psnr --no-asm --aq-mode 0 --no-psy --no-scenecut'

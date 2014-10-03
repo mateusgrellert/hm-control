@@ -8,6 +8,7 @@ class App:
 			self.App = 'valgrind --tool=cachegrind --log-file=valgrind.out ../x265'
 		else:
 			self.App = '../x265'
+		self.name = 'x265'
 		self.valgrind = valgrind
 		self.period = 8
 		self.numSteps = 300

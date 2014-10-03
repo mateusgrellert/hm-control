@@ -8,7 +8,7 @@ class App:
 			self.App = 'valgrind --tool=cachegrind --log-file=valgrind.out ../bin/TAppEncoderStatic'
 		else:
 			self.App = '../bin/TAppEncoderStatic'
-
+		self.name = 'HM'
 		self.valgrind = valgrind
 		self.period = 8
 		self.numSteps = 300
@@ -37,7 +37,7 @@ class App:
 				bitrate = float(l.split('(')[1].split()[0])
 			elif 'SUMMARY' in l:
 				psnr_count = True
-			elif count == 3:
+			elif count == 2:
 				y_psnr = float(l.split()[3])
 				u_psnr = float(l.split()[4])
 				v_psnr = float(l.split()[5])

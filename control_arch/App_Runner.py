@@ -1,6 +1,8 @@
 import os
 import importlib
 import re
+import time
+import Genetic_Controller as gc
 
 class App_Runner:
 
@@ -10,7 +12,7 @@ class App_Runner:
 		self.paramTable = {}
 		self.paramSkip = 0
 		self.lastSwitch = ''
-		self.outputCsv = open('App_Runner_Results.csv','w')
+		self.Controller = gc.Genetic_Controller()
 		self.cfgVector = []
 		self.switchVector = []
 		self.outputVector = []
@@ -19,7 +21,7 @@ class App_Runner:
 
 		module = importlib.import_module(mod)
 		self.App = module.App(valgrind)
-
+		self.outputCsv = open(self.App.name+'_Results.csv','w')
 		self.buildParamTable()
 		self.makeInputVector()
 
@@ -46,7 +48,8 @@ class App_Runner:
 						val = float(minv)+i*step
 						if int_conv:
 							val = self.round_to(val,0.5)
-						vals.append(str(val))
+						if str(val) not in vals:
+							vals.append(str(val))
 					self.paramTable[param] = vals
 
 				else:
@@ -118,7 +121,25 @@ class App_Runner:
 
 		self.printOutput()
 
+	def controlTarget(self, period):
+		target_idx = 0
+		cfg = self.buildFirstConfig()
+		out_tuple = []
+		print ' '.join(cfg)
+		inp = self.inputVet[0]
 
+		self.App.run(inp,cfg,period)
+		output = self.App.parseOutput()
+		actual = float(output[target_idx])
+		SP = 0.6*actual
+		control = self.Controller(self.paramTable)
+
+		while (SP < actual):
+			cfg = controller.getNextConfig()
+			self.App.run(inp, cfg,period)
+			output = self.App.parseOutput()
+			actual = float(output[target_idx])
+			print '\t', SP, '\t', actual
 
 	def switchSingleParam(self,cfg, mode):
 
@@ -128,10 +149,7 @@ class App_Runner:
 
 			for i in self.paramTable[p][::-1]:
 				if self.paramTable[p].index(i) < self.paramTable[p].index(v):
-					if i.isdigit():
-						self.deltaParam = 1.0-(float(i)/(float(self.paramTable[p][-1])*1.0))
-					else:
-						self.deltaParam = 1.0/self.numLevels
+					self.deltaParam = self.paramTable[p].index(i) - len(self.paramTable[p]) + 1 
 
 					cfg[replace_idx] = self.replace_last(cfg[replace_idx], v, i)
 					self.lastSwitch = p + '=' + i
@@ -159,7 +177,7 @@ class App_Runner:
 		for cfg in self.cfgVector:
 			print >> self.outputCsv, 'c'+str(count)+'\t',cfg
 			count += 1
-
+		self.cleanUp()
 
 	def calcSensitivity(self, ref_tuple, new_tuple):
 		sense_vet = []
@@ -209,4 +227,12 @@ class App_Runner:
 	def replace_last(self, source_string, replace_what, replace_with):
 		head, sep, tail = source_string.rpartition(replace_what)
 		return head + replace_with + tail
+
+	def cleanUp(self):
+		os.system('mv *log logs/')
+		out_path = '_'.join([str(x) for x in time.localtime()[:5]])
+		os.system('mkdir output_'+out_path)
+		os.system('mv *csv output_'+out_pat)
+		os.system('rm *.out *.txt cachegrind.out* *.yuv *.bin')
+
 			

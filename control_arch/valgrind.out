@@ -1,0 +1,23 @@
+==23360== Cachegrind, a cache and branch-prediction profiler
+==23360== Copyright (C) 2002-2013, and GNU GPL'd, by Nicholas Nethercote et al.
+==23360== Using Valgrind-3.10.0.SVN and LibVEX; rerun with -h for copyright info
+==23360== Command: ../x264 --profile high --psnr --no-asm --aq-mode 0 --no-psy --no-scenecut --me tesa --bframes 4 --merange 64 --b-adapt 2 --weightp 2 --trellis 2 --ref 5 --partitions all -o out.x264 ../../origCfP/cropped/BlowingBubbles_384x192_50.yuv --frames 16
+==23360== Parent PID: 23359
+==23360== 
+--23360-- warning: L3 cache found, using its data for the LL simulation.
+==23360== 
+==23360== I   refs:      72,521,186,393
+==23360== I1  misses:         6,180,972
+==23360== LLi misses:             8,220
+==23360== I1  miss rate:           0.00%
+==23360== LLi miss rate:           0.00%
+==23360== 
+==23360== D   refs:      16,724,701,690  (15,873,034,590 rd   + 851,667,100 wr)
+==23360== D1  misses:        58,987,663  (    54,959,018 rd   +   4,028,645 wr)
+==23360== LLd misses:           475,795  (        40,607 rd   +     435,188 wr)
+==23360== D1  miss rate:            0.3% (           0.3%     +         0.4%  )
+==23360== LLd miss rate:            0.0% (           0.0%     +         0.0%  )
+==23360== 
+==23360== LL refs:           65,168,635  (    61,139,990 rd   +   4,028,645 wr)
+==23360== LL misses:            484,015  (        48,827 rd   +     435,188 wr)
+==23360== LL miss rate:             0.0% (           0.0%     +         0.0%  )
