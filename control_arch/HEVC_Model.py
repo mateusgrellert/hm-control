@@ -10,7 +10,7 @@ class App:
 			self.App = '../bin/TAppEncoderStatic'
 		self.name = 'HM'
 		self.valgrind = valgrind
-		self.period = 8
+		self.period = 3
 		self.numSteps = 300
 		self.initConfig = '-c ../cfg/encoder_lowdelay_main.cfg '
 

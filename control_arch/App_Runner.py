@@ -12,7 +12,7 @@ class App_Runner:
 		self.paramTable = {}
 		self.paramSkip = 0
 		self.lastSwitch = ''
-		self.Controller = gc.Genetic_Controller()
+
 		self.cfgVector = []
 		self.switchVector = []
 		self.outputVector = []
@@ -24,6 +24,7 @@ class App_Runner:
 		self.outputCsv = open(self.App.name+'_Results.csv','w')
 		self.buildParamTable()
 		self.makeInputVector()
+		self.Controller = gc.Genetic_Controller(self.paramTable, self.App)
 
 	def buildParamTable(self):
 		f = open(self.config_path,'r')
@@ -123,22 +124,27 @@ class App_Runner:
 
 	def controlTarget(self, period):
 		target_idx = 0
-		cfg = self.buildFirstConfig()
-		out_tuple = []
-		print ' '.join(cfg)
+		control = self.Controller
 		inp = self.inputVet[0]
+		out_tuple = []
+		
+		cfg = self.buildFirstConfig()
+		#print ' '.join(cfg)
 
 		self.App.run(inp,cfg,period)
 		output = self.App.parseOutput()
 		actual = float(output[target_idx])
-		SP = 0.6*actual
-		control = self.Controller(self.paramTable)
+		SP = actual*0.4
+		control.updateFitness((actual-SP)*(actual-SP))
+		print '\t', SP, '\t', actual
 
-		while (SP < actual):
-			cfg = controller.getNextConfig()
+		while (True):
+			cfg = control.getNextCfg()
+			#print ' '.join(cfg)
 			self.App.run(inp, cfg,period)
 			output = self.App.parseOutput()
 			actual = float(output[target_idx])
+			control.updateFitness((actual-SP)*(actual-SP))
 			print '\t', SP, '\t', actual
 
 	def switchSingleParam(self,cfg, mode):
@@ -231,8 +237,8 @@ class App_Runner:
 	def cleanUp(self):
 		os.system('mv *log logs/')
 		out_path = '_'.join([str(x) for x in time.localtime()[:5]])
-		os.system('mkdir output_'+out_path)
-		os.system('mv *csv output_'+out_pat)
+		#os.system('mkdir output_'+out_path)
+		#os.system('mv *csv output_'+out_path)
 		os.system('rm *.out *.txt cachegrind.out* *.yuv *.bin')
 
 			

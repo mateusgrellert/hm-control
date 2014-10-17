@@ -1,0 +1,64 @@
+
+HM software: Encoder Version [14.0][Linux][GCC 4.8.2][64 bit] 
+
+Input          File          : ../../origCfP/cropped/BasketballPass_384x192_50.yuv
+Bitstream      File          : str.bin
+Reconstruction File          : rec.yuv
+Real     Format              : 384x192 50Hz
+Internal Format              : 384x192 50Hz
+Frame/Field                  : Frame based coding
+Frame index                  : 0 - 7 (8 frames)
+CU size / depth              : 64 / 4
+RQT trans. size (min / max)  : 4 / 32
+Max RQT depth inter          : 3
+Max RQT depth intra          : 3
+Min PCM size                 : 8
+Motion search range          : 128
+Intra period                 : -1
+Decoding refresh type        : 0
+QP                           : 32.00
+Max dQP signaling depth      : 0
+Cb QP Offset                 : 0
+Cr QP Offset                 : 0
+QP adaptation                : 0 (range=0)
+GOP size                     : 4
+Internal bit depth           : (Y:8, C:8)
+PCM sample bit depth         : (Y:8, C:8)
+RateControl                  : 0
+Max Num Merge Candidates     : 5
+
+TOOL CFG: IBD:0 HAD:1 RDQ:1 RDQTS:1 RDpenalty:0 SQP:0 ASR:0 FEN:1 ECU:0 FDM:1 CFM:0 ESD:0 RQT:1 TransformSkip:1 TransformSkipFast:1 Slice: M=0 SliceSegment: M=0 CIP:0 SAO:1 PCM:0 TransQuantBypassEnabled:0 WPP:0 WPB:0 PME:2  WaveFrontSynchro:0 WaveFrontSubstreams:1 ScalingList:0 TMVPMode:1 AQpS:0 SignBitHidingFlag:1 RecalQP:0
+
+POC    0 TId: 0 ( I-SLICE, nQP 32 QP 32 )      28808 bits [Y 35.7320 dB    U 39.4011 dB    V 39.1218 dB] [ET 20.71 ] [L0 ] [L1 ]
+POC    1 TId: 0 ( B-SLICE, nQP 35 QP 35 )       1096 bits [Y 34.3203 dB    U 39.2502 dB    V 38.7703 dB] [ET 29.68 ] [L0 0 ] [L1 0 ]
+POC    2 TId: 0 ( B-SLICE, nQP 34 QP 34 )       1776 bits [Y 34.1288 dB    U 39.0876 dB    V 38.2812 dB] [ET 44.41 ] [L0 1 0 ] [L1 1 0 ]
+POC    3 TId: 0 ( B-SLICE, nQP 35 QP 35 )       1448 bits [Y 33.6138 dB    U 38.9511 dB    V 38.0417 dB] [ET 55.25 ] [L0 2 1 0 ] [L1 2 1 0 ]
+POC    4 TId: 0 ( B-SLICE, nQP 33 QP 33 )       6376 bits [Y 35.2477 dB    U 39.1918 dB    V 38.8019 dB] [ET 78.83 ] [L0 3 2 1 0 ] [L1 3 2 1 0 ]
+POC    5 TId: 0 ( B-SLICE, nQP 35 QP 35 )        904 bits [Y 34.1848 dB    U 39.0428 dB    V 38.6197 dB] [ET 67.29 ] [L0 4 3 2 0 ] [L1 4 3 2 0 ]
+POC    6 TId: 0 ( B-SLICE, nQP 34 QP 34 )       1816 bits [Y 33.8459 dB    U 38.8552 dB    V 37.9937 dB] [ET 69.29 ] [L0 5 4 3 0 ] [L1 5 4 3 0 ]
+POC    7 TId: 0 ( B-SLICE, nQP 35 QP 35 )       1480 bits [Y 33.3162 dB    U 38.6395 dB    V 37.8576 dB] [ET 67.09 ] [L0 6 5 4 0 ] [L1 6 5 4 0 ]
+
+
+SUMMARY --------------------------------------------------------
+	Total Frames |  Bitrate    Y-PSNR    U-PSNR    V-PSNR 
+	        8    a    273.1500   34.2987   39.0524   38.4360
+
+
+I Slices--------------------------------------------------------
+	Total Frames |  Bitrate    Y-PSNR    U-PSNR    V-PSNR 
+	        1    i   1440.4000   35.7320   39.4011   39.1218
+
+
+P Slices--------------------------------------------------------
+	Total Frames |  Bitrate    Y-PSNR    U-PSNR    V-PSNR 
+	        0    p        -nan      -nan      -nan      -nan
+
+
+B Slices--------------------------------------------------------
+	Total Frames |  Bitrate    Y-PSNR    U-PSNR    V-PSNR 
+	        7    b    106.4000   34.0939   39.0026   38.3380
+
+RVM: 0.000
+Bytes written to file: 5506 (275.300 kbps)
+
+ Total Time:      432.738 sec.
