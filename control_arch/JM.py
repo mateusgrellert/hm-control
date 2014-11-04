@@ -5,47 +5,43 @@ import math
 class App:
 	def __init__(self, valgrind = False):
 		if valgrind:
-			self.App = 'valgrind --tool=cachegrind --log-file=valgrind.out ../bin/TAppEncoderStatic'
+			self.App = 'valgrind --tool=cachegrind --log-file=valgrind.out ../JM/lencod.exe'
 		else:
-			self.App = '../bin/TAppEncoderStatic'
-		self.name = 'HM'
+			self.App = '../JM/lencod.exe '
+		self.name = 'JM'
 		self.valgrind = valgrind
 		self.period = 3
 		self.numSteps = 300
-		self.initConfig = '-c ../cfg/encoder_lowdelay_main.cfg '
-		self.QPs = ['22','27','32','37']
-	
+		self.initConfig = '-d ../JM/encoder_max_performance.cfg'
+
+
 	def run(self, inp, cfg, period):
-		line = self.App + ' ' + self.initConfig + ' -c /home/grellert/hm-cfgs/cropped/' + inp + ' ' + ' '.join(cfg)
-		line += ' --IntraPeriod=-1 -p FramesToBeEncoded=' + str(period)
-		line += ' > HM_out.txt 2> HM_warn.txt'
+		line = self.App + ' ' + self.initConfig + '-p Log2MaxFNumMinus4=-1 -p InputFile=/home/grellert/origCfP/cropped/' + inp[0] + ' -p SourceWidth=' + inp[1] + ' -p SourceHeight=' + inp[2] + ' ' + ' '.join(cfg)
+		line += ' -p IntraPeriod=-1 -p FramesToBeEncoded=' + str(period)
+		line += ' > JM_out.txt 2> JM_warn.txt'
 		os.system(line)
-		os.system('cat HM_out.txt >> HM_out.log')
+		os.system('cat JM_out.txt >> JM_out.log')
 		#self.stepsTaken += period
 
 		
 	def parseOutput(self,start=False):
-		f = open('HM_out.txt','r')
-		f2 = open('HM_warn.txt','r')
+		f = open('JM_out.txt','r')
 		count = 0
 		psnr_count = False
 
-		for l in (f.readlines() + f2.readlines()):
-			if 'Total Time' in l:
-				time = float(l.split()[2])
-			elif 'Bytes written to file' in l:
-				bitrate = float(l.split('(')[1].split()[0])
-			elif 'SUMMARY' in l:
-				psnr_count = True
-			elif count == 2:
-				y_psnr = float(l.split()[3])
-				u_psnr = float(l.split()[4])
-				v_psnr = float(l.split()[5])
-				psnr = (4*y_psnr+u_psnr+v_psnr)/6.0
-
-			if psnr_count:
-				count += 1
-
+		for l in (f.readlines()):
+			if 'Total encoding time' in l:
+				time = float(l.split()[7])
+			elif 'Y { PSNR' in l:
+				y_psnr = float(l.split()[10].strip(','))
+			elif 'U { PSNR' in l:
+				u_psnr = float(l.split()[10].strip(','))
+			elif 'V { PSNR' in l:
+				v_psnr = float(l.split()[10].strip(','))
+			elif 'Bit rate' in l:
+				bitrate = float(l.split()[7])
+		
+		psnr = (4*y_psnr+u_psnr+v_psnr)/6.0
 		if self.valgrind:
 			valg = open('valgrind.out','r')
 			for l in valg.readlines():
@@ -78,10 +74,10 @@ class App:
 		return (norm_br*weight_br+norm_psnr*weight_psnr)
 
 	def makeParam(self,name, value):
-		return ('--' + name + '=' + value)
+		return ('-p ' + name + '=' + value)
 	
 	def splitParam(self,param):
-		return (param.strip('--').split('='))
+		return (param.strip('-p ').split('='))
 
 	def getOutputNames(self):
 		if self.valgrind:

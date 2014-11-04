@@ -1,23 +1,43 @@
-==22772== Cachegrind, a cache and branch-prediction profiler
-==22772== Copyright (C) 2002-2013, and GNU GPL'd, by Nicholas Nethercote et al.
-==22772== Using Valgrind-3.10.0.SVN and LibVEX; rerun with -h for copyright info
-==22772== Command: ../bin/TAppEncoderStatic -c ../cfg/encoder_lowdelay_main.cfg -c /home/grellert/hm-cfgs/cropped/BasketballPass.cfg --SearchRange=90 --MaxPartitionDepth=2 --SAO=1 --BipredSearchRange=6 --HadamardME=1 --AMP=1 --QuadtreeTUMaxDepthInter=2 --RDOQ=1 --IntraPeriod=-1 --FramesToBeEncoded=8
-==22772== Parent PID: 22771
-==22772== 
---22772-- warning: L3 cache found, using its data for the LL simulation.
-==22772== 
-==22772== I   refs:      35,043,949,160
-==22772== I1  misses:        33,952,321
-==22772== LLi misses:            18,136
-==22772== I1  miss rate:           0.09%
-==22772== LLi miss rate:           0.00%
-==22772== 
-==22772== D   refs:      11,447,176,049  (8,708,220,342 rd   + 2,738,955,707 wr)
-==22772== D1  misses:       109,794,557  (   46,220,225 rd   +    63,574,332 wr)
-==22772== LLd misses:           512,279  (       98,425 rd   +       413,854 wr)
-==22772== D1  miss rate:            0.9% (          0.5%     +           2.3%  )
-==22772== LLd miss rate:            0.0% (          0.0%     +           0.0%  )
-==22772== 
-==22772== LL refs:          143,746,878  (   80,172,546 rd   +    63,574,332 wr)
-==22772== LL misses:            530,415  (      116,561 rd   +       413,854 wr)
-==22772== LL miss rate:             0.0% (          0.0%     +           0.0%  )
+==14541== Cachegrind, a cache and branch-prediction profiler
+==14541== Copyright (C) 2002-2013, and GNU GPL'd, by Nicholas Nethercote et al.
+==14541== Using Valgrind-3.10.0.SVN and LibVEX; rerun with -h for copyright info
+==14541== Command: ../x265 --input-res 832x448 --fps 30 --profile main --tune psnr --psnr --no-asm --aq-mode 0 --no-scenecut --me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --psy-rdoq 10.0 --tu-intra-depth 2 --rect --amp --no-wpp --weightp --weightb --sao --weightb --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7 --frames 8 ../../origCfP/cropped/RaceHorses_832x448_30.yuv -o out.x265
+==14541== Parent PID: 14540
+==14541== 
+--14541-- warning: L3 cache found, using its data for the LL simulation.
+==14541== 
+==14541== Process terminating with default action of signal 11 (SIGSEGV)
+==14541==  Access not within mapped region at address 0x3011
+==14541==    at 0x4D8F080: void (anonymous namespace)::blockcopy_sp_c<64, 64>(unsigned char*, long, short*, long) (in /home/grellert/x265/build/linux/libx265.so.32)
+==14541==    by 0x4C6AEB6: x265::Search::estIntraPredQT(x265::TComDataCU*, x265::TComYuv*, x265::TComYuv*, x265::ShortYuv*, x265::TComYuv*, unsigned int*) (in /home/grellert/x265/build/linux/libx265.so.32)
+==14541==    by 0x4C5A68A: x265::Analysis::checkIntraInInter_rd5_6(x265::TComDataCU*&, x265::TComDataCU*&, x265::PartSize) (in /home/grellert/x265/build/linux/libx265.so.32)
+==14541==    by 0x4C5D9B7: x265::Analysis::compressInterCU_rd5_6(x265::TComDataCU*&, x265::TComDataCU*&, unsigned int, x265::TComDataCU*, x265::CU*, x265::PartSize) (in /home/grellert/x265/build/linux/libx265.so.32)
+==14541==    by 0x4C5DED7: x265::Analysis::compressCU(x265::TComDataCU*) (in /home/grellert/x265/build/linux/libx265.so.32)
+==14541==    by 0x4C7D96D: x265::FrameEncoder::processRowEncoder(int, x265::ThreadLocalData&) (in /home/grellert/x265/build/linux/libx265.so.32)
+==14541==    by 0x4C7BC41: x265::FrameEncoder::compressCTURows() (in /home/grellert/x265/build/linux/libx265.so.32)
+==14541==    by 0x4C7C85E: x265::FrameEncoder::compressFrame() (in /home/grellert/x265/build/linux/libx265.so.32)
+==14541==    by 0x4C7D337: x265::FrameEncoder::threadMain() (in /home/grellert/x265/build/linux/libx265.so.32)
+==14541==    by 0x4E071E9: x265::ThreadShim(void*) (in /home/grellert/x265/build/linux/libx265.so.32)
+==14541==    by 0x504A181: start_thread (pthread_create.c:312)
+==14541==    by 0x565EFBC: clone (clone.S:111)
+==14541==  If you believe this happened as a result of a stack
+==14541==  overflow in your program's main thread (unlikely but
+==14541==  possible), you can try to increase the size of the
+==14541==  main thread stack using the --main-stacksize= flag.
+==14541==  The main thread stack size used in this run was 8388608.
+==14541== 
+==14541== I   refs:      353,882,277,384
+==14541== I1  misses:        334,510,097
+==14541== LLi misses:             12,008
+==14541== I1  miss rate:            0.09%
+==14541== LLi miss rate:            0.00%
+==14541== 
+==14541== D   refs:      122,843,795,578  (98,588,878,148 rd   + 24,254,917,430 wr)
+==14541== D1  misses:        524,351,597  (   362,517,408 rd   +    161,834,189 wr)
+==14541== LLd misses:            980,148  (       250,468 rd   +        729,680 wr)
+==14541== D1  miss rate:             0.4% (           0.3%     +            0.6%  )
+==14541== LLd miss rate:             0.0% (           0.0%     +            0.0%  )
+==14541== 
+==14541== LL refs:           858,861,694  (   697,027,505 rd   +    161,834,189 wr)
+==14541== LL misses:             992,156  (       262,476 rd   +        729,680 wr)
+==14541== LL miss rate:              0.0% (           0.0%     +            0.0%  )

@@ -1,0 +1,18 @@
+yuv  [info]: 832x448 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
+x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Concurrently encoded frames         : 8
+x265 [warning]: --psnr used with psy on: results will be invalid!
+x265 [warning]: --tune psnr should be used if attempting to benchmark psnr!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: CU size                             : 64
+x265 [info]: Max RQT depth inter / intra         : 3 / 2
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: RDpenalty                    : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
+x265 [info]: tools: rect amp rd=6 psy-rdoq=10.00 lft sao-lcu signhide 
+Killed

@@ -22,105 +22,109 @@ class App_Runner:
 		module = importlib.import_module(mod)
 		self.App = module.App(valgrind)
 		self.outputCsv = open(self.App.name+'_Results.csv','w')
+		
+
 		self.buildParamTable()
 		self.makeInputVector()
-		self.Controller = gc.Genetic_Controller(self.paramTable, self.App)
+		#self.Controller = gc.Genetic_Controller(self.paramTable, self.App)
+
+
+
 
 	def buildParamTable(self):
 		f = open(self.config_path,'r')
 		file_lines = f.readlines()
-		self.numLevels = int(file_lines[0])
-		int_conv = True
-		for l in file_lines[1:]:
-			if len(l) < 3: continue #skip empty lines
+		f.close()
+		self.paramTable["SWITCHES_ON"] = []
+		self.paramTable["SWITCHES_OFF"] = []
 
-			param = l.split()[0]
-			self.paramTable[param] = []
-			if len(l.split()) > 1:
-				values = l.split()[1:]
+		for line in file_lines:
+			if len(line) <= 1: continue # skip empty lines
+			if '#' in line: continue # skip comments
 
-				if re.search(r'[0-9].*-[0-9].*',values[0]):
-					[minv, maxv] = values[0].split('-')
-					step = (float(maxv) - float(minv)*1.0)/(self.numLevels-1)
-					if '.' in values[0]:
-						int_conv = False
-					vals = []
-					for i in range(0, self.numLevels):
-						val = float(minv)+i*step
-						if int_conv:
-							val = self.round_to(val,0.5)
-						if str(val) not in vals:
-							vals.append(str(val))
-					self.paramTable[param] = vals
+			if ':' in line: # param : 1 2 3 ...
+				[param, vals] = line.split(':')
+				param = param.strip(' ')
+				self.paramTable[param] = []
+				for v in vals.split():
+					self.paramTable[param].append(v)
 
-				else:
-					for v in values:
-						self.paramTable[param].append(v)
-			else:
-				self.paramTable[param] = ''
+			elif '/' in line: # SWITCH OFF/SWITCH ON
+				[sw1, sw2] = line.split('/')
+				self.paramTable["SWITCHES_OFF"].append(sw1.strip('\n'))
+				self.paramTable["SWITCHES_ON"].append(sw2.strip('\n'))
 
-		print self.paramTable
+		self.printParamTable()
+
+
+
+
+	def printParamTable(self):
+		for k,v in self.paramTable.items():
+			print k, ' : ', v
+
+
+
 
 	def makeInputVector(self):
 		f = open(self.input_path,'r')
 
 		for l in f.readlines():
-			if len(l) < 3: continue #skip empty lines
+			if len(l) <= 1: continue # skip empty lines
 
 			self.inputVet.append(l.strip('\n'))
 
 
+
 	def buildFirstConfig(self):
 		cfg = []
-		for p in self.paramTable:
-			if isinstance(self.paramTable[p], list):
-				cfg.append(self.App.makeParam(p, str(self.paramTable[p][-1])))
-			else:
-				cfg.append(self.App.makeParam(p, ''))
+		for p,vals in self.paramTable.items():
+			if p == 'SWITCHES_ON':
+				for switch in vals:
+					cfg.append(self.App.makeParam(switch, ''))
+			elif p != 'SWITCHES_OFF':
+				cfg.append(self.App.makeParam(p, vals[-1]))
 		return cfg
+
+
 
 
 	def sensitivityAnalysis(self, period, mode):
 
-		cfg = self.buildFirstConfig()
-		print ' '.join(cfg)
-		ref_tuple = []
 		out_tuple = []
+		self.lastSwitch = 'c0'
+		cfg = self.buildFirstConfig()
+		ref_tuple = []
+		for i in range(len(self.inputVet)):
+			ref_tuple.append(0)
 
-		for inp in self.inputVet:
-			self.App.run(inp,cfg,period)
-			output = self.App.parseOutput()
-			out_tuple.append(output)
-			ref_tuple.append(output)
-
-		self.outputVector.append(out_tuple)
-		self.cfgVector.append(' '.join(cfg))
-		self.switchVector.append('c0')
-
-		while True:
-
-			cfg = self.switchSingleParam(cfg, mode)
-			if not(cfg): break
-
-			print ' '.join(cfg)
+		while cfg:
 			output_tuple = []
 			sense_tuple = []
-			for inp in self.inputVet:
-				self.App.run(inp, cfg,period)
-				output = self.App.parseOutput()
+			print ' '.join(cfg)
+			for i in range(len(self.inputVet)):
+				inp = self.inputVet[i]
+
+				output = self.App.run(inp, cfg,period)
 				output_tuple.append(output)
-				sense_tuple.append(self.calcSensitivity(ref_tuple[self.inputVet.index(inp)], output))
-				if mode == 'cumulative':
-					ref_tuple[self.inputVet.index(inp)] = output
+				if self.lastSwitch != 'c0':
+					sense_tuple.append(self.calcSensitivity(ref_tuple[i], output))
+
+				if (self.lastSwitch == 'c0' or mode == 'cumulative'): # update reference results if first run or if cumulative analysis
+					ref_tuple[i] = output
 
 			self.outputVector.append(output_tuple)
 			self.sensitivityVector.append(sense_tuple)
 
 			self.cfgVector.append(' '.join(cfg))
 			self.switchVector.append(self.lastSwitch)
-
+			
+			cfg = self.switchSingleParam(cfg, mode)
 
 		self.printOutput()
+
+
+
 
 	def controlTarget(self, period):
 		target_idx = 0
@@ -129,10 +133,8 @@ class App_Runner:
 		out_tuple = []
 		
 		cfg = self.buildFirstConfig()
-		#print ' '.join(cfg)
 
-		self.App.run(inp,cfg,period)
-		output = self.App.parseOutput()
+		output = self.App.run(inp,cfg,period)
 		actual = float(output[target_idx])
 		SP = actual*0.4
 		control.updateFitness((actual-SP)*(actual-SP))
@@ -140,9 +142,7 @@ class App_Runner:
 
 		while (True):
 			cfg = control.getNextCfg()
-			#print ' '.join(cfg)
-			self.App.run(inp, cfg,period)
-			output = self.App.parseOutput()
+			output = self.App.run(inp, cfg,period)
 			actual = float(output[target_idx])
 			control.updateFitness((actual-SP)*(actual-SP))
 			print '\t', SP, '\t', actual
@@ -152,21 +152,30 @@ class App_Runner:
 		for pv in cfg[self.paramSkip:]:
 			[p,v] = self.App.splitParam(pv)
 			replace_idx = cfg.index(pv)
+			
+			if p in self.paramTable['SWITCHES_ON']:
+				p_idx = self.paramTable['SWITCHES_ON'].index(p)
+				sw_off = self.paramTable['SWITCHES_OFF'][p_idx]
+				cfg[replace_idx] = self.replace_last(cfg[replace_idx], p, sw_off)
+				self.lastSwitch = sw_off
+				return cfg
+			if p not in self.paramTable['SWITCHES_OFF']:
+				for i in self.paramTable[p][::-1]:
+					if self.paramTable[p].index(i) < self.paramTable[p].index(v):
+						self.deltaParam = self.paramTable[p].index(i) - len(self.paramTable[p]) + 1 
 
-			for i in self.paramTable[p][::-1]:
-				if self.paramTable[p].index(i) < self.paramTable[p].index(v):
-					self.deltaParam = self.paramTable[p].index(i) - len(self.paramTable[p]) + 1 
-
-					cfg[replace_idx] = self.replace_last(cfg[replace_idx], v, i)
-					self.lastSwitch = p + '=' + i
+						cfg[replace_idx] = self.replace_last(cfg[replace_idx], v, i)
+						self.lastSwitch = p + '=' + i
 				
-					return cfg
+						return cfg
 
 			if mode == 'single':
-				if isinstance(self.paramTable[p], list):
-					cfg[replace_idx] = self.replace_last(cfg[replace_idx],v, self.paramTable[p][-1])
+				if p in self.paramTable['SWITCHES_OFF']:
+					p_idx = self.paramTable['SWITCHES_OFF'].index(p)
+					sw_on = self.paramTable['SWITCHES_ON'][p_idx]
+					cfg[replace_idx] = self.replace_last(cfg[replace_idx], p, sw_on)
 				else:
-					cfg[replace_idx] = self.replace_last(cfg[replace_idx], p, '')
+					cfg[replace_idx] = self.replace_last(cfg[replace_idx],v, self.paramTable[p][-1])
 
 			self.paramSkip += 1
 		return False
@@ -208,7 +217,7 @@ class App_Runner:
 	def reportSensitivity(self):
 		self.printCsvHeader()
 
-		for cfg, cfg_out in zip(self.switchVector[1:], self.sensitivityVector):
+		for cfg, cfg_out in zip(self.switchVector[1:], self.sensitivityVector[1:]):
 			print >> self.outputCsv, '\n'+cfg+'\t',
 			for seq in cfg_out:
 				for o in seq:
@@ -236,9 +245,9 @@ class App_Runner:
 
 	def cleanUp(self):
 		os.system('mv *log logs/')
-		out_path = '_'.join([str(x) for x in time.localtime()[:5]])
+		#out_path = '_'.join([str(x) for x in time.localtime()[:5]])
 		#os.system('mkdir output_'+out_path)
 		#os.system('mv *csv output_'+out_path)
-		os.system('rm *.out *.txt cachegrind.out* *.yuv *.bin')
+		os.system('rm -rf *.out *.txt cachegrind.out* *.yuv *.bin')
 
 			

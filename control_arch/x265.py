@@ -13,21 +13,27 @@ class App:
 		self.period = 8
 		self.numSteps = 300
 		self.initConfig = ' --profile main --tune psnr --psnr --no-asm --aq-mode 0 --no-scenecut'
-
+		self.QPs = ['22','27','32','37']
 
 	def run(self, inp, cfg, period):
-		inp = inp.split()
-		line = self.App + ' --input-res ' + inp[1] + ' --fps ' + inp[2] + self.initConfig + ' ' + ' '.join(cfg) + ' --frames ' + str(period) + ' ../../origCfP/cropped/' + inp[0]
-		line += ' -o out.x265 > x265_out.txt 2> x265_warn.txt '
-		os.system(line)
-		os.system('cat x265_out.txt >> x265_out.log')
-		os.system('cat x265_warn.txt >> x265_warn.log')
-		#self.stepsTaken += period
 
+		inp = inp.split()
+		for qp in QPs:
+			line = self.App + ' --qp ' + qp + ' --input-res ' + inp[1] + ' --fps ' + inp[2] + self.initConfig + ' ' + ' '.join(cfg) + ' --frames ' + str(period) + ' ../../origCfP/cropped/' + inp[0]
+			line += ' -o out.x265 > x265_out.txt 2> x265_warn.txt '
+			os.system(line)
+			os.system('cat x265_out.txt >> x265_out.log')
+			os.system('cat x265_warn.txt >> x265_warn.log')
+			out = self.parseOutput()
+			for i in range(len(out)):
+				avg[i] += out[i]
+			printBDRateFile(out, qp)
+			#self.stepsTaken += period
+		return avg
 		
 	def parseOutput(self):
 		f = open('x265_out.txt','r')
-		valg = open('x265_out.txt','r')
+
 		for l in f.readlines():
 			if 'encoded' in l:
 				l = l.split()
@@ -60,6 +66,36 @@ class App:
 		else:
 			return [time, psnr, bitrate]
 
+	def printBDRateFile(tupl, qp):
+
+		f = open('x265_warn.txt','r')
+
+		reg = 'global.*kb\/s\:\s*([\d+.]+).*Y\:([\d+.]+)\s*U\:([\d+.]+)\s*V\:([\d+.]+)'
+		obj = re.compile(reg)
+		n = obj.findall(f.read())[0]
+
+		(bitrate, y_psnr, u_psnr, v_psnr) = n
+
+		if self.valgrind:
+			valg = open('valgrind.out','r')
+			for l in valg.readlines():
+				if 'D   refs:' in l:
+					rd_refs = float(l.split('(')[1].split()[0].replace(',',''))
+					wr_refs = float(l.split('+')[1].split()[0].replace(',',''))
+				elif 'D1  misses:' in l:
+					rd_misses = float(l.split('(')[1].split()[0].replace(',',''))
+					wr_misses = float(l.split('+')[1].split()[0].replace(',',''))
+				elif 'LL refs' in l:
+					LL_rd_refs = float(l.split('(')[1].split()[0].replace(',',''))
+					LL_wr_refs = float(l.split('+')[1].split()[0].replace(',',''))
+				elif 'LL misses' in l:
+					LL_rd_misses = float(l.split('(')[1].split()[0].replace(',',''))
+					LL_wr_misses = float(l.split('+')[1].split()[0].replace(',',''))
+
+		for t in tupl:	
+			print >> BDRateFile, t,'\t',
+		print >> BDRateFile,
+	
 	def calculatePerformance(self,avg_br, avg_psnr):
 		weight_br = 0.5
 		weight_psnr = 0.5
@@ -70,10 +106,16 @@ class App:
 		return (norm_br*weight_br+norm_psnr*weight_psnr)
 
 	def makeParam(self,name, value):
-		return ('--' + name + ' ' + value)
+		if value:
+			return ('--' + name + ' ' + value)
+		else:
+			return ('--' + name)
 	
 	def splitParam(self,param):
-		return (param.strip('--').split(' '))
+		ret = param.strip('--').split(' ')
+		if len(ret) < 2:
+			ret = ret + [0]
+		return ret
 
 	def getOutputNames(self):
 		if self.valgrind:
