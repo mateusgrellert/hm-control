@@ -1,7 +1,7 @@
-objects/annexBbytecount.d.o: \
- /home/grellert/hm-control/build/linux/utils/annexBbytecount/../../../../source/App/utils/annexBbytecount.cpp \
- /home/grellert/hm-control/build/linux/utils/annexBbytecount/../../../../source/Lib/TLibDecoder/AnnexBread.h \
- /home/grellert/hm-control/build/linux/utils/annexBbytecount/../../../../source/Lib/TLibCommon/TypeDef.h
- /home/grellert/hm-control/build/linux/utils/annexBbytecount/../../../../source/App/utils/annexBbytecount.cpp :
- /home/grellert/hm-control/build/linux/utils/annexBbytecount/../../../../source/Lib/TLibDecoder/AnnexBread.h :
- /home/grellert/hm-control/build/linux/utils/annexBbytecount/../../../../source/Lib/TLibCommon/TypeDef.h :
+./objects/annexBbytecount.d.o: \
+  /Users/mateusgrellert/hm-control/build/linux/utils/annexBbytecount/../../../../source/App/utils/annexBbytecount.cpp \
+  /Users/mateusgrellert/hm-control/build/linux/utils/annexBbytecount/../../../../source/Lib/TLibDecoder/AnnexBread.h \
+  /Users/mateusgrellert/hm-control/build/linux/utils/annexBbytecount/../../../../source/Lib/TLibCommon/TypeDef.h
+  /Users/mateusgrellert/hm-control/build/linux/utils/annexBbytecount/../../../../source/App/utils/annexBbytecount.cpp :
+  /Users/mateusgrellert/hm-control/build/linux/utils/annexBbytecount/../../../../source/Lib/TLibDecoder/AnnexBread.h :
+  /Users/mateusgrellert/hm-control/build/linux/utils/annexBbytecount/../../../../source/Lib/TLibCommon/TypeDef.h :

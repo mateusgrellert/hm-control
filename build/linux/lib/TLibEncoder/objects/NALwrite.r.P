@@ -1,15 +1,13 @@
-objects/NALwrite.r.o: \
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/NALwrite.cpp \
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/NAL.h \
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h \
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h \
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitStream.h \
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/NALwrite.h \
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/NALwrite.cpp :
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/NAL.h :
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h :
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h :
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitStream.h :
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/NALwrite.h :
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h :
+./objects/NALwrite.r.o: \
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/NALwrite.cpp \
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/NAL.h \
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h \
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h \
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitStream.h \
+  ../../../../source/Lib/TLibEncoder/NALwrite.h
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/NALwrite.cpp :
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/NAL.h :
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h :
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h :
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitStream.h :
+  ../../../../source/Lib/TLibEncoder/NALwrite.h :

@@ -10,6 +10,7 @@ class App:
 			self.App = '../x265'
 		self.name = 'x265'
 		self.valgrind = valgrind
+		self.BDRateFile = 'x265_QPWise_Values.csv'
 		self.period = 8
 		self.numSteps = 300
 		self.initConfig = ' --profile main --tune psnr --psnr --no-asm --aq-mode 0 --no-scenecut'
@@ -18,7 +19,11 @@ class App:
 	def run(self, inp, cfg, period):
 
 		inp = inp.split()
-		for qp in QPs:
+		avg = []
+		for i in range(len(getOutputNames())):
+			avg.append(0)
+
+		for qp in self.QPs:
 			line = self.App + ' --qp ' + qp + ' --input-res ' + inp[1] + ' --fps ' + inp[2] + self.initConfig + ' ' + ' '.join(cfg) + ' --frames ' + str(period) + ' ../../origCfP/cropped/' + inp[0]
 			line += ' -o out.x265 > x265_out.txt 2> x265_warn.txt '
 			os.system(line)
@@ -29,7 +34,7 @@ class App:
 				avg[i] += out[i]
 			printBDRateFile(out, qp)
 			#self.stepsTaken += period
-		return avg
+		return [float(x)/len(self.QPs) for x in avg]
 		
 	def parseOutput(self):
 		f = open('x265_out.txt','r')
@@ -72,30 +77,17 @@ class App:
 
 		reg = 'global.*kb\/s\:\s*([\d+.]+).*Y\:([\d+.]+)\s*U\:([\d+.]+)\s*V\:([\d+.]+)'
 		obj = re.compile(reg)
-		n = obj.findall(f.read())[0]
+		(bitrate, y_psnr, u_psnr, v_psnr) = obj.findall(f.read())[0]
 
-		(bitrate, y_psnr, u_psnr, v_psnr) = n
+		f2 = open('x265_out.txt','r')
+		reg = 'encoded.*in\s*([\d+\.]+)s'
+		obj = re.compile(reg)
+		(time) = obj.findall(f.read())[0]
 
-		if self.valgrind:
-			valg = open('valgrind.out','r')
-			for l in valg.readlines():
-				if 'D   refs:' in l:
-					rd_refs = float(l.split('(')[1].split()[0].replace(',',''))
-					wr_refs = float(l.split('+')[1].split()[0].replace(',',''))
-				elif 'D1  misses:' in l:
-					rd_misses = float(l.split('(')[1].split()[0].replace(',',''))
-					wr_misses = float(l.split('+')[1].split()[0].replace(',',''))
-				elif 'LL refs' in l:
-					LL_rd_refs = float(l.split('(')[1].split()[0].replace(',',''))
-					LL_wr_refs = float(l.split('+')[1].split()[0].replace(',',''))
-				elif 'LL misses' in l:
-					LL_rd_misses = float(l.split('(')[1].split()[0].replace(',',''))
-					LL_wr_misses = float(l.split('+')[1].split()[0].replace(',',''))
-
-		for t in tupl:	
-			print >> BDRateFile, t,'\t',
-		print >> BDRateFile,
-	
+		print >> self.BDRateFile, '\t'.join([bitrate, y_psnr, u_psnr, v_psnr,time]),'\t'
+		if qp == self.QPs[-1]:
+			print >> self.BDRateFile,'\n'
+		
 	def calculatePerformance(self,avg_br, avg_psnr):
 		weight_br = 0.5
 		weight_psnr = 0.5

@@ -1,17 +1,13 @@
-objects/TVideoIOYuv.d.o: \
- /home/grellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibVideoIO/TVideoIOYuv.cpp \
- /home/grellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibCommon/TComRom.h \
- /home/grellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibCommon/CommonDef.h \
- /home/grellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibCommon/TypeDef.h \
- /home/grellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibVideoIO/TVideoIOYuv.h \
- /home/grellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibCommon/CommonDef.h \
- /home/grellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibCommon/TComPicYuv.h \
- /home/grellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibCommon/TComRom.h
- /home/grellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibVideoIO/TVideoIOYuv.cpp :
- /home/grellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibCommon/TComRom.h :
- /home/grellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibCommon/CommonDef.h :
- /home/grellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibCommon/TypeDef.h :
- /home/grellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibVideoIO/TVideoIOYuv.h :
- /home/grellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibCommon/CommonDef.h :
- /home/grellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibCommon/TComPicYuv.h :
- /home/grellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibCommon/TComRom.h :
+./objects/TVideoIOYuv.d.o: \
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibVideoIO/TVideoIOYuv.cpp \
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibCommon/TComRom.h \
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibCommon/CommonDef.h \
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibCommon/TypeDef.h \
+  ../../../../source/Lib/TLibVideoIO/TVideoIOYuv.h \
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibCommon/TComPicYuv.h
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibVideoIO/TVideoIOYuv.cpp :
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibCommon/TComRom.h :
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibCommon/CommonDef.h :
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibCommon/TypeDef.h :
+  ../../../../source/Lib/TLibVideoIO/TVideoIOYuv.h :
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibVideoIO/../../../../source/Lib/TLibCommon/TComPicYuv.h :

@@ -1,5 +1,5 @@
-objects/program_options_lite.r.o: \
- /home/grellert/hm-control/build/linux/lib/TAppCommon/../../../../source/Lib/TAppCommon/program_options_lite.cpp \
- /home/grellert/hm-control/build/linux/lib/TAppCommon/../../../../source/Lib/TAppCommon/program_options_lite.h
- /home/grellert/hm-control/build/linux/lib/TAppCommon/../../../../source/Lib/TAppCommon/program_options_lite.cpp :
- /home/grellert/hm-control/build/linux/lib/TAppCommon/../../../../source/Lib/TAppCommon/program_options_lite.h :
+./objects/program_options_lite.r.o: \
+  /Users/mateusgrellert/hm-control/build/linux/lib/TAppCommon/../../../../source/Lib/TAppCommon/program_options_lite.cpp \
+  ../../../../source/Lib/TAppCommon/program_options_lite.h
+  /Users/mateusgrellert/hm-control/build/linux/lib/TAppCommon/../../../../source/Lib/TAppCommon/program_options_lite.cpp :
+  ../../../../source/Lib/TAppCommon/program_options_lite.h :

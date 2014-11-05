@@ -1,9 +1,9 @@
-objects/TComCABACTables.d.o: \
- /home/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComCABACTables.cpp \
- /home/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComCABACTables.h \
- /home/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/CommonDef.h \
- /home/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TypeDef.h
- /home/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComCABACTables.cpp :
- /home/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComCABACTables.h :
- /home/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/CommonDef.h :
- /home/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TypeDef.h :
+./objects/TComCABACTables.d.o: \
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComCABACTables.cpp \
+  ../../../../source/Lib/TLibCommon/TComCABACTables.h \
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/CommonDef.h \
+  ../../../../source/Lib/TLibCommon/TypeDef.h
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComCABACTables.cpp :
+  ../../../../source/Lib/TLibCommon/TComCABACTables.h :
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/CommonDef.h :
+  ../../../../source/Lib/TLibCommon/TypeDef.h :

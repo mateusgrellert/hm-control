@@ -1,11 +1,11 @@
-objects/TComMotionInfo.r.o: \
- /home/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComMotionInfo.cpp \
- /home/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComMotionInfo.h \
- /home/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/CommonDef.h \
- /home/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TypeDef.h \
- /home/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComMv.h
- /home/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComMotionInfo.cpp :
- /home/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComMotionInfo.h :
- /home/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/CommonDef.h :
- /home/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TypeDef.h :
- /home/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComMv.h :
+./objects/TComMotionInfo.r.o: \
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComMotionInfo.cpp \
+  ../../../../source/Lib/TLibCommon/TComMotionInfo.h \
+  ../../../../source/Lib/TLibCommon/CommonDef.h \
+  ../../../../source/Lib/TLibCommon/TypeDef.h \
+  ../../../../source/Lib/TLibCommon/TComMv.h
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComMotionInfo.cpp :
+  ../../../../source/Lib/TLibCommon/TComMotionInfo.h :
+  ../../../../source/Lib/TLibCommon/CommonDef.h :
+  ../../../../source/Lib/TLibCommon/TypeDef.h :
+  ../../../../source/Lib/TLibCommon/TComMv.h :

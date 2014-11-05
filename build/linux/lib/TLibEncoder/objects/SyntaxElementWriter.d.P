@@ -1,15 +1,13 @@
-objects/SyntaxElementWriter.d.o: \
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/SyntaxElementWriter.cpp \
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h \
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h \
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/SyntaxElementWriter.h \
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitStream.h \
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h \
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComRom.h
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/SyntaxElementWriter.cpp :
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h :
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h :
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/SyntaxElementWriter.h :
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitStream.h :
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h :
- /home/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComRom.h :
+./objects/SyntaxElementWriter.d.o: \
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/SyntaxElementWriter.cpp \
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h \
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h \
+  ../../../../source/Lib/TLibEncoder/SyntaxElementWriter.h \
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitStream.h \
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComRom.h
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/SyntaxElementWriter.cpp :
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h :
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h :
+  ../../../../source/Lib/TLibEncoder/SyntaxElementWriter.h :
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitStream.h :
+  /Users/mateusgrellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComRom.h :
