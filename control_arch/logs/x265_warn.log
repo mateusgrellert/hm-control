@@ -1,504 +1,0 @@
-yuv  [info]: 832x448 fps 30000/1000 i420p8 frames 0 - 15 of 300
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 15 / 8 / 3
-x265 [info]: Main profile, Level-3 (Main tier)
-x265 [info]: CU size                             : 64
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : star / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 7187.76 kb/s, eta 5:24:33  [12.5%] 2/16 frames, 0.00 fps, 5459.76 kb/s, eta 2:41:05  [18.8%] 3/16 frames, 0.00 fps, 4030.08 kb/s, eta 1:46:06  [25.0%] 4/16 frames, 0.00 fps, 3210.48 kb/s, eta 1:18:04  [31.2%] 5/16 frames, 0.00 fps, 2713.78 kb/s, eta 1:01:14  [37.5%] 6/16 frames, 0.00 fps, 2353.48 kb/s, eta 0:49:49  [43.8%] 7/16 frames, 0.00 fps, 2498.23 kb/s, eta 0:41:44  [50.0%] 8/16 frames, 0.00 fps, 2340.72 kb/s, eta 0:34:43  [56.2%] 9/16 frames, 0.00 fps, 2138.16 kb/s, eta 0:30:24  [62.5%] 10/16 frames, 0.00 fps, 1980.14 kb/s, eta 0:26:02  [68.8%] 11/16 frames, 0.00 fps, 2059.22 kb/s, eta 0:21:21  [75.0%] 12/16 frames, 0.00 fps, 1997.54 kb/s, eta 0:16:48  [81.2%] 13/16 frames, 0.00 fps, 1886.55 kb/s, eta 0:12:44  [87.5%] 14/16 frames, 0.00 fps, 1790.49 kb/s, eta 0:08:24  [100.0%] 16/16 frames, 0.00 fps, 1701.89 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:31.56  kb/s: 6970.32   PSNR Mean: Y:35.274 U:38.043 V:39.102
-x265 [info]: frame P:      4, Avg QP:32.68  kb/s: 2900.82   PSNR Mean: Y:33.496 U:37.110 V:37.974
-x265 [info]: frame B:     11, Avg QP:35.91  kb/s: 765.88    PSNR Mean: Y:32.724 U:36.852 V:37.839
-x265 [info]: global :     16, Avg QP:34.83  kb/s: 1687.39   PSNR Mean: Y:33.076 U:36.991 V:37.952
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 20.0% 20.0% 0.0% 40.0% 20.0% 
-yuv  [info]: 832x448 fps 50000/1000 i420p8 frames 0 - 15 of 501
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 15 / 8 / 3
-x265 [info]: Main profile, Level-3.1 (Main tier)
-x265 [info]: CU size                             : 64
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : star / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 7581.60 kb/s, eta 3:10:38  [12.5%] 2/16 frames, 0.00 fps, 3810.40 kb/s, eta 1:34:12  [18.8%] 3/16 frames, 0.00 fps, 3072.00 kb/s, eta 1:02:23  [25.0%] 4/16 frames, 0.00 fps, 2432.20 kb/s, eta 0:45:02  [31.2%] 5/16 frames, 0.00 fps, 2001.76 kb/s, eta 0:39:09  [37.5%] 6/16 frames, 0.01 fps, 1722.27 kb/s, eta 0:30:53  [43.8%] 7/16 frames, 0.01 fps, 1512.57 kb/s, eta 0:25:04  [50.0%] 8/16 frames, 0.01 fps, 1497.60 kb/s, eta 0:21:07  [56.2%] 9/16 frames, 0.01 fps, 1393.96 kb/s, eta 0:17:21  [62.5%] 10/16 frames, 0.01 fps, 1285.00 kb/s, eta 0:16:02  [68.8%] 11/16 frames, 0.01 fps, 1197.96 kb/s, eta 0:12:26  [75.0%] 12/16 frames, 0.01 fps, 1122.43 kb/s, eta 0:09:35  [81.2%] 13/16 frames, 0.01 fps, 1116.06 kb/s, eta 0:07:05  [87.5%] 14/16 frames, 0.01 fps, 1084.34 kb/s, eta 0:04:31  [93.8%] 15/16 frames, 0.01 fps, 1029.73 kb/s, eta 0:02:17  [100.0%] 16/16 frames, 0.01 fps, 981.95 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:31.32  kb/s: 7219.20   PSNR Mean: Y:36.169 U:39.392 V:39.563
-x265 [info]: frame P:      4, Avg QP:33.53  kb/s: 1015.10   PSNR Mean: Y:35.370 U:38.816 V:39.019
-x265 [info]: frame B:     11, Avg QP:37.98  kb/s: 367.75    PSNR Mean: Y:34.648 U:38.557 V:38.760
-x265 [info]: global :     16, Avg QP:36.45  kb/s: 957.80    PSNR Mean: Y:34.924 U:38.674 V:38.875
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 40.0% 0.0% 0.0% 20.0% 40.0% 
-yuv  [info]: 832x448 fps 60000/1000 i420p8 frames 0 - 15 of 601
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 15 / 8 / 3
-x265 [info]: Main profile, Level-3.1 (Main tier)
-x265 [info]: CU size                             : 64
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : star / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 12034.56 kb/s, eta 8:32:24  [12.5%] 2/16 frames, 0.00 fps, 6957.36 kb/s, eta 4:02:28  [18.8%] 3/16 frames, 0.00 fps, 4776.96 kb/s, eta 2:30:37  [25.0%] 4/16 frames, 0.00 fps, 3618.12 kb/s, eta 1:47:08  [31.2%] 5/16 frames, 0.00 fps, 2927.04 kb/s, eta 1:19:58  [37.5%] 6/16 frames, 0.00 fps, 2772.32 kb/s, eta 1:01:33  [43.8%] 7/16 frames, 0.00 fps, 2436.75 kb/s, eta 0:47:44  [50.0%] 8/16 frames, 0.00 fps, 2152.08 kb/s, eta 0:39:29  [56.2%] 9/16 frames, 0.00 fps, 1928.75 kb/s, eta 0:30:49  [62.5%] 10/16 frames, 0.00 fps, 1919.76 kb/s, eta 0:24:17  [68.8%] 11/16 frames, 0.00 fps, 1787.87 kb/s, eta 0:18:36  [75.0%] 12/16 frames, 0.00 fps, 1652.64 kb/s, eta 0:14:38  [81.2%] 13/16 frames, 0.00 fps, 1539.21 kb/s, eta 0:10:09  [87.5%] 14/16 frames, 0.01 fps, 1515.91 kb/s, eta 0:06:24  [93.8%] 15/16 frames, 0.01 fps, 1436.64 kb/s, eta 0:03:00  [100.0%] 16/16 frames, 0.01 fps, 1358.34 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:32.32  kb/s: 11599.68  PSNR Mean: Y:35.404 U:39.301 V:39.948
-x265 [info]: frame P:      4, Avg QP:34.10  kb/s: 1730.76   PSNR Mean: Y:34.073 U:38.844 V:39.356
-x265 [info]: frame B:     11, Avg QP:38.55  kb/s: 249.73    PSNR Mean: Y:33.960 U:38.960 V:39.535
-x265 [info]: global :     16, Avg QP:37.05  kb/s: 1329.36   PSNR Mean: Y:34.079 U:38.952 V:39.516
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 20.0% 0.0% 20.0% 60.0% 0.0% 
-yuv  [info]: 832x448 fps 50000/1000 i420p8 frames 0 - 15 of 501
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 15 / 8 / 3
-x265 [info]: Main profile, Level-3.1 (Main tier)
-x265 [info]: CU size                             : 64
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : star / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 23340.00 kb/s, eta 6:25:00  [12.5%] 2/16 frames, 0.00 fps, 11694.00 kb/s, eta 3:02:22  [18.8%] 3/16 frames, 0.00 fps, 7806.00 kb/s, eta 1:56:07  [25.0%] 4/16 frames, 0.00 fps, 7336.10 kb/s, eta 1:23:05  [31.2%] 5/16 frames, 0.00 fps, 6302.56 kb/s, eta 1:02:17  [37.5%] 6/16 frames, 0.00 fps, 5370.33 kb/s, eta 0:49:32  [43.8%] 7/16 frames, 0.00 fps, 4708.63 kb/s, eta 0:39:49  [50.0%] 8/16 frames, 0.00 fps, 4794.50 kb/s, eta 0:32:20  [56.2%] 9/16 frames, 0.00 fps, 4492.89 kb/s, eta 0:25:46  [62.5%] 10/16 frames, 0.00 fps, 4114.48 kb/s, eta 0:21:53  [68.8%] 11/16 frames, 0.00 fps, 3807.13 kb/s, eta 0:17:08  [75.0%] 12/16 frames, 0.01 fps, 3770.00 kb/s, eta 0:13:09  [81.2%] 13/16 frames, 0.01 fps, 3621.97 kb/s, eta 0:09:18  [87.5%] 14/16 frames, 0.01 fps, 3431.46 kb/s, eta 0:06:26  [93.8%] 15/16 frames, 0.01 fps, 3272.29 kb/s, eta 0:03:00  [100.0%] 16/16 frames, 0.01 fps, 3117.03 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:30.60  kb/s: 22977.60  PSNR Mean: Y:33.804 U:37.081 V:37.374
-x265 [info]: frame P:      4, Avg QP:33.24  kb/s: 3681.30   PSNR Mean: Y:31.623 U:36.356 V:36.568
-x265 [info]: frame B:     11, Avg QP:37.82  kb/s: 1071.20   PSNR Mean: Y:30.615 U:36.099 V:36.355
-x265 [info]: global :     16, Avg QP:36.22  kb/s: 3092.88   PSNR Mean: Y:31.066 U:36.225 V:36.472
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 20.0% 20.0% 0.0% 40.0% 20.0% 
-yuv  [info]: 832x448 fps 30000/1000 i420p8 frames 0 - 15 of 300
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 15 / 8 / 3
-x265 [info]: Main profile, Level-3 (Main tier)
-x265 [info]: CU size                             : 64
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : umh / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 7187.76 kb/s, eta 9:02:26  [12.5%] 2/16 frames, 0.00 fps, 5443.32 kb/s, eta 4:25:32  [18.8%] 3/16 frames, 0.00 fps, 4022.64 kb/s, eta 2:53:41  [25.0%] 4/16 frames, 0.00 fps, 3203.10 kb/s, eta 2:06:39  [31.2%] 5/16 frames, 0.00 fps, 2706.29 kb/s, eta 1:37:54  [37.5%] 6/16 frames, 0.00 fps, 2345.04 kb/s, eta 1:18:09  [43.8%] 7/16 frames, 0.00 fps, 2483.38 kb/s, eta 1:03:50  [50.0%] 8/16 frames, 0.00 fps, 2325.21 kb/s, eta 0:53:25  [56.2%] 9/16 frames, 0.00 fps, 2125.33 kb/s, eta 0:44:09  [62.5%] 10/16 frames, 0.00 fps, 1970.52 kb/s, eta 0:36:10  [68.8%] 11/16 frames, 0.00 fps, 2050.15 kb/s, eta 0:29:32  [75.0%] 12/16 frames, 0.00 fps, 1986.96 kb/s, eta 0:23:15  [81.2%] 13/16 frames, 0.00 fps, 1876.49 kb/s, eta 0:16:37  [87.5%] 14/16 frames, 0.00 fps, 1779.67 kb/s, eta 0:10:59  [93.8%] 15/16 frames, 0.00 fps, 1769.82 kb/s, eta 0:05:07  [100.0%] 16/16 frames, 0.00 fps, 1690.97 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:31.56  kb/s: 6970.32   PSNR Mean: Y:35.274 U:38.043 V:39.102
-x265 [info]: frame P:      4, Avg QP:32.68  kb/s: 2871.72   PSNR Mean: Y:33.492 U:37.126 V:38.004
-x265 [info]: frame B:     11, Avg QP:35.91  kb/s: 760.58    PSNR Mean: Y:32.730 U:36.863 V:37.870
-x265 [info]: global :     16, Avg QP:34.83  kb/s: 1676.47   PSNR Mean: Y:33.080 U:37.003 V:37.980
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 20.0% 20.0% 0.0% 40.0% 20.0% 
-yuv  [info]: 832x448 fps 50000/1000 i420p8 frames 0 - 15 of 501
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 15 / 8 / 3
-x265 [info]: Main profile, Level-3.1 (Main tier)
-x265 [info]: CU size                             : 64
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : umh / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 7581.60 kb/s, eta 4:25:08  [12.5%] 2/16 frames, 0.00 fps, 3810.40 kb/s, eta 2:09:20  [18.8%] 3/16 frames, 0.00 fps, 3070.27 kb/s, eta 1:25:17  [25.0%] 4/16 frames, 0.00 fps, 2432.40 kb/s, eta 1:02:08  [31.2%] 5/16 frames, 0.00 fps, 2002.40 kb/s, eta 0:50:26  [37.5%] 6/16 frames, 0.00 fps, 1722.67 kb/s, eta 0:40:14  [43.8%] 7/16 frames, 0.00 fps, 1512.17 kb/s, eta 0:32:33  [50.0%] 8/16 frames, 0.00 fps, 1497.65 kb/s, eta 0:26:55  [56.2%] 9/16 frames, 0.01 fps, 1394.27 kb/s, eta 0:22:07  [62.5%] 10/16 frames, 0.01 fps, 1284.24 kb/s, eta 0:19:34  [68.8%] 11/16 frames, 0.01 fps, 1197.02 kb/s, eta 0:15:20  [75.0%] 12/16 frames, 0.01 fps, 1119.87 kb/s, eta 0:11:46  [81.2%] 13/16 frames, 0.01 fps, 1114.06 kb/s, eta 0:08:29  [87.5%] 14/16 frames, 0.01 fps, 1083.37 kb/s, eta 0:05:22  [93.8%] 15/16 frames, 0.01 fps, 1028.48 kb/s, eta 0:02:44                                                                                  x265 [info]: frame I:      1, Avg QP:31.32  kb/s: 7219.20   PSNR Mean: Y:36.169 U:39.392 V:39.563
-x265 [info]: frame P:      4, Avg QP:33.53  kb/s: 1015.80   PSNR Mean: Y:35.369 U:38.819 V:39.054
-x265 [info]: frame B:     11, Avg QP:37.98  kb/s: 367.16    PSNR Mean: Y:34.655 U:38.543 V:38.757
-x265 [info]: global :     16, Avg QP:36.45  kb/s: 957.58    PSNR Mean: Y:34.928 U:38.665 V:38.882
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 40.0% 0.0% 0.0% 20.0% 40.0% 
-yuv  [info]: 832x448 fps 60000/1000 i420p8 frames 0 - 15 of 601
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 15 / 8 / 3
-x265 [info]: Main profile, Level-3.1 (Main tier)
-x265 [info]: CU size                             : 64
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : umh / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 12034.56 kb/s, eta 3:47:45  [12.5%] 2/16 frames, 0.00 fps, 6951.60 kb/s, eta 1:49:30  [18.8%] 3/16 frames, 0.00 fps, 4769.76 kb/s, eta 1:08:39  [25.0%] 4/16 frames, 0.00 fps, 3613.80 kb/s, eta 0:51:42  [31.2%] 5/16 frames, 0.00 fps, 2923.30 kb/s, eta 0:39:19  [37.5%] 6/16 frames, 0.01 fps, 2770.96 kb/s, eta 0:30:55  [43.8%] 7/16 frames, 0.01 fps, 2437.03 kb/s, eta 0:24:24  [50.0%] 8/16 frames, 0.01 fps, 2151.66 kb/s, eta 0:22:42  [56.2%] 9/16 frames, 0.01 fps, 1928.00 kb/s, eta 0:17:46  [62.5%] 10/16 frames, 0.01 fps, 1918.46 kb/s, eta 0:14:34  [68.8%] 11/16 frames, 0.01 fps, 1785.34 kb/s, eta 0:11:12  [75.0%] 12/16 frames, 0.01 fps, 1649.76 kb/s, eta 0:09:38  [81.2%] 13/16 frames, 0.01 fps, 1536.37 kb/s, eta 0:06:45  [87.5%] 14/16 frames, 0.01 fps, 1511.04 kb/s, eta 0:04:21  [93.8%] 15/16 frames, 0.01 fps, 1431.07 kb/s, eta 0:02:03  [100.0%] 16/16 frames, 0.01 fps, 1353.96 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:32.32  kb/s: 11599.68  PSNR Mean: Y:35.404 U:39.301 V:39.948
-x265 [info]: frame P:      4, Avg QP:34.10  kb/s: 1721.16   PSNR Mean: Y:34.074 U:38.823 V:39.416
-x265 [info]: frame B:     11, Avg QP:38.55  kb/s: 246.85    PSNR Mean: Y:33.952 U:38.952 V:39.578
-x265 [info]: global :     16, Avg QP:37.05  kb/s: 1324.98   PSNR Mean: Y:34.073 U:38.942 V:39.561
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 20.0% 0.0% 20.0% 60.0% 0.0% 
-yuv  [info]: 832x448 fps 50000/1000 i420p8 frames 0 - 15 of 501
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 15 / 8 / 3
-x265 [info]: Main profile, Level-3.1 (Main tier)
-x265 [info]: CU size                             : 64
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : umh / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 23340.00 kb/s, eta 1:55:11  [12.5%] 2/16 frames, 0.00 fps, 11694.00 kb/s, eta 0:57:42  [18.8%] 3/16 frames, 0.01 fps, 7806.00 kb/s, eta 0:40:08  [25.0%] 4/16 frames, 0.01 fps, 7337.50 kb/s, eta 0:32:00  [31.2%] 5/16 frames, 0.01 fps, 6301.52 kb/s, eta 0:25:52  [37.5%] 6/16 frames, 0.01 fps, 5370.60 kb/s, eta 0:24:28  [43.8%] 7/16 frames, 0.01 fps, 4711.89 kb/s, eta 0:20:20  [50.0%] 8/16 frames, 0.01 fps, 4793.40 kb/s, eta 0:18:22  [56.2%] 9/16 frames, 0.01 fps, 4495.78 kb/s, eta 0:15:45  [62.5%] 10/16 frames, 0.01 fps, 4115.96 kb/s, eta 0:13:46  [68.8%] 11/16 frames, 0.01 fps, 3806.36 kb/s, eta 0:11:47  [75.0%] 12/16 frames, 0.01 fps, 3768.07 kb/s, eta 0:09:27  [81.2%] 13/16 frames, 0.01 fps, 3621.75 kb/s, eta 0:07:02  [87.5%] 14/16 frames, 0.01 fps, 3433.46 kb/s, eta 0:04:58  [93.8%] 15/16 frames, 0.01 fps, 3274.35 kb/s, eta 0:02:24  [100.0%] 16/16 frames, 0.01 fps, 3117.03 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:30.60  kb/s: 22977.60  PSNR Mean: Y:33.804 U:37.081 V:37.374
-x265 [info]: frame P:      4, Avg QP:33.24  kb/s: 3671.10   PSNR Mean: Y:31.621 U:36.377 V:36.578
-x265 [info]: frame B:     11, Avg QP:37.82  kb/s: 1074.91   PSNR Mean: Y:30.608 U:36.100 V:36.366
-x265 [info]: global :     16, Avg QP:36.22  kb/s: 3092.88   PSNR Mean: Y:31.061 U:36.231 V:36.482
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 20.0% 20.0% 0.0% 40.0% 20.0% 
-yuv  [info]: 832x448 fps 30000/1000 i420p8 frames 0 - 15 of 300
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 15 / 8 / 3
-x265 [info]: Main profile, Level-3 (Main tier)
-x265 [info]: CU size                             : 64
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : hex / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 7187.76 kb/s, eta 6:19:23  [12.5%] 2/16 frames, 0.00 fps, 5668.80 kb/s, eta 3:02:09  [18.8%] 3/16 frames, 0.00 fps, 4203.60 kb/s, eta 1:57:20  [25.0%] 4/16 frames, 0.00 fps, 3338.94 kb/s, eta 1:23:46  [31.2%] 5/16 frames, 0.00 fps, 2821.58 kb/s, eta 1:03:11  [37.5%] 6/16 frames, 0.00 fps, 2443.12 kb/s, eta 0:49:09  [43.8%] 7/16 frames, 0.00 fps, 2603.31 kb/s, eta 0:39:22  [50.0%] 8/16 frames, 0.00 fps, 2436.48 kb/s, eta 0:31:47  [56.2%] 9/16 frames, 0.00 fps, 2224.93 kb/s, eta 0:25:43  [62.5%] 10/16 frames, 0.00 fps, 2060.52 kb/s, eta 0:20:51  [68.8%] 11/16 frames, 0.01 fps, 2154.72 kb/s, eta 0:16:30  [75.0%] 12/16 frames, 0.01 fps, 2089.30 kb/s, eta 0:12:40  [81.2%] 13/16 frames, 0.01 fps, 1972.58 kb/s, eta 0:08:59  [87.5%] 14/16 frames, 0.01 fps, 1870.54 kb/s, eta 0:05:45  [93.8%] 15/16 frames, 0.01 fps, 1862.13 kb/s, eta 0:02:41  [100.0%] 16/16 frames, 0.01 fps, 1778.22 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:31.56  kb/s: 6970.32   PSNR Mean: Y:35.274 U:38.043 V:39.102
-x265 [info]: frame P:      4, Avg QP:32.68  kb/s: 3137.88   PSNR Mean: Y:33.450 U:37.108 V:37.988
-x265 [info]: frame B:     11, Avg QP:35.91  kb/s: 790.71    PSNR Mean: Y:32.672 U:36.854 V:37.853
-x265 [info]: global :     16, Avg QP:34.83  kb/s: 1763.73   PSNR Mean: Y:33.029 U:36.992 V:37.965
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 20.0% 20.0% 0.0% 40.0% 20.0% 
-yuv  [info]: 832x448 fps 50000/1000 i420p8 frames 0 - 15 of 501
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 15 / 8 / 3
-x265 [info]: Main profile, Level-3.1 (Main tier)
-x265 [info]: CU size                             : 64
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : hex / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 7581.60 kb/s, eta 6:11:47  [12.5%] 2/16 frames, 0.00 fps, 3810.40 kb/s, eta 2:55:52  [18.8%] 3/16 frames, 0.00 fps, 3108.53 kb/s, eta 1:51:45  [25.0%] 4/16 frames, 0.00 fps, 2467.10 kb/s, eta 1:18:15  [31.2%] 5/16 frames, 0.00 fps, 2027.68 kb/s, eta 0:59:00  [37.5%] 6/16 frames, 0.00 fps, 1743.80 kb/s, eta 0:45:33  [43.8%] 7/16 frames, 0.00 fps, 1533.14 kb/s, eta 0:35:58  [50.0%] 8/16 frames, 0.00 fps, 1522.15 kb/s, eta 0:28:29  [56.2%] 9/16 frames, 0.01 fps, 1423.07 kb/s, eta 0:22:21  [62.5%] 10/16 frames, 0.01 fps, 1310.36 kb/s, eta 0:18:16  [68.8%] 11/16 frames, 0.01 fps, 1220.55 kb/s, eta 0:14:06  [75.0%] 12/16 frames, 0.01 fps, 1143.37 kb/s, eta 0:10:30  [81.2%] 13/16 frames, 0.01 fps, 1138.22 kb/s, eta 0:07:25  [87.5%] 14/16 frames, 0.01 fps, 1105.83 kb/s, eta 0:04:40  [93.8%] 15/16 frames, 0.01 fps, 1050.19 kb/s, eta 0:02:12  [100.0%] 16/16 frames, 0.01 fps, 1002.08 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:31.32  kb/s: 7219.20   PSNR Mean: Y:36.169 U:39.392 V:39.563
-x265 [info]: frame P:      4, Avg QP:33.53  kb/s: 1064.80   PSNR Mean: Y:35.346 U:38.742 V:38.935
-x265 [info]: frame B:     11, Avg QP:37.98  kb/s: 378.95    PSNR Mean: Y:34.626 U:38.446 V:38.647
-x265 [info]: global :     16, Avg QP:36.45  kb/s: 977.93    PSNR Mean: Y:34.902 U:38.579 V:38.776
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 40.0% 0.0% 0.0% 20.0% 40.0% 
-yuv  [info]: 832x448 fps 60000/1000 i420p8 frames 0 - 15 of 601
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 15 / 8 / 3
-x265 [info]: Main profile, Level-3.1 (Main tier)
-x265 [info]: CU size                             : 64
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : hex / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 12034.56 kb/s, eta 81:31:50  [12.5%] 2/16 frames, 0.00 fps, 6963.12 kb/s, eta 38:04:23  [18.8%] 3/16 frames, 0.00 fps, 4778.24 kb/s, eta 23:34:21  [25.0%] 4/16 frames, 0.00 fps, 3620.64 kb/s, eta 16:21:16  [31.2%] 5/16 frames, 0.00 fps, 2930.30 kb/s, eta 11:59:56  [37.5%] 6/16 frames, 0.00 fps, 2776.88 kb/s, eta 9:05:49  [43.8%] 7/16 frames, 0.00 fps, 2443.06 kb/s, eta 7:01:18  [50.0%] 8/16 frames, 0.00 fps, 2156.64 kb/s, eta 5:28:58  [56.2%] 9/16 frames, 0.00 fps, 1933.12 kb/s, eta 4:15:57  [62.5%] 10/16 frames, 0.00 fps, 1925.18 kb/s, eta 3:17:44  [68.8%] 11/16 frames, 0.00 fps, 1792.15 kb/s, eta 2:29:52  [75.0%] 12/16 frames, 0.00 fps, 1655.76 kb/s, eta 1:50:21  [81.2%] 13/16 frames, 0.00 fps, 1542.65 kb/s, eta 1:16:25  [87.5%] 14/16 frames, 0.00 fps, 1518.86 kb/s, eta 0:47:23  [93.8%] 15/16 frames, 0.00 fps, 1439.87 kb/s, eta 0:22:06  [100.0%] 16/16 frames, 0.00 fps, 1361.58 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:32.32  kb/s: 11599.68  PSNR Mean: Y:35.404 U:39.301 V:39.948
-x265 [info]: frame P:      4, Avg QP:34.10  kb/s: 1739.28   PSNR Mean: Y:34.045 U:38.799 V:39.403
-x265 [info]: frame B:     11, Avg QP:38.55  kb/s: 251.35    PSNR Mean: Y:33.937 U:38.926 V:39.576
-x265 [info]: global :     16, Avg QP:37.05  kb/s: 1332.60   PSNR Mean: Y:34.056 U:38.918 V:39.556
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 20.0% 0.0% 20.0% 60.0% 0.0% 
-yuv  [info]: 832x448 fps 50000/1000 i420p8 frames 0 - 15 of 501
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 15 / 8 / 3
-x265 [info]: Main profile, Level-3.1 (Main tier)
-x265 [info]: CU size                             : 64
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : hex / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 23340.00 kb/s, eta 157:22:15  [12.5%] 2/16 frames, 0.00 fps, 11694.00 kb/s, eta 73:27:56  [18.8%] 3/16 frames, 0.00 fps, 7806.00 kb/s, eta 45:30:52  [25.0%] 4/16 frames, 0.00 fps, 7345.20 kb/s, eta 31:32:17  [31.2%] 5/16 frames, 0.00 fps, 6318.08 kb/s, eta 23:08:46  [37.5%] 6/16 frames, 0.00 fps, 5384.20 kb/s, eta 17:33:41  [43.8%] 7/16 frames, 0.00 fps, 4723.54 kb/s, eta 13:33:45  [50.0%] 8/16 frames, 0.00 fps, 4807.10 kb/s, eta 10:33:36  [56.2%] 9/16 frames, 0.00 fps, 4509.78 kb/s, eta 8:13:25  [62.5%] 10/16 frames, 0.00 fps, 4130.28 kb/s, eta 6:21:23  [68.8%] 11/16 frames, 0.00 fps, 3817.67 kb/s, eta 4:49:19  [75.0%] 12/16 frames, 0.00 fps, 3784.13 kb/s, eta 3:32:33  [81.2%] 13/16 frames, 0.00 fps, 3636.98 kb/s, eta 2:27:20  [87.5%] 14/16 frames, 0.00 fps, 3447.60 kb/s, eta 1:31:22  [93.8%] 15/16 frames, 0.00 fps, 3288.32 kb/s, eta 0:42:41                                                                                  x265 [info]: frame I:      1, Avg QP:30.60  kb/s: 22977.60  PSNR Mean: Y:33.804 U:37.081 V:37.374
-x265 [info]: frame P:      4, Avg QP:33.24  kb/s: 3702.90   PSNR Mean: Y:31.603 U:36.362 V:36.559
-x265 [info]: frame B:     11, Avg QP:37.82  kb/s: 1083.13   PSNR Mean: Y:30.592 U:36.106 V:36.332
-x265 [info]: global :     16, Avg QP:36.22  kb/s: 3106.48   PSNR Mean: Y:31.046 U:36.231 V:36.454
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 20.0% 20.0% 0.0% 40.0% 20.0% 
-yuv  [info]: 832x448 fps 30000/1000 i420p8 frames 0 - 15 of 300
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 15 / 8 / 3
-x265 [info]: Main profile, Level-3 (Main tier)
-x265 [info]: CU size                             : 64
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : dia / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 7187.76 kb/s, eta 4:54:36  [12.5%] 2/16 frames, 0.00 fps, 5846.64 kb/s, eta 2:21:12  [18.8%] 3/16 frames, 0.00 fps, 4331.76 kb/s, eta 1:29:56  [25.0%] 4/16 frames, 0.00 fps, 3436.26 kb/s, eta 1:05:26  [31.2%] 5/16 frames, 0.00 fps, 2898.72 kb/s, eta 0:49:47  [37.5%] 6/16 frames, 0.00 fps, 2513.64 kb/s, eta 0:38:50  [43.8%] 7/16 frames, 0.00 fps, 2694.24 kb/s, eta 0:31:14  [50.0%] 8/16 frames, 0.01 fps, 2522.31 kb/s, eta 0:25:14  [56.2%] 9/16 frames, 0.01 fps, 2302.13 kb/s, eta 0:20:57  [62.5%] 10/16 frames, 0.01 fps, 2131.75 kb/s, eta 0:16:50  [68.8%] 11/16 frames, 0.01 fps, 2224.21 kb/s, eta 0:13:22  [75.0%] 12/16 frames, 0.01 fps, 2155.14 kb/s, eta 0:10:24  [81.2%] 13/16 frames, 0.01 fps, 2033.52 kb/s, eta 0:07:26  [87.5%] 14/16 frames, 0.01 fps, 1926.07 kb/s, eta 0:04:48  [93.8%] 15/16 frames, 0.01 fps, 1915.20 kb/s, eta 0:02:14  [100.0%] 16/16 frames, 0.01 fps, 1828.02 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:31.56  kb/s: 6970.32   PSNR Mean: Y:35.274 U:38.043 V:39.102
-x265 [info]: frame P:      4, Avg QP:32.68  kb/s: 3297.84   PSNR Mean: Y:33.413 U:37.126 V:37.938
-x265 [info]: frame B:     11, Avg QP:35.91  kb/s: 804.98    PSNR Mean: Y:32.668 U:36.863 V:37.828
-x265 [info]: global :     16, Avg QP:34.83  kb/s: 1813.53   PSNR Mean: Y:33.017 U:37.003 V:37.935
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 20.0% 20.0% 0.0% 40.0% 20.0% 
-yuv  [info]: 832x448 fps 50000/1000 i420p8 frames 0 - 15 of 501
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 15 / 8 / 3
-x265 [info]: Main profile, Level-3.1 (Main tier)
-x265 [info]: CU size                             : 64
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : dia / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 7581.60 kb/s, eta 5:30:02  [12.5%] 2/16 frames, 0.00 fps, 3810.40 kb/s, eta 2:37:13  [18.8%] 3/16 frames, 0.00 fps, 3112.13 kb/s, eta 1:39:17  [25.0%] 4/16 frames, 0.00 fps, 2478.30 kb/s, eta 1:10:07  [31.2%] 5/16 frames, 0.00 fps, 2038.88 kb/s, eta 0:53:37  [37.5%] 6/16 frames, 0.00 fps, 1756.60 kb/s, eta 0:41:32  [43.8%] 7/16 frames, 0.00 fps, 1545.43 kb/s, eta 0:32:55  [50.0%] 8/16 frames, 0.01 fps, 1537.15 kb/s, eta 0:26:17  [56.2%] 9/16 frames, 0.01 fps, 1435.20 kb/s, eta 0:21:04  [62.5%] 10/16 frames, 0.01 fps, 1324.12 kb/s, eta 0:17:04  [68.8%] 11/16 frames, 0.01 fps, 1233.05 kb/s, eta 0:13:19  [75.0%] 12/16 frames, 0.01 fps, 1156.00 kb/s, eta 0:09:58  [81.2%] 13/16 frames, 0.01 fps, 1150.12 kb/s, eta 0:07:02  [87.5%] 14/16 frames, 0.01 fps, 1117.54 kb/s, eta 0:04:26  [93.8%] 15/16 frames, 0.01 fps, 1060.03 kb/s, eta 0:02:08                                                                                  x265 [info]: frame I:      1, Avg QP:31.32  kb/s: 7219.20   PSNR Mean: Y:36.169 U:39.392 V:39.563
-x265 [info]: frame P:      4, Avg QP:33.53  kb/s: 1076.80   PSNR Mean: Y:35.341 U:38.774 V:38.909
-x265 [info]: frame B:     11, Avg QP:37.98  kb/s: 388.69    PSNR Mean: Y:34.603 U:38.457 V:38.584
-x265 [info]: global :     16, Avg QP:36.45  kb/s: 987.62    PSNR Mean: Y:34.885 U:38.595 V:38.726
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 40.0% 0.0% 0.0% 20.0% 40.0% 
-yuv  [info]: 832x448 fps 60000/1000 i420p8 frames 0 - 15 of 601
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 15 / 8 / 3
-x265 [info]: Main profile, Level-3.1 (Main tier)
-x265 [info]: CU size                             : 64
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : dia / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 12034.56 kb/s, eta 1:47:23  [12.5%] 2/16 frames, 0.00 fps, 6974.40 kb/s, eta 0:52:04  [18.8%] 3/16 frames, 0.01 fps, 4785.12 kb/s, eta 0:32:52  [25.0%] 4/16 frames, 0.01 fps, 3624.96 kb/s, eta 0:23:38  [31.2%] 5/16 frames, 0.01 fps, 2932.42 kb/s, eta 0:18:18  [37.5%] 6/16 frames, 0.01 fps, 2780.24 kb/s, eta 0:14:30  [43.8%] 7/16 frames, 0.01 fps, 2449.23 kb/s, eta 0:11:23  [50.0%] 8/16 frames, 0.01 fps, 2162.40 kb/s, eta 0:10:25  [56.2%] 9/16 frames, 0.01 fps, 1938.51 kb/s, eta 0:08:13  [62.5%] 10/16 frames, 0.02 fps, 1929.50 kb/s, eta 0:06:37  [68.8%] 11/16 frames, 0.02 fps, 1796.33 kb/s, eta 0:05:05  [75.0%] 12/16 frames, 0.02 fps, 1659.00 kb/s, eta 0:04:16  [81.2%] 13/16 frames, 0.02 fps, 1545.49 kb/s, eta 0:02:59  [87.5%] 14/16 frames, 0.02 fps, 1521.12 kb/s, eta 0:01:54  [93.8%] 15/16 frames, 0.02 fps, 1441.34 kb/s, eta 0:00:53  [100.0%] 16/16 frames, 0.02 fps, 1363.05 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:32.32  kb/s: 11599.68  PSNR Mean: Y:35.404 U:39.301 V:39.948
-x265 [info]: frame P:      4, Avg QP:34.10  kb/s: 1744.68   PSNR Mean: Y:34.054 U:38.832 V:39.355
-x265 [info]: frame B:     11, Avg QP:38.55  kb/s: 251.52    PSNR Mean: Y:33.946 U:38.948 V:39.543
-x265 [info]: global :     16, Avg QP:37.05  kb/s: 1334.07   PSNR Mean: Y:34.064 U:38.941 V:39.522
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 20.0% 0.0% 20.0% 60.0% 0.0% 
-yuv  [info]: 832x448 fps 50000/1000 i420p8 frames 0 - 15 of 501
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 15 / 8 / 3
-x265 [info]: Main profile, Level-3.1 (Main tier)
-x265 [info]: CU size                             : 64
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : dia / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 23340.00 kb/s, eta 6:26:42  [12.5%] 2/16 frames, 0.00 fps, 11694.00 kb/s, eta 3:02:04  [18.8%] 3/16 frames, 0.00 fps, 7806.00 kb/s, eta 1:55:06  [25.0%] 4/16 frames, 0.00 fps, 7355.70 kb/s, eta 1:21:15  [31.2%] 5/16 frames, 0.00 fps, 6330.56 kb/s, eta 1:00:48  [37.5%] 6/16 frames, 0.00 fps, 5398.53 kb/s, eta 0:47:17  [43.8%] 7/16 frames, 0.00 fps, 4740.69 kb/s, eta 0:37:22  [50.0%] 8/16 frames, 0.00 fps, 4829.95 kb/s, eta 0:29:44  [56.2%] 9/16 frames, 0.00 fps, 4533.56 kb/s, eta 0:23:39  [62.5%] 10/16 frames, 0.01 fps, 4152.80 kb/s, eta 0:19:07  [68.8%] 11/16 frames, 0.01 fps, 3840.62 kb/s, eta 0:14:53  [75.0%] 12/16 frames, 0.01 fps, 3806.93 kb/s, eta 0:11:13  [81.2%] 13/16 frames, 0.01 fps, 3661.48 kb/s, eta 0:07:57  [87.5%] 14/16 frames, 0.01 fps, 3470.09 kb/s, eta 0:05:05  [93.8%] 15/16 frames, 0.01 fps, 3309.81 kb/s, eta 0:02:25  [100.0%] 16/16 frames, 0.01 fps, 3149.50 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:30.60  kb/s: 22977.60  PSNR Mean: Y:33.804 U:37.081 V:37.374
-x265 [info]: frame P:      4, Avg QP:33.24  kb/s: 3734.40   PSNR Mean: Y:31.598 U:36.373 V:36.546
-x265 [info]: frame B:     11, Avg QP:37.82  kb/s: 1099.13   PSNR Mean: Y:30.587 U:36.124 V:36.341
-x265 [info]: global :     16, Avg QP:36.22  kb/s: 3125.35   PSNR Mean: Y:31.041 U:36.246 V:36.457
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 20.0% 20.0% 0.0% 40.0% 20.0% 
-yuv  [info]: 832x448 fps 30000/1000 i420p8 frames 0 - 15 of 300
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 29 / 8 / 3
-x265 [info]: Main profile, Level-3 (Main tier)
-x265 [info]: CU size                             : 32
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : dia / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 7242.72 kb/s, eta 3:34:04  [12.5%] 2/16 frames, 0.00 fps, 5781.12 kb/s, eta 1:45:39  [18.8%] 3/16 frames, 0.00 fps, 4292.08 kb/s, eta 1:07:17  [25.0%] 4/16 frames, 0.00 fps, 3412.38 kb/s, eta 0:48:19  [31.2%] 5/16 frames, 0.00 fps, 2882.54 kb/s, eta 0:37:42  [37.5%] 6/16 frames, 0.01 fps, 2497.68 kb/s, eta 0:30:30  [43.8%] 7/16 frames, 0.01 fps, 2696.30 kb/s, eta 0:24:48  [50.0%] 8/16 frames, 0.01 fps, 2526.00 kb/s, eta 0:19:53  [56.2%] 9/16 frames, 0.01 fps, 2305.12 kb/s, eta 0:16:30  [62.5%] 10/16 frames, 0.01 fps, 2135.54 kb/s, eta 0:13:31  [68.8%] 11/16 frames, 0.01 fps, 2248.69 kb/s, eta 0:10:54  [75.0%] 12/16 frames, 0.01 fps, 2178.54 kb/s, eta 0:08:15  [81.2%] 13/16 frames, 0.01 fps, 2055.82 kb/s, eta 0:05:57  [87.5%] 14/16 frames, 0.01 fps, 1948.54 kb/s, eta 0:03:56  [93.8%] 15/16 frames, 0.01 fps, 1943.25 kb/s, eta 0:01:50  [100.0%] 16/16 frames, 0.01 fps, 1856.96 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:31.29  kb/s: 7025.28   PSNR Mean: Y:35.160 U:37.926 V:39.043
-x265 [info]: frame P:      4, Avg QP:32.42  kb/s: 3363.24   PSNR Mean: Y:33.358 U:37.035 V:37.834
-x265 [info]: frame B:     11, Avg QP:35.61  kb/s: 818.29    PSNR Mean: Y:32.663 U:36.796 V:37.795
-x265 [info]: global :     16, Avg QP:34.54  kb/s: 1842.46   PSNR Mean: Y:32.992 U:36.927 V:37.883
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 20.0% 20.0% 0.0% 40.0% 20.0% 
-yuv  [info]: 832x448 fps 50000/1000 i420p8 frames 0 - 15 of 501
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 29 / 8 / 3
-x265 [info]: Main profile, Level-3.1 (Main tier)
-x265 [info]: CU size                             : 32
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : dia / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 7764.80 kb/s, eta 2:46:17  [12.5%] 2/16 frames, 0.00 fps, 3919.20 kb/s, eta 1:20:08  [18.8%] 3/16 frames, 0.00 fps, 3213.60 kb/s, eta 0:51:22  [25.0%] 4/16 frames, 0.01 fps, 2561.50 kb/s, eta 0:36:42  [31.2%] 5/16 frames, 0.01 fps, 2108.96 kb/s, eta 0:28:46  [37.5%] 6/16 frames, 0.01 fps, 1816.80 kb/s, eta 0:22:26  [43.8%] 7/16 frames, 0.01 fps, 1597.31 kb/s, eta 0:18:18  [50.0%] 8/16 frames, 0.01 fps, 1590.70 kb/s, eta 0:14:43  [56.2%] 9/16 frames, 0.01 fps, 1488.80 kb/s, eta 0:11:57  [62.5%] 10/16 frames, 0.01 fps, 1373.60 kb/s, eta 0:09:48  [68.8%] 11/16 frames, 0.01 fps, 1280.18 kb/s, eta 0:07:42  [75.0%] 12/16 frames, 0.01 fps, 1200.13 kb/s, eta 0:06:01  [81.2%] 13/16 frames, 0.01 fps, 1199.60 kb/s, eta 0:04:15  [87.5%] 14/16 frames, 0.01 fps, 1168.03 kb/s, eta 0:02:43  [93.8%] 15/16 frames, 0.01 fps, 1110.27 kb/s, eta 0:01:19                                                                                  x265 [info]: frame I:      1, Avg QP:31.02  kb/s: 7402.40   PSNR Mean: Y:36.082 U:39.302 V:39.455
-x265 [info]: frame P:      4, Avg QP:33.24  kb/s: 1151.80   PSNR Mean: Y:35.213 U:38.688 V:38.833
-x265 [info]: frame B:     11, Avg QP:37.68  kb/s: 414.58    PSNR Mean: Y:34.522 U:38.343 V:38.503
-x265 [info]: global :     16, Avg QP:36.15  kb/s: 1035.62   PSNR Mean: Y:34.792 U:38.489 V:38.645
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 40.0% 0.0% 0.0% 20.0% 40.0% 
-yuv  [info]: 832x448 fps 60000/1000 i420p8 frames 0 - 15 of 601
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 29 / 8 / 3
-x265 [info]: Main profile, Level-3.1 (Main tier)
-x265 [info]: CU size                             : 32
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : dia / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 12329.28 kb/s, eta 4:54:26  [12.5%] 2/16 frames, 0.00 fps, 7145.04 kb/s, eta 2:19:11  [18.8%] 3/16 frames, 0.00 fps, 4921.60 kb/s, eta 1:27:04  [25.0%] 4/16 frames, 0.00 fps, 3731.52 kb/s, eta 1:01:41  [31.2%] 5/16 frames, 0.00 fps, 3021.89 kb/s, eta 0:45:38  [37.5%] 6/16 frames, 0.00 fps, 2867.20 kb/s, eta 0:35:02  [43.8%] 7/16 frames, 0.01 fps, 2525.90 kb/s, eta 0:27:38  [50.0%] 8/16 frames, 0.01 fps, 2232.54 kb/s, eta 0:22:08  [56.2%] 9/16 frames, 0.01 fps, 2002.29 kb/s, eta 0:17:25  [62.5%] 10/16 frames, 0.01 fps, 1997.90 kb/s, eta 0:13:48  [68.8%] 11/16 frames, 0.01 fps, 1866.24 kb/s, eta 0:10:43  [75.0%] 12/16 frames, 0.01 fps, 1725.84 kb/s, eta 0:08:07  [81.2%] 13/16 frames, 0.01 fps, 1608.04 kb/s, eta 0:05:42  [87.5%] 14/16 frames, 0.01 fps, 1587.36 kb/s, eta 0:03:34  [93.8%] 15/16 frames, 0.01 fps, 1505.02 kb/s, eta 0:01:41  [100.0%] 16/16 frames, 0.01 fps, 1423.98 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:32.00  kb/s: 11894.40  PSNR Mean: Y:35.405 U:39.263 V:40.026
-x265 [info]: frame P:      4, Avg QP:33.80  kb/s: 1830.96   PSNR Mean: Y:33.985 U:38.755 V:39.472
-x265 [info]: frame B:     11, Avg QP:38.24  kb/s: 281.98    PSNR Mean: Y:33.959 U:38.891 V:39.645
-x265 [info]: global :     16, Avg QP:36.74  kb/s: 1395.00   PSNR Mean: Y:34.056 U:38.880 V:39.626
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 20.0% 0.0% 20.0% 60.0% 0.0% 
-yuv  [info]: 832x448 fps 50000/1000 i420p8 frames 0 - 15 of 501
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 29 / 8 / 3
-x265 [info]: Main profile, Level-3.1 (Main tier)
-x265 [info]: CU size                             : 32
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : dia / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 23559.20 kb/s, eta 3:35:05  [12.5%] 2/16 frames, 0.00 fps, 11818.40 kb/s, eta 1:41:48  [18.8%] 3/16 frames, 0.00 fps, 7894.93 kb/s, eta 1:05:08  [25.0%] 4/16 frames, 0.00 fps, 7441.50 kb/s, eta 0:46:39  [31.2%] 5/16 frames, 0.01 fps, 6402.32 kb/s, eta 0:35:09  [37.5%] 6/16 frames, 0.01 fps, 5457.13 kb/s, eta 0:27:59  [43.8%] 7/16 frames, 0.01 fps, 4790.46 kb/s, eta 0:22:45  [50.0%] 8/16 frames, 0.01 fps, 4896.25 kb/s, eta 0:18:25  [56.2%] 9/16 frames, 0.01 fps, 4596.84 kb/s, eta 0:14:43  [62.5%] 10/16 frames, 0.01 fps, 4208.96 kb/s, eta 0:12:06  [68.8%] 11/16 frames, 0.01 fps, 3892.91 kb/s, eta 0:09:50  [75.0%] 12/16 frames, 0.01 fps, 3868.20 kb/s, eta 0:07:31  [81.2%] 13/16 frames, 0.01 fps, 3721.08 kb/s, eta 0:05:20  [87.5%] 14/16 frames, 0.01 fps, 3527.51 kb/s, eta 0:03:28  [93.8%] 15/16 frames, 0.01 fps, 3362.83 kb/s, eta 0:01:41  [100.0%] 16/16 frames, 0.01 fps, 3203.68 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:30.27  kb/s: 23196.80  PSNR Mean: Y:33.795 U:37.127 V:37.430
-x265 [info]: frame P:      4, Avg QP:32.94  kb/s: 3846.40   PSNR Mean: Y:31.601 U:36.302 V:36.539
-x265 [info]: frame B:     11, Avg QP:37.51  kb/s: 1117.27   PSNR Mean: Y:30.641 U:36.032 V:36.324
-x265 [info]: global :     16, Avg QP:35.92  kb/s: 3179.53   PSNR Mean: Y:31.078 U:36.168 V:36.447
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 20.0% 20.0% 0.0% 40.0% 20.0% 
-yuv  [info]: 832x448 fps 30000/1000 i420p8 frames 0 - 15 of 300
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 57 / 8 / 3
-x265 [info]: Main profile, Level-3 (Main tier)
-x265 [info]: CU size                             : 16
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : dia / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 7356.24 kb/s, eta 5:19:57  [12.5%] 2/16 frames, 0.00 fps, 6065.64 kb/s, eta 2:32:27  [18.8%] 3/16 frames, 0.00 fps, 4495.84 kb/s, eta 1:35:58  [25.0%] 4/16 frames, 0.00 fps, 3575.22 kb/s, eta 1:09:10  [31.2%] 5/16 frames, 0.00 fps, 3023.42 kb/s, eta 0:52:16  [37.5%] 6/16 frames, 0.00 fps, 2630.88 kb/s, eta 0:41:07  [43.8%] 7/16 frames, 0.00 fps, 2846.81 kb/s, eta 0:33:01  [50.0%] 8/16 frames, 0.01 fps, 2665.08 kb/s, eta 0:26:04  [56.2%] 9/16 frames, 0.01 fps, 2435.09 kb/s, eta 0:20:57  [62.5%] 10/16 frames, 0.01 fps, 2260.03 kb/s, eta 0:17:03  [68.8%] 11/16 frames, 0.01 fps, 2383.03 kb/s, eta 0:13:23  [75.0%] 12/16 frames, 0.01 fps, 2306.08 kb/s, eta 0:10:01  [81.2%] 13/16 frames, 0.01 fps, 2176.98 kb/s, eta 0:07:14  [87.5%] 14/16 frames, 0.01 fps, 2068.39 kb/s, eta 0:04:39  [93.8%] 15/16 frames, 0.01 fps, 2066.94 kb/s, eta 0:02:11  [100.0%] 16/16 frames, 0.01 fps, 1975.26 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:31.22  kb/s: 7138.80   PSNR Mean: Y:35.011 U:37.611 V:38.633
-x265 [info]: frame P:      4, Avg QP:32.35  kb/s: 3643.32   PSNR Mean: Y:33.190 U:36.494 V:37.291
-x265 [info]: frame B:     11, Avg QP:35.54  kb/s: 878.20    PSNR Mean: Y:32.565 U:36.429 V:37.380
-x265 [info]: global :     16, Avg QP:34.47  kb/s: 1960.77   PSNR Mean: Y:32.874 U:36.520 V:37.436
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 20.0% 20.0% 0.0% 40.0% 20.0% 
-yuv  [info]: 832x448 fps 50000/1000 i420p8 frames 0 - 15 of 501
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 57 / 8 / 3
-x265 [info]: Main profile, Level-3.1 (Main tier)
-x265 [info]: CU size                             : 16
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : dia / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 8000.80 kb/s, eta 3:35:19  [12.5%] 2/16 frames, 0.00 fps, 4065.40 kb/s, eta 1:41:54  [18.8%] 3/16 frames, 0.00 fps, 3397.07 kb/s, eta 1:05:17  [25.0%] 4/16 frames, 0.00 fps, 2718.20 kb/s, eta 0:46:25  [31.2%] 5/16 frames, 0.01 fps, 2250.56 kb/s, eta 0:34:55  [37.5%] 6/16 frames, 0.01 fps, 1945.80 kb/s, eta 0:27:15  [43.8%] 7/16 frames, 0.01 fps, 1721.60 kb/s, eta 0:21:35  [50.0%] 8/16 frames, 0.01 fps, 1730.00 kb/s, eta 0:17:25  [56.2%] 9/16 frames, 0.01 fps, 1626.22 kb/s, eta 0:13:51  [62.5%] 10/16 frames, 0.01 fps, 1504.68 kb/s, eta 0:11:09  [68.8%] 11/16 frames, 0.01 fps, 1408.58 kb/s, eta 0:08:46  [75.0%] 12/16 frames, 0.01 fps, 1326.17 kb/s, eta 0:06:39  [81.2%] 13/16 frames, 0.01 fps, 1324.89 kb/s, eta 0:04:44  [87.5%] 14/16 frames, 0.01 fps, 1295.89 kb/s, eta 0:03:00  [93.8%] 15/16 frames, 0.01 fps, 1236.27 kb/s, eta 0:01:26  [100.0%] 16/16 frames, 0.01 fps, 1183.73 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:30.99  kb/s: 7638.40   PSNR Mean: Y:36.038 U:38.948 V:39.070
-x265 [info]: frame P:      4, Avg QP:33.15  kb/s: 1320.60   PSNR Mean: Y:35.102 U:38.212 V:38.386
-x265 [info]: frame B:     11, Avg QP:37.60  kb/s: 512.04    PSNR Mean: Y:34.356 U:37.870 V:38.094
-x265 [info]: global :     16, Avg QP:36.08  kb/s: 1159.58   PSNR Mean: Y:34.648 U:38.023 V:38.228
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 40.0% 0.0% 0.0% 20.0% 40.0% 
-yuv  [info]: 832x448 fps 60000/1000 i420p8 frames 0 - 15 of 601
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 57 / 8 / 3
-x265 [info]: Main profile, Level-3.1 (Main tier)
-x265 [info]: CU size                             : 16
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : dia / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 12900.00 kb/s, eta 12:50:24  [12.5%] 2/16 frames, 0.00 fps, 7474.80 kb/s, eta 6:00:42  [18.8%] 3/16 frames, 0.00 fps, 5158.72 kb/s, eta 3:45:03  [25.0%] 4/16 frames, 0.00 fps, 3925.56 kb/s, eta 2:36:43  [31.2%] 5/16 frames, 0.00 fps, 3190.08 kb/s, eta 1:55:24  [37.5%] 6/16 frames, 0.00 fps, 3031.44 kb/s, eta 1:28:10  [43.8%] 7/16 frames, 0.00 fps, 2680.46 kb/s, eta 1:08:27  [50.0%] 8/16 frames, 0.00 fps, 2374.68 kb/s, eta 0:53:44  [56.2%] 9/16 frames, 0.00 fps, 2137.65 kb/s, eta 0:42:09  [62.5%] 10/16 frames, 0.00 fps, 2136.86 kb/s, eta 0:32:51  [68.8%] 11/16 frames, 0.00 fps, 1996.97 kb/s, eta 0:25:12  [75.0%] 12/16 frames, 0.00 fps, 1851.36 kb/s, eta 0:18:38  [81.2%] 13/16 frames, 0.00 fps, 1728.66 kb/s, eta 0:13:03  [87.5%] 14/16 frames, 0.00 fps, 1709.90 kb/s, eta 0:08:09  [93.8%] 15/16 frames, 0.00 fps, 1623.71 kb/s, eta 0:03:50  [100.0%] 16/16 frames, 0.00 fps, 1539.84 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:31.94  kb/s: 12465.12  PSNR Mean: Y:35.470 U:38.867 V:39.612
-x265 [info]: frame P:      4, Avg QP:33.72  kb/s: 1968.96   PSNR Mean: Y:33.974 U:38.322 V:39.032
-x265 [info]: frame B:     11, Avg QP:38.16  kb/s: 348.44    PSNR Mean: Y:33.986 U:38.493 V:39.209
-x265 [info]: global :     16, Avg QP:36.67  kb/s: 1510.86   PSNR Mean: Y:34.075 U:38.474 V:39.190
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 20.0% 0.0% 20.0% 60.0% 0.0% 
-yuv  [info]: 832x448 fps 50000/1000 i420p8 frames 0 - 15 of 501
-x265 [info]: HEVC encoder version 1.3+213-25dde1ffab66
-x265 [info]: build info [Linux][GCC 4.8.2][64 bit] 8bpp
-x265 [info]: using cpu capabilities: none!
-x265 [info]: WPP streams / pool / frames         : 57 / 8 / 3
-x265 [info]: Main profile, Level-3.1 (Main tier)
-x265 [info]: CU size                             : 16
-x265 [info]: Max RQT depth inter / intra         : 3 / 1
-x265 [info]: ME / range / subpel / merge         : dia / 64 / 2 / 5
-x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
-x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
-x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
-x265 [info]: Rate Control / AQ-Strength / CUTree : CRF-28.0 / 0.0 / 1
-x265 [info]: tools: rect amp rd=3 lft sao-lcu signhide 
-[6.2%] 1/16 frames, 0.00 fps, 23781.20 kb/s, eta 12:49:17  [12.5%] 2/16 frames, 0.00 fps, 11938.80 kb/s, eta 5:59:44  [18.8%] 3/16 frames, 0.00 fps, 7975.60 kb/s, eta 3:44:04  [25.0%] 4/16 frames, 0.00 fps, 7551.70 kb/s, eta 2:36:53  [31.2%] 5/16 frames, 0.00 fps, 6507.44 kb/s, eta 1:55:47  [37.5%] 6/16 frames, 0.00 fps, 5550.13 kb/s, eta 1:28:57  [43.8%] 7/16 frames, 0.00 fps, 4878.91 kb/s, eta 1:09:33  [50.0%] 8/16 frames, 0.00 fps, 4991.25 kb/s, eta 0:55:06  [56.2%] 9/16 frames, 0.00 fps, 4682.84 kb/s, eta 0:43:07  [62.5%] 10/16 frames, 0.00 fps, 4292.92 kb/s, eta 0:33:49  [68.8%] 11/16 frames, 0.00 fps, 3977.56 kb/s, eta 0:26:00  [75.0%] 12/16 frames, 0.00 fps, 3955.77 kb/s, eta 0:19:23  [81.2%] 13/16 frames, 0.00 fps, 3802.22 kb/s, eta 0:13:36  [87.5%] 14/16 frames, 0.00 fps, 3606.49 kb/s, eta 0:08:34  [93.8%] 15/16 frames, 0.00 fps, 3440.45 kb/s, eta 0:04:02  [100.0%] 16/16 frames, 0.00 fps, 3277.65 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:30.21  kb/s: 23418.80  PSNR Mean: Y:33.771 U:37.077 V:37.294
-x265 [info]: frame P:      4, Avg QP:32.87  kb/s: 3965.90   PSNR Mean: Y:31.552 U:36.195 V:36.381
-x265 [info]: frame B:     11, Avg QP:37.43  kb/s: 1161.24   PSNR Mean: Y:30.606 U:35.964 V:36.202
-x265 [info]: global :     16, Avg QP:35.84  kb/s: 3253.50   PSNR Mean: Y:31.041 U:36.091 V:36.315
-x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
-x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
-x265 [info]: consecutive B-frames: 20.0% 20.0% 0.0% 40.0% 20.0% 

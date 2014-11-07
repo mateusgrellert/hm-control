@@ -1,6 +1,7 @@
 import os
 import operator
 import math
+import re
 
 class App:
 	def __init__(self, valgrind = False):
@@ -10,7 +11,8 @@ class App:
 			self.App = '../x265'
 		self.name = 'x265'
 		self.valgrind = valgrind
-		self.BDRateFile = 'x265_QPWise_Values.csv'
+		self.BDRateFile = open('x265_QPWise_Values.csv','w')
+		self.BDRateFile.close()
 		self.period = 8
 		self.numSteps = 300
 		self.initConfig = ' --profile main --tune psnr --psnr --no-asm --aq-mode 0 --no-scenecut'
@@ -20,7 +22,7 @@ class App:
 
 		inp = inp.split()
 		avg = []
-		for i in range(len(getOutputNames())):
+		for i in range(len(self.getOutputNames())):
 			avg.append(0)
 
 		for qp in self.QPs:
@@ -32,7 +34,7 @@ class App:
 			out = self.parseOutput()
 			for i in range(len(out)):
 				avg[i] += out[i]
-			printBDRateFile(out, qp)
+			self.printBDRateFile(out, qp)
 			#self.stepsTaken += period
 		return [float(x)/len(self.QPs) for x in avg]
 		
@@ -71,8 +73,8 @@ class App:
 		else:
 			return [time, psnr, bitrate]
 
-	def printBDRateFile(tupl, qp):
-
+	def printBDRateFile(self,tupl, qp):
+		self.BDRateFile = open('x265_QPWise_Values.csv','a')
 		f = open('x265_warn.txt','r')
 
 		reg = 'global.*kb\/s\:\s*([\d+.]+).*Y\:([\d+.]+)\s*U\:([\d+.]+)\s*V\:([\d+.]+)'
@@ -82,11 +84,13 @@ class App:
 		f2 = open('x265_out.txt','r')
 		reg = 'encoded.*in\s*([\d+\.]+)s'
 		obj = re.compile(reg)
-		(time) = obj.findall(f.read())[0]
 
-		print >> self.BDRateFile, '\t'.join([bitrate, y_psnr, u_psnr, v_psnr,time]),'\t'
+		(time) = obj.findall(f2.read())[0]
+
+		print >> self.BDRateFile, '\t'.join([bitrate, y_psnr, u_psnr, v_psnr,time]),'\t',
 		if qp == self.QPs[-1]:
 			print >> self.BDRateFile,'\n'
+		self.BDRateFile.close()
 		
 	def calculatePerformance(self,avg_br, avg_psnr):
 		weight_br = 0.5

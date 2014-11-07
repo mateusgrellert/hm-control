@@ -22,7 +22,7 @@ class App_Runner:
 		module = importlib.import_module(mod)
 		self.App = module.App(valgrind)
 		self.outputCsv = open(self.App.name+'_Results.csv','w')
-		
+		self.outputCsv.close()
 
 		self.buildParamTable()
 		self.makeInputVector()
@@ -182,7 +182,7 @@ class App_Runner:
 			
 
 	def printOutput(self):
-
+		self.outputCsv = open(self.App.name+'_Results.csv','a')
 		self.reportOutput()
 		print >> self.outputCsv, '\n'*3
 		self.reportSensitivity()
@@ -193,6 +193,7 @@ class App_Runner:
 			print >> self.outputCsv, 'c'+str(count)+'\t',cfg
 			count += 1
 		self.cleanUp()
+		self.outputCsv.close()
 
 	def calcSensitivity(self, ref_tuple, new_tuple):
 		sense_vet = []

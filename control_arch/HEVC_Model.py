@@ -1,28 +1,64 @@
 import os
 import operator
 import math
+import re
 
 class App:
 	def __init__(self, valgrind = False):
 		if valgrind:
 			self.App = 'valgrind --tool=cachegrind --log-file=valgrind.out ../bin/TAppEncoderStatic'
 		else:
-			self.App = '../bin/TAppEncoderStatic'
+			self.App = '../HM_bin/TAppEncoderStatic'
 		self.name = 'HM'
 		self.valgrind = valgrind
+
 		self.period = 3
 		self.numSteps = 300
 		self.initConfig = '-c ../cfg/encoder_lowdelay_main.cfg '
 		self.QPs = ['22','27','32','37']
+		self.makeBDRateFile()
+
+	def makeBDRateFile(self):
+		self.BDRateFile = open('x265_QPWise_Values.csv','w')
+		print >> self.BDRateFile, '\t'.join(self.QPs)
+		self.BDRateFile.close()
 	
 	def run(self, inp, cfg, period):
-		line = self.App + ' ' + self.initConfig + ' -c /home/grellert/hm-cfgs/cropped/' + inp + ' ' + ' '.join(cfg)
-		line += ' --IntraPeriod=-1 -p FramesToBeEncoded=' + str(period)
-		line += ' > HM_out.txt 2> HM_warn.txt'
-		os.system(line)
-		os.system('cat HM_out.txt >> HM_out.log')
-		#self.stepsTaken += period
+		avg = []
+		for i in range(len(self.getOutputNames())):
+			avg.append(0)
 
+		for qp in self.QPs:
+			line = self.App + ' ' + self.initConfig + ' -c /home/grellert/hm-cfgs/cropped/' + inp + ' ' + ' '.join(cfg)
+			line += ' --IntraPeriod=-1 --FramesToBeEncoded=' + str(period) + ' --QP=' + qp
+			line += ' > HM_out.txt 2> HM_warn.txt'
+			os.system(line)
+			os.system('cat HM_out.txt >> HM_out.log')
+			out = self.parseOutput()
+			for i in range(len(out)):
+				avg[i] += out[i]
+			self.printBDRateFile(out, qp)
+			#self.stepsTaken += period
+		return [float(x)/len(self.QPs) for x in avg]
+
+	def printBDRateFile(self,tupl, qp):
+		self.BDRateFile = open('x265_QPWise_Values.csv','a')
+		f = open('HM_out.txt','r')
+		fread = f.read()
+		f.close()
+
+		reg = 'SUMMARY.*\n.*\n.*a\s*([\d+.]+)\s*([\d+.]+)\s*([\d+.]+)\s*([\d+.]+).*\n'
+		obj = re.compile(reg)
+		(bitrate, y_psnr, u_psnr, v_psnr) = obj.findall(fread)[0]
+		reg2 = 'Total\s*Time:\s*([\d+.]+).*'
+		obj = re.compile(reg2)
+		(time) = obj.findall(fread)[0]
+
+
+		print >> self.BDRateFile, '\t'.join([bitrate, y_psnr, u_psnr, v_psnr,time]),'\t',
+		if qp == self.QPs[-1]:
+			print >> self.BDRateFile,'\n'
+		self.BDRateFile.close()
 		
 	def parseOutput(self,start=False):
 		f = open('HM_out.txt','r')
