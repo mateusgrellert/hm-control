@@ -98,7 +98,7 @@ class App:
 	def printBDRateFile(self,tupl, qp):
 		self.BDRateFile = open(self.name+'_QPWise_Values.csv','a')
 		
-		print >> self.BDRateFile, '\t'.join([str(x) for x in tupl]),'\t\t',
+		print >> self.BDRateFile, '\t'.join(tupl),'\t\t',
 
 		if qp == self.QPs[-1]:
 			print >> self.BDRateFile,'\n'

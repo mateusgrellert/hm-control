@@ -1,19 +1,19 @@
 import os
 import operator
 import math
+import re
 
 class App:
 	def __init__(self, valgrind = False, BDRate = False):
 		if valgrind:
-			self.App = 'valgrind --tool=cachegrind --log-file=valgrind.out ../x264'
+			self.App = 'valgrind --tool=cachegrind --log-file=valgrind.out ../JM/lencod.exe'
 		else:
-			self.App = '../x264'
-
+			self.App = '../JM_bin/lencod.exe '
+		self.name = 'JM'
 		self.valgrind = valgrind
 		self.BDRate = BDRate
-		self.name = 'x264'
 		self.numSteps = 300
-		self.initConfig = '--profile high --psnr --no-asm --aq-mode 0 --no-psy --no-scenecut'
+		self.initConfig = '-d ../JM_bin/encoder_max_performance.cfg '
 
 		if self.BDRate:
 			self.QPs = ['20','25','30','35']
@@ -27,45 +27,49 @@ class App:
 		self.BDRateFile.close()
 
 	def run(self, inp, cfg, period):
-		inp = inp.split()
 		avg = []
 		for i in range(len(self.getOutputNames())):
 			avg.append(0)
-
+		inp = inp.split()
+		
 		for qp in self.QPs:
-			line = self.App + ' ' + self.initConfig + ' ' + ' '.join(cfg) + ' -o out.x264 ../../origCfP/cropped/' + inp
-			line += ' --frames ' + str(period)
-			line += ' 2> x264_out.txt '
-
+			line = self.App + ' ' + self.initConfig + '-p Log2MaxFNumMinus4=-1 -p InputFile=/home/grellert/origCfP/cropped/' + inp[0]
+			line += ' -p SourceWidth=' + inp[1] + ' -p SourceHeight=' + inp[2] + ' -p FrameRate=' + inp[3] + ' -p RDOptimization=1' + ' ' + ' '.join(cfg)
+			line += ' -p IntraPeriod=30 -p FramesToBeEncoded=' + str(period)
+			line += ' > JM_out.txt 2> JM_warn.txt'
+			
 			os.system('echo \"' + line + '\" >> cmd_line.log')
 			os.system(line)
-			os.system('cat x264_out.txt >> x264_out.log')
+			os.system('cat JM_out.txt >> JM_out.log; cat JM_warn.txt >> JM_warn.log')
 			
-			out = self.parseOutput(qp)
+			out = self.parseOutput()
 			for i in range(len(out)):
 				avg[i] += out[i]
-			
 
-		#self.stepsTaken += period
 		return [float(x)/len(self.QPs) for x in avg]
+
 		
 	def parseOutput(self, qp):
-		f = open('x264_out.txt','r')
+		f = open('JM_out.txt','r')
+		count = 0
+		psnr_count = False
 
-		for l in f.readlines():
-			if 'x264 [info]: PSNR Mean' in l:
-				for t in l.split():
-					if 'Y:' in t:
-						y_psnr = float(t.split(':')[-1])
-					elif 'U:' in t:
-						u_psnr = float(t.split(':')[-1])
-					elif 'V:' in t:
-						v_psnr = float(t.split(':')[-1])
-			elif 'encoded' in l:
-				n_frames = int(l.split()[1])
-				fps = float(l.split()[3])
-				bitrate = float(l.split()[5])
+		for l in (f.readlines()):
+			if 'Total encoding time' in l:
+				time = float(l.split()[7])
+			elif 'Y { PSNR' in l:
+				y_psnr = float(l.split()[10].strip(','))
+			elif 'U { PSNR' in l:
+				u_psnr = float(l.split()[10].strip(','))
+			elif 'V { PSNR' in l:
+				v_psnr = float(l.split()[10].strip(','))
+			elif 'Bit rate' in l:
+				bitrate = float(l.split()[7])
 		
+		if self.BDRate:
+			self.printBDRateFile([bitrate, y_psnr, u_psnr,v_psnr,time],qp)
+
+		psnr = (4*y_psnr+u_psnr+v_psnr)/6.0
 		if self.valgrind:
 			valg = open('valgrind.out','r')
 			for l in valg.readlines():
@@ -81,14 +85,8 @@ class App:
 				elif 'LL misses' in l:
 					LL_rd_misses = float(l.split('(')[1].split()[0].replace(',',''))
 					LL_wr_misses = float(l.split('+')[1].split()[0].replace(',',''))
-
-
-		psnr = (4*y_psnr+u_psnr+v_psnr)/6.0
-		time = n_frames/fps	
-		if self.BDRate:
-			self.printBDRateFile([bitrate, y_psnr, u_psnr,v_psnr,time],qp)
+	
 		#RDNP = self.calculatePerformance(bitrate/framesCounted, psnr/framesCounted)
-
 		if self.valgrind:
 			return [time, psnr, bitrate, rd_misses, wr_misses, LL_rd_misses, LL_wr_misses]
 		else:
@@ -98,7 +96,7 @@ class App:
 	def printBDRateFile(self,tupl, qp):
 		self.BDRateFile = open(self.name+'_QPWise_Values.csv','a')
 		
-		print >> self.BDRateFile, '\t'.join([str(x) for x in tupl]),'\t\t',
+		print >> self.BDRateFile, '\t'.join(tupl),'\t\t',
 
 		if qp == self.QPs[-1]:
 			print >> self.BDRateFile,'\n'
@@ -114,10 +112,10 @@ class App:
 		return (norm_br*weight_br+norm_psnr*weight_psnr)
 
 	def makeParam(self,name, value):
-		return ('--' + name + ' ' + value)
+		return ('-p ' + name + '=' + value)
 	
 	def splitParam(self,param):
-		return (param.strip('--').split(' '))
+		return (param.strip('-p ').split('='))
 
 	def getOutputNames(self):
 		if self.valgrind:

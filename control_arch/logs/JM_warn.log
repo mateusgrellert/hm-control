@@ -26,3 +26,7 @@ Warning: Hierarchical coding or Referenced B slices used.
 Warning: Hierarchical coding or Referenced B slices used.
          Make sure that you have allocated enough references
          in reference buffer to achieve best performance.
+
+Warning: Hierarchical coding or Referenced B slices used.
+         Make sure that you have allocated enough references
+         in reference buffer to achieve best performance.

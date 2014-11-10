@@ -1,83 +1,40 @@
 Setting Default Parameters...
 Parsing Configfile ../JM_bin/encoder_max_performance.cfg....................................................................................................................................................................................................................................................................................................................................................................................................................
 Parsing command line string 'Log2MaxFNumMinus4 = -1'.
-Parsing command line string 'InputFile = /home/grellert/origCfP/cropped/RaceHorses_832x448_30.yuv'.
-Parsing command line string 'SourceWidth = 832'.
-Parsing command line string 'SourceHeight = 448'.
-Parsing command line string 'FrameRate = 30'.
+Parsing command line string 'InputFile = /home/grellert/origCfP/cropped/BlowingBubbles_384x192_50.yuv'.
+Parsing command line string 'SourceWidth = 384'.
+Parsing command line string 'SourceHeight = 192'.
+Parsing command line string 'FrameRate = 50'.
 Parsing command line string 'RDOptimization = 1'.
-Parsing command line string 'SearchRange = 64'.
-Parsing command line string 'PSliceSearch8x16 = 1'.
-Parsing command line string 'NumberReferenceFrames = 4'.
-Parsing command line string 'PSliceSearch4x8 = 1'.
-Parsing command line string 'BSliceSearch8x4 = 1'.
-Parsing command line string 'BReferencePictures = 2'.
-Parsing command line string 'BSliceSearch8x8 = 1'.
-Parsing command line string 'UseRDOQuant = 1'.
-Parsing command line string 'WeightedPrediction = 1'.
-Parsing command line string 'BiPredMESubPel = 2'.
-Parsing command line string 'BSliceSearch8x16 = 1'.
-Parsing command line string 'SearchMode = 3'.
-Parsing command line string 'EPZSPattern = 5'.
-Parsing command line string 'EPZSDualRefinement = 6'.
-Parsing command line string 'BiPredMERefinements = 1'.
-Parsing command line string 'PSliceSearch8x4 = 1'.
-Parsing command line string 'BSliceSearch16x16 = 1'.
-Parsing command line string 'MDDistortion = 2'.
-Parsing command line string 'MEDistortionHPel = 2'.
-Parsing command line string 'PSliceSearch8x8 = 1'.
-Parsing command line string 'ChromaMEEnable = 2'.
-Parsing command line string 'BSliceSearch16x8 = 1'.
-Parsing command line string 'EPZSSubPelMEBipred = 1'.
-Parsing command line string 'MEDistortionQPel = 2'.
-Parsing command line string 'PSliceSearch16x8 = 1'.
-Parsing command line string 'DisableSubpelME = 0'.
-Parsing command line string 'BiPredMotionEstimation = 1'.
-Parsing command line string 'RDOQ_Fast = 1'.
-Parsing command line string 'MEDistortionFPel = 1'.
-Parsing command line string 'RDOptimization = 1'.
-Parsing command line string 'WeightedBiprediction = 2'.
-Parsing command line string 'PSliceSearch16x16 = 1'.
-Parsing command line string 'PSliceSearch4x4 = 1'.
-Parsing command line string 'BiPredMESearchRange = 8'.
-Parsing command line string 'EPZSSubPelME = 1'.
+Parsing command line string 'SearchRange = 18'.
 Parsing command line string 'IntraPeriod = 30'.
-Parsing command line string 'FramesToBeEncoded = 3'.
+Parsing command line string 'FramesToBeEncoded = 2'.
 
 AdaptiveRounding is disabled when RDO Quantization is used
 ------------------------------- JM 18.6 (FRExt) -------------------------------
- Input YUV file                    : /home/grellert/origCfP/cropped/RaceHorses_832x448_30.yuv 
+ Input YUV file                    : /home/grellert/origCfP/cropped/BlowingBubbles_384x192_50.yuv 
  Output H.264 bitstream            : test.264 
  Output YUV file                   : test_rec.yuv 
  YUV Format                        : YUV 4:2:0 
- Frames to be encoded              : 3
- Freq. for encoded bitstream       : 30.00
+ Frames to be encoded              : 2
+ Freq. for encoded bitstream       : 50.00
  PicInterlace / MbInterlace        : 0/0
  Transform8x8Mode                  : 1
- ME Metric for Refinement Level 0  : SSE
+ ME Metric for Refinement Level 0  : SAD
  ME Metric for Refinement Level 1  : Hadamard SAD
  ME Metric for Refinement Level 2  : Hadamard SAD
  Mode Decision Metric              : Hadamard SAD
  Motion Estimation for components  : Y
- Image format                      : 832x448 (832x448)
+ Image format                      : 384x192 (384x192)
  Error robustness                  : Off
- Search range                      : 64
- Total number of references        : 4
- References for P slices           : 4
- References for B slices (L0, L1)  : 4, 1
+ Search range                      : 18
+ Total number of references        : 5
+ References for P slices           : 5
+ References for B slices (L0, L1)  : 5, 1
  Sequence type                     : Hierarchy (QP: I 28, P 28, B 30) 
  Entropy coding method             : CABAC
  Profile/Level IDC                 : (100,40)
- Motion Estimation Scheme          : EPZS
- EPZS Pattern                      : PMVFAST
- EPZS Dual Pattern                 : PMVFAST
- EPZS Fixed Predictors             : Aggressive
- EPZS Aggressive Predictors        : Disabled
- EPZS Temporal Predictors          : Enabled
- EPZS Spatial Predictors           : Enabled
- EPZS Threshold Multipliers        : (1 0 2)
- EPZS Subpel ME                    : Basic
- EPZS Subpel ME BiPred             : Basic
+ Motion Estimation Scheme          : Fast Full Search
  Search range restrictions         : none
  RD-optimized mode decision        : used
  Data Partitioning Mode            : 1 partition 
@@ -85,36 +42,35 @@ AdaptiveRounding is disabled when RDO Quantization is used
 -------------------------------------------------------------------------------
 Frame     Bit/pic    QP   SnrY    SnrU    SnrV    Time(ms) MET(ms) Frm/Fld Ref  
 -------------------------------------------------------------------------------
-00000(NVB)     328 
-00000(IDR)  425376   27  38.842  40.074  40.972      3196       0    FRM    3
-00002( B )   92768   32  34.685  38.289  39.419     17888    7163    FRM    2
-00001( B )   36968   32  34.197  38.204  39.318     14355    5879    FRM    0
+00000(NVB)     320 
+00000(IDR)   97560   26  37.557  39.585  41.355       769       0    FRM    3
+00001( P )   19736   27  36.804  39.427  41.236      4639    1375    FRM    2
 -------------------------------------------------------------------------------
- Total Frames:  3 
+ Total Frames:  2 
  LeakyBucketRate File does not exist. Using rate calculated from avg. rate 
  Number Leaky Buckets: 8 
      Rmin     Bmin     Fmin 
-  5551110   425376   425376 
-  6938880   425376   425376 
-  8326650   425376   425376 
-  9714420   425376   425376 
- 11102190   425376   425376 
- 12489960   425376   425376 
- 13877730   425376   425376 
- 15265500   425376   425376 
+  2932400    97560    97560 
+  3665500    97560    97560 
+  4398600    97560    97560 
+  5131700    97560    97560 
+  5864800    97560    97560 
+  6597900    97560    97560 
+  7331000    97560    97560 
+  8064100    97560    97560 
 ------------------ Average data all frames  -----------------------------------
 
- Total encoding time for the seq.  :  35.440 sec (0.08 fps)
- Total ME time for sequence        :  13.043 sec 
+ Total encoding time for the seq.  :   5.408 sec (0.37 fps)
+ Total ME time for sequence        :   1.375 sec 
 
- Y { PSNR (dB), cSNR (dB), MSE }   : {  35.908,  35.472,  18.44547 }
- U { PSNR (dB), cSNR (dB), MSE }   : {  38.856,  38.774,   8.62270 }
- V { PSNR (dB), cSNR (dB), MSE }   : {  39.903,  39.840,   6.74648 }
+ Y { PSNR (dB), cSNR (dB), MSE }   : {  37.180,  37.164,  12.49356 }
+ U { PSNR (dB), cSNR (dB), MSE }   : {  39.506,  39.505,   7.28676 }
+ V { PSNR (dB), cSNR (dB), MSE }   : {  41.296,  41.295,   4.82544 }
 
- Total bits                        : 555440 (I 425376, P 0, B 129736 NVB 328) 
- Bit rate (kbit/s)  @ 30.00 Hz     : 5554.40
- Bits to avoid Startcode Emulation : 18 
- Bits for parameter sets           : 328 
+ Total bits                        : 117616 (I 97560, P 19736, NVB 320) 
+ Bit rate (kbit/s)  @ 50.00 Hz     : 2940.40
+ Bits to avoid Startcode Emulation : 21 
+ Bits for parameter sets           : 320 
  Bits for filler data              : 0 
 
 -------------------------------------------------------------------------------
@@ -122,83 +78,40 @@ Exit JM 18 (FRExt) encoder ver 18.6
 Setting Default Parameters...
 Parsing Configfile ../JM_bin/encoder_max_performance.cfg....................................................................................................................................................................................................................................................................................................................................................................................................................
 Parsing command line string 'Log2MaxFNumMinus4 = -1'.
-Parsing command line string 'InputFile = /home/grellert/origCfP/cropped/RaceHorses_832x448_30.yuv'.
-Parsing command line string 'SourceWidth = 832'.
-Parsing command line string 'SourceHeight = 448'.
-Parsing command line string 'FrameRate = 30'.
+Parsing command line string 'InputFile = /home/grellert/origCfP/cropped/BlowingBubbles_384x192_50.yuv'.
+Parsing command line string 'SourceWidth = 384'.
+Parsing command line string 'SourceHeight = 192'.
+Parsing command line string 'FrameRate = 50'.
 Parsing command line string 'RDOptimization = 1'.
-Parsing command line string 'SearchRange = 64'.
-Parsing command line string 'PSliceSearch8x16 = 1'.
-Parsing command line string 'NumberReferenceFrames = 4'.
-Parsing command line string 'PSliceSearch4x8 = 1'.
-Parsing command line string 'BSliceSearch8x4 = 1'.
-Parsing command line string 'BReferencePictures = 2'.
-Parsing command line string 'BSliceSearch8x8 = 1'.
-Parsing command line string 'UseRDOQuant = 1'.
-Parsing command line string 'WeightedPrediction = 1'.
-Parsing command line string 'BiPredMESubPel = 2'.
-Parsing command line string 'BSliceSearch8x16 = 1'.
-Parsing command line string 'SearchMode = 3'.
-Parsing command line string 'EPZSPattern = 5'.
-Parsing command line string 'EPZSDualRefinement = 6'.
-Parsing command line string 'BiPredMERefinements = 1'.
-Parsing command line string 'PSliceSearch8x4 = 1'.
-Parsing command line string 'BSliceSearch16x16 = 1'.
-Parsing command line string 'MDDistortion = 2'.
-Parsing command line string 'MEDistortionHPel = 2'.
-Parsing command line string 'PSliceSearch8x8 = 1'.
-Parsing command line string 'ChromaMEEnable = 2'.
-Parsing command line string 'BSliceSearch16x8 = 1'.
-Parsing command line string 'EPZSSubPelMEBipred = 1'.
-Parsing command line string 'MEDistortionQPel = 2'.
-Parsing command line string 'PSliceSearch16x8 = 1'.
-Parsing command line string 'DisableSubpelME = 0'.
-Parsing command line string 'BiPredMotionEstimation = 1'.
-Parsing command line string 'RDOQ_Fast = 1'.
-Parsing command line string 'MEDistortionFPel = 1'.
-Parsing command line string 'RDOptimization = 1'.
-Parsing command line string 'WeightedBiprediction = 2'.
-Parsing command line string 'PSliceSearch16x16 = 1'.
-Parsing command line string 'PSliceSearch4x4 = 1'.
-Parsing command line string 'BiPredMESearchRange = 8'.
-Parsing command line string 'EPZSSubPelME = 1'.
+Parsing command line string 'SearchRange = 18'.
 Parsing command line string 'IntraPeriod = 30'.
-Parsing command line string 'FramesToBeEncoded = 3'.
+Parsing command line string 'FramesToBeEncoded = 2'.
 
 AdaptiveRounding is disabled when RDO Quantization is used
 ------------------------------- JM 18.6 (FRExt) -------------------------------
- Input YUV file                    : /home/grellert/origCfP/cropped/RaceHorses_832x448_30.yuv 
+ Input YUV file                    : /home/grellert/origCfP/cropped/BlowingBubbles_384x192_50.yuv 
  Output H.264 bitstream            : test.264 
  Output YUV file                   : test_rec.yuv 
  YUV Format                        : YUV 4:2:0 
- Frames to be encoded              : 3
- Freq. for encoded bitstream       : 30.00
+ Frames to be encoded              : 2
+ Freq. for encoded bitstream       : 50.00
  PicInterlace / MbInterlace        : 0/0
  Transform8x8Mode                  : 1
- ME Metric for Refinement Level 0  : SSE
+ ME Metric for Refinement Level 0  : SAD
  ME Metric for Refinement Level 1  : Hadamard SAD
  ME Metric for Refinement Level 2  : Hadamard SAD
  Mode Decision Metric              : Hadamard SAD
  Motion Estimation for components  : Y
- Image format                      : 832x448 (832x448)
+ Image format                      : 384x192 (384x192)
  Error robustness                  : Off
- Search range                      : 64
- Total number of references        : 4
- References for P slices           : 4
- References for B slices (L0, L1)  : 4, 1
+ Search range                      : 18
+ Total number of references        : 5
+ References for P slices           : 5
+ References for B slices (L0, L1)  : 5, 1
  Sequence type                     : Hierarchy (QP: I 28, P 28, B 30) 
  Entropy coding method             : CABAC
  Profile/Level IDC                 : (100,40)
- Motion Estimation Scheme          : EPZS
- EPZS Pattern                      : PMVFAST
- EPZS Dual Pattern                 : PMVFAST
- EPZS Fixed Predictors             : Aggressive
- EPZS Aggressive Predictors        : Disabled
- EPZS Temporal Predictors          : Enabled
- EPZS Spatial Predictors           : Enabled
- EPZS Threshold Multipliers        : (1 0 2)
- EPZS Subpel ME                    : Basic
- EPZS Subpel ME BiPred             : Basic
+ Motion Estimation Scheme          : Fast Full Search
  Search range restrictions         : none
  RD-optimized mode decision        : used
  Data Partitioning Mode            : 1 partition 
@@ -206,36 +119,35 @@ AdaptiveRounding is disabled when RDO Quantization is used
 -------------------------------------------------------------------------------
 Frame     Bit/pic    QP   SnrY    SnrU    SnrV    Time(ms) MET(ms) Frm/Fld Ref  
 -------------------------------------------------------------------------------
-00000(NVB)     328 
-00000(IDR)  425376   27  38.842  40.074  40.972      3132       0    FRM    3
-00002( B )   92768   32  34.685  38.289  39.419     18266    7367    FRM    2
-00001( B )   36968   32  34.197  38.204  39.318     13901    5584    FRM    0
+00000(NVB)     320 
+00000(IDR)   97560   26  37.557  39.585  41.355       763       0    FRM    3
+00001( P )   19736   27  36.804  39.427  41.236      4517    1336    FRM    2
 -------------------------------------------------------------------------------
- Total Frames:  3 
+ Total Frames:  2 
  LeakyBucketRate File does not exist. Using rate calculated from avg. rate 
  Number Leaky Buckets: 8 
      Rmin     Bmin     Fmin 
-  5551110   425376   425376 
-  6938880   425376   425376 
-  8326650   425376   425376 
-  9714420   425376   425376 
- 11102190   425376   425376 
- 12489960   425376   425376 
- 13877730   425376   425376 
- 15265500   425376   425376 
+  2932400    97560    97560 
+  3665500    97560    97560 
+  4398600    97560    97560 
+  5131700    97560    97560 
+  5864800    97560    97560 
+  6597900    97560    97560 
+  7331000    97560    97560 
+  8064100    97560    97560 
 ------------------ Average data all frames  -----------------------------------
 
- Total encoding time for the seq.  :  35.301 sec (0.08 fps)
- Total ME time for sequence        :  12.952 sec 
+ Total encoding time for the seq.  :   5.280 sec (0.38 fps)
+ Total ME time for sequence        :   1.336 sec 
 
- Y { PSNR (dB), cSNR (dB), MSE }   : {  35.908,  35.472,  18.44547 }
- U { PSNR (dB), cSNR (dB), MSE }   : {  38.856,  38.774,   8.62270 }
- V { PSNR (dB), cSNR (dB), MSE }   : {  39.903,  39.840,   6.74648 }
+ Y { PSNR (dB), cSNR (dB), MSE }   : {  37.180,  37.164,  12.49356 }
+ U { PSNR (dB), cSNR (dB), MSE }   : {  39.506,  39.505,   7.28676 }
+ V { PSNR (dB), cSNR (dB), MSE }   : {  41.296,  41.295,   4.82544 }
 
- Total bits                        : 555440 (I 425376, P 0, B 129736 NVB 328) 
- Bit rate (kbit/s)  @ 30.00 Hz     : 5554.40
- Bits to avoid Startcode Emulation : 18 
- Bits for parameter sets           : 328 
+ Total bits                        : 117616 (I 97560, P 19736, NVB 320) 
+ Bit rate (kbit/s)  @ 50.00 Hz     : 2940.40
+ Bits to avoid Startcode Emulation : 21 
+ Bits for parameter sets           : 320 
  Bits for filler data              : 0 
 
 -------------------------------------------------------------------------------
@@ -243,83 +155,40 @@ Exit JM 18 (FRExt) encoder ver 18.6
 Setting Default Parameters...
 Parsing Configfile ../JM_bin/encoder_max_performance.cfg....................................................................................................................................................................................................................................................................................................................................................................................................................
 Parsing command line string 'Log2MaxFNumMinus4 = -1'.
-Parsing command line string 'InputFile = /home/grellert/origCfP/cropped/RaceHorses_832x448_30.yuv'.
-Parsing command line string 'SourceWidth = 832'.
-Parsing command line string 'SourceHeight = 448'.
-Parsing command line string 'FrameRate = 30'.
+Parsing command line string 'InputFile = /home/grellert/origCfP/cropped/BQSquare_384x192_60.yuv'.
+Parsing command line string 'SourceWidth = 384'.
+Parsing command line string 'SourceHeight = 192'.
+Parsing command line string 'FrameRate = 60'.
 Parsing command line string 'RDOptimization = 1'.
-Parsing command line string 'SearchRange = 64'.
-Parsing command line string 'PSliceSearch8x16 = 1'.
-Parsing command line string 'NumberReferenceFrames = 4'.
-Parsing command line string 'PSliceSearch4x8 = 1'.
-Parsing command line string 'BSliceSearch8x4 = 1'.
-Parsing command line string 'BReferencePictures = 2'.
-Parsing command line string 'BSliceSearch8x8 = 1'.
-Parsing command line string 'UseRDOQuant = 1'.
-Parsing command line string 'WeightedPrediction = 1'.
-Parsing command line string 'BiPredMESubPel = 2'.
-Parsing command line string 'BSliceSearch8x16 = 1'.
-Parsing command line string 'SearchMode = 3'.
-Parsing command line string 'EPZSPattern = 5'.
-Parsing command line string 'EPZSDualRefinement = 6'.
-Parsing command line string 'BiPredMERefinements = 1'.
-Parsing command line string 'PSliceSearch8x4 = 1'.
-Parsing command line string 'BSliceSearch16x16 = 1'.
-Parsing command line string 'MDDistortion = 2'.
-Parsing command line string 'MEDistortionHPel = 2'.
-Parsing command line string 'PSliceSearch8x8 = 1'.
-Parsing command line string 'ChromaMEEnable = 2'.
-Parsing command line string 'BSliceSearch16x8 = 1'.
-Parsing command line string 'EPZSSubPelMEBipred = 1'.
-Parsing command line string 'MEDistortionQPel = 2'.
-Parsing command line string 'PSliceSearch16x8 = 1'.
-Parsing command line string 'DisableSubpelME = 0'.
-Parsing command line string 'BiPredMotionEstimation = 1'.
-Parsing command line string 'RDOQ_Fast = 1'.
-Parsing command line string 'MEDistortionFPel = 1'.
-Parsing command line string 'RDOptimization = 1'.
-Parsing command line string 'WeightedBiprediction = 2'.
-Parsing command line string 'PSliceSearch16x16 = 1'.
-Parsing command line string 'PSliceSearch4x4 = 1'.
-Parsing command line string 'BiPredMESearchRange = 8'.
-Parsing command line string 'EPZSSubPelME = 1'.
+Parsing command line string 'SearchRange = 18'.
 Parsing command line string 'IntraPeriod = 30'.
-Parsing command line string 'FramesToBeEncoded = 3'.
+Parsing command line string 'FramesToBeEncoded = 2'.
 
 AdaptiveRounding is disabled when RDO Quantization is used
 ------------------------------- JM 18.6 (FRExt) -------------------------------
- Input YUV file                    : /home/grellert/origCfP/cropped/RaceHorses_832x448_30.yuv 
+ Input YUV file                    : /home/grellert/origCfP/cropped/BQSquare_384x192_60.yuv 
  Output H.264 bitstream            : test.264 
  Output YUV file                   : test_rec.yuv 
  YUV Format                        : YUV 4:2:0 
- Frames to be encoded              : 3
- Freq. for encoded bitstream       : 30.00
+ Frames to be encoded              : 2
+ Freq. for encoded bitstream       : 60.00
  PicInterlace / MbInterlace        : 0/0
  Transform8x8Mode                  : 1
- ME Metric for Refinement Level 0  : SSE
+ ME Metric for Refinement Level 0  : SAD
  ME Metric for Refinement Level 1  : Hadamard SAD
  ME Metric for Refinement Level 2  : Hadamard SAD
  Mode Decision Metric              : Hadamard SAD
  Motion Estimation for components  : Y
- Image format                      : 832x448 (832x448)
+ Image format                      : 384x192 (384x192)
  Error robustness                  : Off
- Search range                      : 64
- Total number of references        : 4
- References for P slices           : 4
- References for B slices (L0, L1)  : 4, 1
+ Search range                      : 18
+ Total number of references        : 5
+ References for P slices           : 5
+ References for B slices (L0, L1)  : 5, 1
  Sequence type                     : Hierarchy (QP: I 28, P 28, B 30) 
  Entropy coding method             : CABAC
  Profile/Level IDC                 : (100,40)
- Motion Estimation Scheme          : EPZS
- EPZS Pattern                      : PMVFAST
- EPZS Dual Pattern                 : PMVFAST
- EPZS Fixed Predictors             : Aggressive
- EPZS Aggressive Predictors        : Disabled
- EPZS Temporal Predictors          : Enabled
- EPZS Spatial Predictors           : Enabled
- EPZS Threshold Multipliers        : (1 0 2)
- EPZS Subpel ME                    : Basic
- EPZS Subpel ME BiPred             : Basic
+ Motion Estimation Scheme          : Fast Full Search
  Search range restrictions         : none
  RD-optimized mode decision        : used
  Data Partitioning Mode            : 1 partition 
@@ -327,36 +196,35 @@ AdaptiveRounding is disabled when RDO Quantization is used
 -------------------------------------------------------------------------------
 Frame     Bit/pic    QP   SnrY    SnrU    SnrV    Time(ms) MET(ms) Frm/Fld Ref  
 -------------------------------------------------------------------------------
-00000(NVB)     328 
-00000(IDR)  425376   27  38.842  40.074  40.972      3168       0    FRM    3
-00002( B )   92768   32  34.685  38.289  39.419     18009    7215    FRM    2
-00001( B )   36968   32  34.197  38.204  39.318     14054    5670    FRM    0
+00000(NVB)     320 
+00000(IDR)  130280   27  37.397  41.118  41.605       828       0    FRM    3
+00001( P )   34656   27  36.815  41.137  41.634      4849    1350    FRM    2
 -------------------------------------------------------------------------------
- Total Frames:  3 
+ Total Frames:  2 
  LeakyBucketRate File does not exist. Using rate calculated from avg. rate 
  Number Leaky Buckets: 8 
      Rmin     Bmin     Fmin 
-  5551110   425376   425376 
-  6938880   425376   425376 
-  8326650   425376   425376 
-  9714420   425376   425376 
- 11102190   425376   425376 
- 12489960   425376   425376 
- 13877730   425376   425376 
- 15265500   425376   425376 
+  4948080   130280   130280 
+  6185100   130280   130280 
+  7422120   130280   130280 
+  8659140   130280   130280 
+  9896160   130280   130280 
+ 11133180   130280   130280 
+ 12370200   130280   130280 
+ 13607220   130280   130280 
 ------------------ Average data all frames  -----------------------------------
 
- Total encoding time for the seq.  :  35.232 sec (0.09 fps)
- Total ME time for sequence        :  12.886 sec 
+ Total encoding time for the seq.  :   5.678 sec (0.35 fps)
+ Total ME time for sequence        :   1.350 sec 
 
- Y { PSNR (dB), cSNR (dB), MSE }   : {  35.908,  35.472,  18.44547 }
- U { PSNR (dB), cSNR (dB), MSE }   : {  38.856,  38.774,   8.62270 }
- V { PSNR (dB), cSNR (dB), MSE }   : {  39.903,  39.840,   6.74648 }
+ Y { PSNR (dB), cSNR (dB), MSE }   : {  37.106,  37.096,  12.68929 }
+ U { PSNR (dB), cSNR (dB), MSE }   : {  41.127,  41.127,   5.01592 }
+ V { PSNR (dB), cSNR (dB), MSE }   : {  41.619,  41.619,   4.47862 }
 
- Total bits                        : 555440 (I 425376, P 0, B 129736 NVB 328) 
- Bit rate (kbit/s)  @ 30.00 Hz     : 5554.40
- Bits to avoid Startcode Emulation : 18 
- Bits for parameter sets           : 328 
+ Total bits                        : 165256 (I 130280, P 34656, NVB 320) 
+ Bit rate (kbit/s)  @ 60.00 Hz     : 4957.68
+ Bits to avoid Startcode Emulation : 19 
+ Bits for parameter sets           : 320 
  Bits for filler data              : 0 
 
 -------------------------------------------------------------------------------
@@ -364,83 +232,40 @@ Exit JM 18 (FRExt) encoder ver 18.6
 Setting Default Parameters...
 Parsing Configfile ../JM_bin/encoder_max_performance.cfg....................................................................................................................................................................................................................................................................................................................................................................................................................
 Parsing command line string 'Log2MaxFNumMinus4 = -1'.
-Parsing command line string 'InputFile = /home/grellert/origCfP/cropped/RaceHorses_832x448_30.yuv'.
-Parsing command line string 'SourceWidth = 832'.
-Parsing command line string 'SourceHeight = 448'.
-Parsing command line string 'FrameRate = 30'.
+Parsing command line string 'InputFile = /home/grellert/origCfP/cropped/BQSquare_384x192_60.yuv'.
+Parsing command line string 'SourceWidth = 384'.
+Parsing command line string 'SourceHeight = 192'.
+Parsing command line string 'FrameRate = 60'.
 Parsing command line string 'RDOptimization = 1'.
-Parsing command line string 'SearchRange = 64'.
-Parsing command line string 'PSliceSearch8x16 = 1'.
-Parsing command line string 'NumberReferenceFrames = 4'.
-Parsing command line string 'PSliceSearch4x8 = 1'.
-Parsing command line string 'BSliceSearch8x4 = 1'.
-Parsing command line string 'BReferencePictures = 2'.
-Parsing command line string 'BSliceSearch8x8 = 1'.
-Parsing command line string 'UseRDOQuant = 1'.
-Parsing command line string 'WeightedPrediction = 1'.
-Parsing command line string 'BiPredMESubPel = 2'.
-Parsing command line string 'BSliceSearch8x16 = 1'.
-Parsing command line string 'SearchMode = 3'.
-Parsing command line string 'EPZSPattern = 5'.
-Parsing command line string 'EPZSDualRefinement = 6'.
-Parsing command line string 'BiPredMERefinements = 1'.
-Parsing command line string 'PSliceSearch8x4 = 1'.
-Parsing command line string 'BSliceSearch16x16 = 1'.
-Parsing command line string 'MDDistortion = 2'.
-Parsing command line string 'MEDistortionHPel = 2'.
-Parsing command line string 'PSliceSearch8x8 = 1'.
-Parsing command line string 'ChromaMEEnable = 2'.
-Parsing command line string 'BSliceSearch16x8 = 1'.
-Parsing command line string 'EPZSSubPelMEBipred = 1'.
-Parsing command line string 'MEDistortionQPel = 2'.
-Parsing command line string 'PSliceSearch16x8 = 1'.
-Parsing command line string 'DisableSubpelME = 0'.
-Parsing command line string 'BiPredMotionEstimation = 1'.
-Parsing command line string 'RDOQ_Fast = 1'.
-Parsing command line string 'MEDistortionFPel = 1'.
-Parsing command line string 'RDOptimization = 1'.
-Parsing command line string 'WeightedBiprediction = 2'.
-Parsing command line string 'PSliceSearch16x16 = 1'.
-Parsing command line string 'PSliceSearch4x4 = 1'.
-Parsing command line string 'BiPredMESearchRange = 8'.
-Parsing command line string 'EPZSSubPelME = 1'.
+Parsing command line string 'SearchRange = 18'.
 Parsing command line string 'IntraPeriod = 30'.
-Parsing command line string 'FramesToBeEncoded = 3'.
+Parsing command line string 'FramesToBeEncoded = 2'.
 
 AdaptiveRounding is disabled when RDO Quantization is used
 ------------------------------- JM 18.6 (FRExt) -------------------------------
- Input YUV file                    : /home/grellert/origCfP/cropped/RaceHorses_832x448_30.yuv 
+ Input YUV file                    : /home/grellert/origCfP/cropped/BQSquare_384x192_60.yuv 
  Output H.264 bitstream            : test.264 
  Output YUV file                   : test_rec.yuv 
  YUV Format                        : YUV 4:2:0 
- Frames to be encoded              : 3
- Freq. for encoded bitstream       : 30.00
+ Frames to be encoded              : 2
+ Freq. for encoded bitstream       : 60.00
  PicInterlace / MbInterlace        : 0/0
  Transform8x8Mode                  : 1
- ME Metric for Refinement Level 0  : SSE
+ ME Metric for Refinement Level 0  : SAD
  ME Metric for Refinement Level 1  : Hadamard SAD
  ME Metric for Refinement Level 2  : Hadamard SAD
  Mode Decision Metric              : Hadamard SAD
  Motion Estimation for components  : Y
- Image format                      : 832x448 (832x448)
+ Image format                      : 384x192 (384x192)
  Error robustness                  : Off
- Search range                      : 64
- Total number of references        : 4
- References for P slices           : 4
- References for B slices (L0, L1)  : 4, 1
+ Search range                      : 18
+ Total number of references        : 5
+ References for P slices           : 5
+ References for B slices (L0, L1)  : 5, 1
  Sequence type                     : Hierarchy (QP: I 28, P 28, B 30) 
  Entropy coding method             : CABAC
  Profile/Level IDC                 : (100,40)
- Motion Estimation Scheme          : EPZS
- EPZS Pattern                      : PMVFAST
- EPZS Dual Pattern                 : PMVFAST
- EPZS Fixed Predictors             : Aggressive
- EPZS Aggressive Predictors        : Disabled
- EPZS Temporal Predictors          : Enabled
- EPZS Spatial Predictors           : Enabled
- EPZS Threshold Multipliers        : (1 0 2)
- EPZS Subpel ME                    : Basic
- EPZS Subpel ME BiPred             : Basic
+ Motion Estimation Scheme          : Fast Full Search
  Search range restrictions         : none
  RD-optimized mode decision        : used
  Data Partitioning Mode            : 1 partition 
@@ -448,36 +273,35 @@ AdaptiveRounding is disabled when RDO Quantization is used
 -------------------------------------------------------------------------------
 Frame     Bit/pic    QP   SnrY    SnrU    SnrV    Time(ms) MET(ms) Frm/Fld Ref  
 -------------------------------------------------------------------------------
-00000(NVB)     328 
-00000(IDR)  425376   27  38.842  40.074  40.972      3140       0    FRM    3
-00002( B )   92768   32  34.685  38.289  39.419     18020    7224    FRM    2
-00001( B )   36968   32  34.197  38.204  39.318     13827    5544    FRM    0
+00000(NVB)     320 
+00000(IDR)  130280   27  37.397  41.118  41.605       831       0    FRM    3
+00001( P )   34656   27  36.815  41.137  41.634      4907    1378    FRM    2
 -------------------------------------------------------------------------------
- Total Frames:  3 
+ Total Frames:  2 
  LeakyBucketRate File does not exist. Using rate calculated from avg. rate 
  Number Leaky Buckets: 8 
      Rmin     Bmin     Fmin 
-  5551110   425376   425376 
-  6938880   425376   425376 
-  8326650   425376   425376 
-  9714420   425376   425376 
- 11102190   425376   425376 
- 12489960   425376   425376 
- 13877730   425376   425376 
- 15265500   425376   425376 
+  4948080   130280   130280 
+  6185100   130280   130280 
+  7422120   130280   130280 
+  8659140   130280   130280 
+  9896160   130280   130280 
+ 11133180   130280   130280 
+ 12370200   130280   130280 
+ 13607220   130280   130280 
 ------------------ Average data all frames  -----------------------------------
 
- Total encoding time for the seq.  :  34.988 sec (0.09 fps)
- Total ME time for sequence        :  12.769 sec 
+ Total encoding time for the seq.  :   5.739 sec (0.35 fps)
+ Total ME time for sequence        :   1.378 sec 
 
- Y { PSNR (dB), cSNR (dB), MSE }   : {  35.908,  35.472,  18.44547 }
- U { PSNR (dB), cSNR (dB), MSE }   : {  38.856,  38.774,   8.62270 }
- V { PSNR (dB), cSNR (dB), MSE }   : {  39.903,  39.840,   6.74648 }
+ Y { PSNR (dB), cSNR (dB), MSE }   : {  37.106,  37.096,  12.68929 }
+ U { PSNR (dB), cSNR (dB), MSE }   : {  41.127,  41.127,   5.01592 }
+ V { PSNR (dB), cSNR (dB), MSE }   : {  41.619,  41.619,   4.47862 }
 
- Total bits                        : 555440 (I 425376, P 0, B 129736 NVB 328) 
- Bit rate (kbit/s)  @ 30.00 Hz     : 5554.40
- Bits to avoid Startcode Emulation : 18 
- Bits for parameter sets           : 328 
+ Total bits                        : 165256 (I 130280, P 34656, NVB 320) 
+ Bit rate (kbit/s)  @ 60.00 Hz     : 4957.68
+ Bits to avoid Startcode Emulation : 19 
+ Bits for parameter sets           : 320 
  Bits for filler data              : 0 
 
 -------------------------------------------------------------------------------
@@ -485,83 +309,40 @@ Exit JM 18 (FRExt) encoder ver 18.6
 Setting Default Parameters...
 Parsing Configfile ../JM_bin/encoder_max_performance.cfg....................................................................................................................................................................................................................................................................................................................................................................................................................
 Parsing command line string 'Log2MaxFNumMinus4 = -1'.
-Parsing command line string 'InputFile = /home/grellert/origCfP/cropped/RaceHorses_832x448_30.yuv'.
-Parsing command line string 'SourceWidth = 832'.
-Parsing command line string 'SourceHeight = 448'.
-Parsing command line string 'FrameRate = 30'.
+Parsing command line string 'InputFile = /home/grellert/origCfP/cropped/BlowingBubbles_384x192_50.yuv'.
+Parsing command line string 'SourceWidth = 384'.
+Parsing command line string 'SourceHeight = 192'.
+Parsing command line string 'FrameRate = 50'.
 Parsing command line string 'RDOptimization = 1'.
-Parsing command line string 'SearchRange = 32'.
-Parsing command line string 'PSliceSearch8x16 = 1'.
-Parsing command line string 'NumberReferenceFrames = 4'.
-Parsing command line string 'PSliceSearch4x8 = 1'.
-Parsing command line string 'BSliceSearch8x4 = 1'.
-Parsing command line string 'BReferencePictures = 2'.
-Parsing command line string 'BSliceSearch8x8 = 1'.
-Parsing command line string 'UseRDOQuant = 1'.
-Parsing command line string 'WeightedPrediction = 1'.
-Parsing command line string 'BiPredMESubPel = 2'.
-Parsing command line string 'BSliceSearch8x16 = 1'.
-Parsing command line string 'SearchMode = 3'.
-Parsing command line string 'EPZSPattern = 5'.
-Parsing command line string 'EPZSDualRefinement = 6'.
-Parsing command line string 'BiPredMERefinements = 1'.
-Parsing command line string 'PSliceSearch8x4 = 1'.
-Parsing command line string 'BSliceSearch16x16 = 1'.
-Parsing command line string 'MDDistortion = 2'.
-Parsing command line string 'MEDistortionHPel = 2'.
-Parsing command line string 'PSliceSearch8x8 = 1'.
-Parsing command line string 'ChromaMEEnable = 2'.
-Parsing command line string 'BSliceSearch16x8 = 1'.
-Parsing command line string 'EPZSSubPelMEBipred = 1'.
-Parsing command line string 'MEDistortionQPel = 2'.
-Parsing command line string 'PSliceSearch16x8 = 1'.
-Parsing command line string 'DisableSubpelME = 0'.
-Parsing command line string 'BiPredMotionEstimation = 1'.
-Parsing command line string 'RDOQ_Fast = 1'.
-Parsing command line string 'MEDistortionFPel = 1'.
-Parsing command line string 'RDOptimization = 1'.
-Parsing command line string 'WeightedBiprediction = 2'.
-Parsing command line string 'PSliceSearch16x16 = 1'.
-Parsing command line string 'PSliceSearch4x4 = 1'.
-Parsing command line string 'BiPredMESearchRange = 8'.
-Parsing command line string 'EPZSSubPelME = 1'.
+Parsing command line string 'SearchRange = 16'.
 Parsing command line string 'IntraPeriod = 30'.
-Parsing command line string 'FramesToBeEncoded = 3'.
+Parsing command line string 'FramesToBeEncoded = 2'.
 
 AdaptiveRounding is disabled when RDO Quantization is used
 ------------------------------- JM 18.6 (FRExt) -------------------------------
- Input YUV file                    : /home/grellert/origCfP/cropped/RaceHorses_832x448_30.yuv 
+ Input YUV file                    : /home/grellert/origCfP/cropped/BlowingBubbles_384x192_50.yuv 
  Output H.264 bitstream            : test.264 
  Output YUV file                   : test_rec.yuv 
  YUV Format                        : YUV 4:2:0 
- Frames to be encoded              : 3
- Freq. for encoded bitstream       : 30.00
+ Frames to be encoded              : 2
+ Freq. for encoded bitstream       : 50.00
  PicInterlace / MbInterlace        : 0/0
  Transform8x8Mode                  : 1
- ME Metric for Refinement Level 0  : SSE
+ ME Metric for Refinement Level 0  : SAD
  ME Metric for Refinement Level 1  : Hadamard SAD
  ME Metric for Refinement Level 2  : Hadamard SAD
  Mode Decision Metric              : Hadamard SAD
  Motion Estimation for components  : Y
- Image format                      : 832x448 (832x448)
+ Image format                      : 384x192 (384x192)
  Error robustness                  : Off
- Search range                      : 32
- Total number of references        : 4
- References for P slices           : 4
- References for B slices (L0, L1)  : 4, 1
+ Search range                      : 16
+ Total number of references        : 5
+ References for P slices           : 5
+ References for B slices (L0, L1)  : 5, 1
  Sequence type                     : Hierarchy (QP: I 28, P 28, B 30) 
  Entropy coding method             : CABAC
  Profile/Level IDC                 : (100,40)
- Motion Estimation Scheme          : EPZS
- EPZS Pattern                      : PMVFAST
- EPZS Dual Pattern                 : PMVFAST
- EPZS Fixed Predictors             : Aggressive
- EPZS Aggressive Predictors        : Disabled
- EPZS Temporal Predictors          : Enabled
- EPZS Spatial Predictors           : Enabled
- EPZS Threshold Multipliers        : (1 0 2)
- EPZS Subpel ME                    : Basic
- EPZS Subpel ME BiPred             : Basic
+ Motion Estimation Scheme          : Fast Full Search
  Search range restrictions         : none
  RD-optimized mode decision        : used
  Data Partitioning Mode            : 1 partition 
@@ -569,36 +350,35 @@ AdaptiveRounding is disabled when RDO Quantization is used
 -------------------------------------------------------------------------------
 Frame     Bit/pic    QP   SnrY    SnrU    SnrV    Time(ms) MET(ms) Frm/Fld Ref  
 -------------------------------------------------------------------------------
-00000(NVB)     328 
-00000(IDR)  425376   27  38.842  40.074  40.972      3146       0    FRM    3
-00002( B )   92424   32  34.672  38.228  39.394     18007    7106    FRM    2
-00001( B )   35960   33  34.165  38.196  39.276     13498    5315    FRM    0
+00000(NVB)     320 
+00000(IDR)   97560   26  37.557  39.585  41.355       768       0    FRM    3
+00001( P )   19832   27  36.818  39.409  41.259      4370    1177    FRM    2
 -------------------------------------------------------------------------------
- Total Frames:  3 
+ Total Frames:  2 
  LeakyBucketRate File does not exist. Using rate calculated from avg. rate 
  Number Leaky Buckets: 8 
      Rmin     Bmin     Fmin 
-  5537580   425376   425376 
-  6921960   425376   425376 
-  8306340   425376   425376 
-  9690720   425376   425376 
- 11075100   425376   425376 
- 12459480   425376   425376 
- 13843860   425376   425376 
- 15228240   425376   425376 
+  2934800    97560    97560 
+  3668500    97560    97560 
+  4402200    97560    97560 
+  5135900    97560    97560 
+  5869600    97560    97560 
+  6603300    97560    97560 
+  7337000    97560    97560 
+  8070700    97560    97560 
 ------------------ Average data all frames  -----------------------------------
 
- Total encoding time for the seq.  :  34.653 sec (0.09 fps)
- Total ME time for sequence        :  12.421 sec 
+ Total encoding time for the seq.  :   5.139 sec (0.39 fps)
+ Total ME time for sequence        :   1.177 sec 
 
- Y { PSNR (dB), cSNR (dB), MSE }   : {  35.893,  35.452,  18.52922 }
- U { PSNR (dB), cSNR (dB), MSE }   : {  38.833,  38.748,   8.67433 }
- V { PSNR (dB), cSNR (dB), MSE }   : {  39.881,  39.815,   6.78583 }
+ Y { PSNR (dB), cSNR (dB), MSE }   : {  37.187,  37.172,  12.47155 }
+ U { PSNR (dB), cSNR (dB), MSE }   : {  39.497,  39.496,   7.30208 }
+ V { PSNR (dB), cSNR (dB), MSE }   : {  41.307,  41.307,   4.81293 }
 
- Total bits                        : 554088 (I 425376, P 0, B 128384 NVB 328) 
- Bit rate (kbit/s)  @ 30.00 Hz     : 5540.88
- Bits to avoid Startcode Emulation : 18 
- Bits for parameter sets           : 328 
+ Total bits                        : 117712 (I 97560, P 19832, NVB 320) 
+ Bit rate (kbit/s)  @ 50.00 Hz     : 2942.80
+ Bits to avoid Startcode Emulation : 17 
+ Bits for parameter sets           : 320 
  Bits for filler data              : 0 
 
 -------------------------------------------------------------------------------
@@ -606,83 +386,40 @@ Exit JM 18 (FRExt) encoder ver 18.6
 Setting Default Parameters...
 Parsing Configfile ../JM_bin/encoder_max_performance.cfg....................................................................................................................................................................................................................................................................................................................................................................................................................
 Parsing command line string 'Log2MaxFNumMinus4 = -1'.
-Parsing command line string 'InputFile = /home/grellert/origCfP/cropped/RaceHorses_832x448_30.yuv'.
-Parsing command line string 'SourceWidth = 832'.
-Parsing command line string 'SourceHeight = 448'.
-Parsing command line string 'FrameRate = 30'.
+Parsing command line string 'InputFile = /home/grellert/origCfP/cropped/BlowingBubbles_384x192_50.yuv'.
+Parsing command line string 'SourceWidth = 384'.
+Parsing command line string 'SourceHeight = 192'.
+Parsing command line string 'FrameRate = 50'.
 Parsing command line string 'RDOptimization = 1'.
-Parsing command line string 'SearchRange = 32'.
-Parsing command line string 'PSliceSearch8x16 = 1'.
-Parsing command line string 'NumberReferenceFrames = 4'.
-Parsing command line string 'PSliceSearch4x8 = 1'.
-Parsing command line string 'BSliceSearch8x4 = 1'.
-Parsing command line string 'BReferencePictures = 2'.
-Parsing command line string 'BSliceSearch8x8 = 1'.
-Parsing command line string 'UseRDOQuant = 1'.
-Parsing command line string 'WeightedPrediction = 1'.
-Parsing command line string 'BiPredMESubPel = 2'.
-Parsing command line string 'BSliceSearch8x16 = 1'.
-Parsing command line string 'SearchMode = 3'.
-Parsing command line string 'EPZSPattern = 5'.
-Parsing command line string 'EPZSDualRefinement = 6'.
-Parsing command line string 'BiPredMERefinements = 1'.
-Parsing command line string 'PSliceSearch8x4 = 1'.
-Parsing command line string 'BSliceSearch16x16 = 1'.
-Parsing command line string 'MDDistortion = 2'.
-Parsing command line string 'MEDistortionHPel = 2'.
-Parsing command line string 'PSliceSearch8x8 = 1'.
-Parsing command line string 'ChromaMEEnable = 2'.
-Parsing command line string 'BSliceSearch16x8 = 1'.
-Parsing command line string 'EPZSSubPelMEBipred = 1'.
-Parsing command line string 'MEDistortionQPel = 2'.
-Parsing command line string 'PSliceSearch16x8 = 1'.
-Parsing command line string 'DisableSubpelME = 0'.
-Parsing command line string 'BiPredMotionEstimation = 1'.
-Parsing command line string 'RDOQ_Fast = 1'.
-Parsing command line string 'MEDistortionFPel = 1'.
-Parsing command line string 'RDOptimization = 1'.
-Parsing command line string 'WeightedBiprediction = 2'.
-Parsing command line string 'PSliceSearch16x16 = 1'.
-Parsing command line string 'PSliceSearch4x4 = 1'.
-Parsing command line string 'BiPredMESearchRange = 8'.
-Parsing command line string 'EPZSSubPelME = 1'.
+Parsing command line string 'SearchRange = 16'.
 Parsing command line string 'IntraPeriod = 30'.
-Parsing command line string 'FramesToBeEncoded = 3'.
+Parsing command line string 'FramesToBeEncoded = 2'.
 
 AdaptiveRounding is disabled when RDO Quantization is used
 ------------------------------- JM 18.6 (FRExt) -------------------------------
- Input YUV file                    : /home/grellert/origCfP/cropped/RaceHorses_832x448_30.yuv 
+ Input YUV file                    : /home/grellert/origCfP/cropped/BlowingBubbles_384x192_50.yuv 
  Output H.264 bitstream            : test.264 
  Output YUV file                   : test_rec.yuv 
  YUV Format                        : YUV 4:2:0 
- Frames to be encoded              : 3
- Freq. for encoded bitstream       : 30.00
+ Frames to be encoded              : 2
+ Freq. for encoded bitstream       : 50.00
  PicInterlace / MbInterlace        : 0/0
  Transform8x8Mode                  : 1
- ME Metric for Refinement Level 0  : SSE
+ ME Metric for Refinement Level 0  : SAD
  ME Metric for Refinement Level 1  : Hadamard SAD
  ME Metric for Refinement Level 2  : Hadamard SAD
  Mode Decision Metric              : Hadamard SAD
  Motion Estimation for components  : Y
- Image format                      : 832x448 (832x448)
+ Image format                      : 384x192 (384x192)
  Error robustness                  : Off
- Search range                      : 32
- Total number of references        : 4
- References for P slices           : 4
- References for B slices (L0, L1)  : 4, 1
+ Search range                      : 16
+ Total number of references        : 5
+ References for P slices           : 5
+ References for B slices (L0, L1)  : 5, 1
  Sequence type                     : Hierarchy (QP: I 28, P 28, B 30) 
  Entropy coding method             : CABAC
  Profile/Level IDC                 : (100,40)
- Motion Estimation Scheme          : EPZS
- EPZS Pattern                      : PMVFAST
- EPZS Dual Pattern                 : PMVFAST
- EPZS Fixed Predictors             : Aggressive
- EPZS Aggressive Predictors        : Disabled
- EPZS Temporal Predictors          : Enabled
- EPZS Spatial Predictors           : Enabled
- EPZS Threshold Multipliers        : (1 0 2)
- EPZS Subpel ME                    : Basic
- EPZS Subpel ME BiPred             : Basic
+ Motion Estimation Scheme          : Fast Full Search
  Search range restrictions         : none
  RD-optimized mode decision        : used
  Data Partitioning Mode            : 1 partition 
@@ -690,36 +427,35 @@ AdaptiveRounding is disabled when RDO Quantization is used
 -------------------------------------------------------------------------------
 Frame     Bit/pic    QP   SnrY    SnrU    SnrV    Time(ms) MET(ms) Frm/Fld Ref  
 -------------------------------------------------------------------------------
-00000(NVB)     328 
-00000(IDR)  425376   27  38.842  40.074  40.972      3147       0    FRM    3
-00002( B )   92424   32  34.672  38.228  39.394     17993    7073    FRM    2
-00001( B )   35960   33  34.165  38.196  39.276     13753    5464    FRM    0
+00000(NVB)     320 
+00000(IDR)   97560   26  37.557  39.585  41.355       803       0    FRM    3
+00001( P )   19832   27  36.818  39.409  41.259      4381    1178    FRM    2
 -------------------------------------------------------------------------------
- Total Frames:  3 
+ Total Frames:  2 
  LeakyBucketRate File does not exist. Using rate calculated from avg. rate 
  Number Leaky Buckets: 8 
      Rmin     Bmin     Fmin 
-  5537580   425376   425376 
-  6921960   425376   425376 
-  8306340   425376   425376 
-  9690720   425376   425376 
- 11075100   425376   425376 
- 12459480   425376   425376 
- 13843860   425376   425376 
- 15228240   425376   425376 
+  2934800    97560    97560 
+  3668500    97560    97560 
+  4402200    97560    97560 
+  5135900    97560    97560 
+  5869600    97560    97560 
+  6603300    97560    97560 
+  7337000    97560    97560 
+  8070700    97560    97560 
 ------------------ Average data all frames  -----------------------------------
 
- Total encoding time for the seq.  :  34.894 sec (0.09 fps)
- Total ME time for sequence        :  12.537 sec 
+ Total encoding time for the seq.  :   5.185 sec (0.39 fps)
+ Total ME time for sequence        :   1.178 sec 
 
- Y { PSNR (dB), cSNR (dB), MSE }   : {  35.893,  35.452,  18.52922 }
- U { PSNR (dB), cSNR (dB), MSE }   : {  38.833,  38.748,   8.67433 }
- V { PSNR (dB), cSNR (dB), MSE }   : {  39.881,  39.815,   6.78583 }
+ Y { PSNR (dB), cSNR (dB), MSE }   : {  37.187,  37.172,  12.47155 }
+ U { PSNR (dB), cSNR (dB), MSE }   : {  39.497,  39.496,   7.30208 }
+ V { PSNR (dB), cSNR (dB), MSE }   : {  41.307,  41.307,   4.81293 }
 
- Total bits                        : 554088 (I 425376, P 0, B 128384 NVB 328) 
- Bit rate (kbit/s)  @ 30.00 Hz     : 5540.88
- Bits to avoid Startcode Emulation : 18 
- Bits for parameter sets           : 328 
+ Total bits                        : 117712 (I 97560, P 19832, NVB 320) 
+ Bit rate (kbit/s)  @ 50.00 Hz     : 2942.80
+ Bits to avoid Startcode Emulation : 17 
+ Bits for parameter sets           : 320 
  Bits for filler data              : 0 
 
 -------------------------------------------------------------------------------
@@ -727,83 +463,40 @@ Exit JM 18 (FRExt) encoder ver 18.6
 Setting Default Parameters...
 Parsing Configfile ../JM_bin/encoder_max_performance.cfg....................................................................................................................................................................................................................................................................................................................................................................................................................
 Parsing command line string 'Log2MaxFNumMinus4 = -1'.
-Parsing command line string 'InputFile = /home/grellert/origCfP/cropped/RaceHorses_832x448_30.yuv'.
-Parsing command line string 'SourceWidth = 832'.
-Parsing command line string 'SourceHeight = 448'.
-Parsing command line string 'FrameRate = 30'.
+Parsing command line string 'InputFile = /home/grellert/origCfP/cropped/BQSquare_384x192_60.yuv'.
+Parsing command line string 'SourceWidth = 384'.
+Parsing command line string 'SourceHeight = 192'.
+Parsing command line string 'FrameRate = 60'.
 Parsing command line string 'RDOptimization = 1'.
-Parsing command line string 'SearchRange = 32'.
-Parsing command line string 'PSliceSearch8x16 = 1'.
-Parsing command line string 'NumberReferenceFrames = 4'.
-Parsing command line string 'PSliceSearch4x8 = 1'.
-Parsing command line string 'BSliceSearch8x4 = 1'.
-Parsing command line string 'BReferencePictures = 2'.
-Parsing command line string 'BSliceSearch8x8 = 1'.
-Parsing command line string 'UseRDOQuant = 1'.
-Parsing command line string 'WeightedPrediction = 1'.
-Parsing command line string 'BiPredMESubPel = 2'.
-Parsing command line string 'BSliceSearch8x16 = 1'.
-Parsing command line string 'SearchMode = 3'.
-Parsing command line string 'EPZSPattern = 5'.
-Parsing command line string 'EPZSDualRefinement = 6'.
-Parsing command line string 'BiPredMERefinements = 1'.
-Parsing command line string 'PSliceSearch8x4 = 1'.
-Parsing command line string 'BSliceSearch16x16 = 1'.
-Parsing command line string 'MDDistortion = 2'.
-Parsing command line string 'MEDistortionHPel = 2'.
-Parsing command line string 'PSliceSearch8x8 = 1'.
-Parsing command line string 'ChromaMEEnable = 2'.
-Parsing command line string 'BSliceSearch16x8 = 1'.
-Parsing command line string 'EPZSSubPelMEBipred = 1'.
-Parsing command line string 'MEDistortionQPel = 2'.
-Parsing command line string 'PSliceSearch16x8 = 1'.
-Parsing command line string 'DisableSubpelME = 0'.
-Parsing command line string 'BiPredMotionEstimation = 1'.
-Parsing command line string 'RDOQ_Fast = 1'.
-Parsing command line string 'MEDistortionFPel = 1'.
-Parsing command line string 'RDOptimization = 1'.
-Parsing command line string 'WeightedBiprediction = 2'.
-Parsing command line string 'PSliceSearch16x16 = 1'.
-Parsing command line string 'PSliceSearch4x4 = 1'.
-Parsing command line string 'BiPredMESearchRange = 8'.
-Parsing command line string 'EPZSSubPelME = 1'.
+Parsing command line string 'SearchRange = 16'.
 Parsing command line string 'IntraPeriod = 30'.
-Parsing command line string 'FramesToBeEncoded = 3'.
+Parsing command line string 'FramesToBeEncoded = 2'.
 
 AdaptiveRounding is disabled when RDO Quantization is used
 ------------------------------- JM 18.6 (FRExt) -------------------------------
- Input YUV file                    : /home/grellert/origCfP/cropped/RaceHorses_832x448_30.yuv 
+ Input YUV file                    : /home/grellert/origCfP/cropped/BQSquare_384x192_60.yuv 
  Output H.264 bitstream            : test.264 
  Output YUV file                   : test_rec.yuv 
  YUV Format                        : YUV 4:2:0 
- Frames to be encoded              : 3
- Freq. for encoded bitstream       : 30.00
+ Frames to be encoded              : 2
+ Freq. for encoded bitstream       : 60.00
  PicInterlace / MbInterlace        : 0/0
  Transform8x8Mode                  : 1
- ME Metric for Refinement Level 0  : SSE
+ ME Metric for Refinement Level 0  : SAD
  ME Metric for Refinement Level 1  : Hadamard SAD
  ME Metric for Refinement Level 2  : Hadamard SAD
  Mode Decision Metric              : Hadamard SAD
  Motion Estimation for components  : Y
- Image format                      : 832x448 (832x448)
+ Image format                      : 384x192 (384x192)
  Error robustness                  : Off
- Search range                      : 32
- Total number of references        : 4
- References for P slices           : 4
- References for B slices (L0, L1)  : 4, 1
+ Search range                      : 16
+ Total number of references        : 5
+ References for P slices           : 5
+ References for B slices (L0, L1)  : 5, 1
  Sequence type                     : Hierarchy (QP: I 28, P 28, B 30) 
  Entropy coding method             : CABAC
  Profile/Level IDC                 : (100,40)
- Motion Estimation Scheme          : EPZS
- EPZS Pattern                      : PMVFAST
- EPZS Dual Pattern                 : PMVFAST
- EPZS Fixed Predictors             : Aggressive
- EPZS Aggressive Predictors        : Disabled
- EPZS Temporal Predictors          : Enabled
- EPZS Spatial Predictors           : Enabled
- EPZS Threshold Multipliers        : (1 0 2)
- EPZS Subpel ME                    : Basic
- EPZS Subpel ME BiPred             : Basic
+ Motion Estimation Scheme          : Fast Full Search
  Search range restrictions         : none
  RD-optimized mode decision        : used
  Data Partitioning Mode            : 1 partition 
@@ -811,36 +504,112 @@ AdaptiveRounding is disabled when RDO Quantization is used
 -------------------------------------------------------------------------------
 Frame     Bit/pic    QP   SnrY    SnrU    SnrV    Time(ms) MET(ms) Frm/Fld Ref  
 -------------------------------------------------------------------------------
-00000(NVB)     328 
-00000(IDR)  425376   27  38.842  40.074  40.972      3200       0    FRM    3
-00002( B )   92424   32  34.672  38.228  39.394     17625    6890    FRM    2
-00001( B )   35960   33  34.165  38.196  39.276     13748    5469    FRM    0
+00000(NVB)     320 
+00000(IDR)  130280   27  37.397  41.118  41.605       839       0    FRM    3
+00001( P )   34552   27  36.809  41.144  41.626      4691    1183    FRM    2
 -------------------------------------------------------------------------------
- Total Frames:  3 
+ Total Frames:  2 
  LeakyBucketRate File does not exist. Using rate calculated from avg. rate 
  Number Leaky Buckets: 8 
      Rmin     Bmin     Fmin 
-  5537580   425376   425376 
-  6921960   425376   425376 
-  8306340   425376   425376 
-  9690720   425376   425376 
- 11075100   425376   425376 
- 12459480   425376   425376 
- 13843860   425376   425376 
- 15228240   425376   425376 
+  4944960   130280   130280 
+  6181200   130280   130280 
+  7417440   130280   130280 
+  8653680   130280   130280 
+  9889920   130280   130280 
+ 11126160   130280   130280 
+ 12362400   130280   130280 
+ 13598640   130280   130280 
 ------------------ Average data all frames  -----------------------------------
 
- Total encoding time for the seq.  :  34.574 sec (0.09 fps)
- Total ME time for sequence        :  12.360 sec 
+ Total encoding time for the seq.  :   5.530 sec (0.36 fps)
+ Total ME time for sequence        :   1.183 sec 
 
- Y { PSNR (dB), cSNR (dB), MSE }   : {  35.893,  35.452,  18.52922 }
- U { PSNR (dB), cSNR (dB), MSE }   : {  38.833,  38.748,   8.67433 }
- V { PSNR (dB), cSNR (dB), MSE }   : {  39.881,  39.815,   6.78583 }
+ Y { PSNR (dB), cSNR (dB), MSE }   : {  37.103,  37.093,  12.69876 }
+ U { PSNR (dB), cSNR (dB), MSE }   : {  41.131,  41.131,   5.01164 }
+ V { PSNR (dB), cSNR (dB), MSE }   : {  41.616,  41.616,   4.48250 }
 
- Total bits                        : 554088 (I 425376, P 0, B 128384 NVB 328) 
- Bit rate (kbit/s)  @ 30.00 Hz     : 5540.88
- Bits to avoid Startcode Emulation : 18 
- Bits for parameter sets           : 328 
+ Total bits                        : 165152 (I 130280, P 34552, NVB 320) 
+ Bit rate (kbit/s)  @ 60.00 Hz     : 4954.56
+ Bits to avoid Startcode Emulation : 12 
+ Bits for parameter sets           : 320 
+ Bits for filler data              : 0 
+
+-------------------------------------------------------------------------------
+Exit JM 18 (FRExt) encoder ver 18.6 
+Setting Default Parameters...
+Parsing Configfile ../JM_bin/encoder_max_performance.cfg....................................................................................................................................................................................................................................................................................................................................................................................................................
+Parsing command line string 'Log2MaxFNumMinus4 = -1'.
+Parsing command line string 'InputFile = /home/grellert/origCfP/cropped/BQSquare_384x192_60.yuv'.
+Parsing command line string 'SourceWidth = 384'.
+Parsing command line string 'SourceHeight = 192'.
+Parsing command line string 'FrameRate = 60'.
+Parsing command line string 'RDOptimization = 1'.
+Parsing command line string 'SearchRange = 16'.
+Parsing command line string 'IntraPeriod = 30'.
+Parsing command line string 'FramesToBeEncoded = 2'.
+
+AdaptiveRounding is disabled when RDO Quantization is used
+------------------------------- JM 18.6 (FRExt) -------------------------------
+ Input YUV file                    : /home/grellert/origCfP/cropped/BQSquare_384x192_60.yuv 
+ Output H.264 bitstream            : test.264 
+ Output YUV file                   : test_rec.yuv 
+ YUV Format                        : YUV 4:2:0 
+ Frames to be encoded              : 2
+ Freq. for encoded bitstream       : 60.00
+ PicInterlace / MbInterlace        : 0/0
+ Transform8x8Mode                  : 1
+ ME Metric for Refinement Level 0  : SAD
+ ME Metric for Refinement Level 1  : Hadamard SAD
+ ME Metric for Refinement Level 2  : Hadamard SAD
+ Mode Decision Metric              : Hadamard SAD
+ Motion Estimation for components  : Y
+ Image format                      : 384x192 (384x192)
+ Error robustness                  : Off
+ Search range                      : 16
+ Total number of references        : 5
+ References for P slices           : 5
+ References for B slices (L0, L1)  : 5, 1
+ Sequence type                     : Hierarchy (QP: I 28, P 28, B 30) 
+ Entropy coding method             : CABAC
+ Profile/Level IDC                 : (100,40)
+ Motion Estimation Scheme          : Fast Full Search
+ Search range restrictions         : none
+ RD-optimized mode decision        : used
+ Data Partitioning Mode            : 1 partition 
+ Output File Format                : H.264/AVC Annex B Byte Stream Format 
+-------------------------------------------------------------------------------
+Frame     Bit/pic    QP   SnrY    SnrU    SnrV    Time(ms) MET(ms) Frm/Fld Ref  
+-------------------------------------------------------------------------------
+00000(NVB)     320 
+00000(IDR)  130280   27  37.397  41.118  41.605       834       0    FRM    3
+00001( P )   34552   27  36.809  41.144  41.626      4668    1175    FRM    2
+-------------------------------------------------------------------------------
+ Total Frames:  2 
+ LeakyBucketRate File does not exist. Using rate calculated from avg. rate 
+ Number Leaky Buckets: 8 
+     Rmin     Bmin     Fmin 
+  4944960   130280   130280 
+  6181200   130280   130280 
+  7417440   130280   130280 
+  8653680   130280   130280 
+  9889920   130280   130280 
+ 11126160   130280   130280 
+ 12362400   130280   130280 
+ 13598640   130280   130280 
+------------------ Average data all frames  -----------------------------------
+
+ Total encoding time for the seq.  :   5.503 sec (0.36 fps)
+ Total ME time for sequence        :   1.175 sec 
+
+ Y { PSNR (dB), cSNR (dB), MSE }   : {  37.103,  37.093,  12.69876 }
+ U { PSNR (dB), cSNR (dB), MSE }   : {  41.131,  41.131,   5.01164 }
+ V { PSNR (dB), cSNR (dB), MSE }   : {  41.616,  41.616,   4.48250 }
+
+ Total bits                        : 165152 (I 130280, P 34552, NVB 320) 
+ Bit rate (kbit/s)  @ 60.00 Hz     : 4954.56
+ Bits to avoid Startcode Emulation : 12 
+ Bits for parameter sets           : 320 
  Bits for filler data              : 0 
 
 -------------------------------------------------------------------------------

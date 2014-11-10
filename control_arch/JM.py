@@ -1,20 +1,25 @@
 import os
 import operator
 import math
+import re
 
 class App:
-	def __init__(self, valgrind = False):
+	def __init__(self, valgrind = False, BDRate = False):
 		if valgrind:
 			self.App = 'valgrind --tool=cachegrind --log-file=valgrind.out ../JM/lencod.exe'
 		else:
 			self.App = '../JM_bin/lencod.exe '
 		self.name = 'JM'
 		self.valgrind = valgrind
-		self.period = 3
+		self.BDRate = BDRate
 		self.numSteps = 300
 		self.initConfig = '-d ../JM_bin/encoder_max_performance.cfg '
-		self.QPs = ['22','27','32','37']
-		self.makeBDRateFile()
+
+		if self.BDRate:
+			self.QPs = ['30','35']
+			self.makeBDRateFile()
+		else:
+			self.QPs = ['32']
 
 	def makeBDRateFile(self):
 		self.BDRateFile = open(self.name+'_QPWise_Values.csv','w')
@@ -28,22 +33,23 @@ class App:
 		inp = inp.split()
 		
 		for qp in self.QPs:
-
-			line = self.App + ' ' + self.initConfig + '-p Log2MaxFNumMinus4=-1 -p InputFile=/home/grellert/origCfP/cropped/' + inp[0] + ' -p SourceWidth=' + inp[1] + ' -p SourceHeight=' + inp[2] + ' -p FrameRate=' + inp[3] + ' -p RDOptimization=1' + ' ' + ' '.join(cfg)
+			line = self.App + ' ' + self.initConfig + '-p Log2MaxFNumMinus4=-1 -p InputFile=/home/grellert/origCfP/cropped/' + inp[0]
+			line += ' -p SourceWidth=' + inp[1] + ' -p SourceHeight=' + inp[2] + ' -p FrameRate=' + inp[3] + ' -p RDOptimization=1' + ' ' + ' '.join(cfg)
 			line += ' -p IntraPeriod=30 -p FramesToBeEncoded=' + str(period)
 			line += ' > JM_out.txt 2> JM_warn.txt'
+			
+			os.system('echo \"' + line + '\" >> cmd_line.log')
 			os.system(line)
-			os.system('cat JM_out.txt >> JM_out.log')
-			os.system('cat JM_warn.txt >> JM_warn.log')
-			out = self.parseOutput()
+			os.system('cat JM_out.txt >> JM_out.log; cat JM_warn.txt >> JM_warn.log')
+			
+			out = self.parseOutput(qp)
 			for i in range(len(out)):
 				avg[i] += out[i]
-			self.printBDRateFile(out, qp)
-		#self.stepsTaken += period
+
 		return [float(x)/len(self.QPs) for x in avg]
 
 		
-	def parseOutput(self,start=False):
+	def parseOutput(self, qp):
 		f = open('JM_out.txt','r')
 		count = 0
 		psnr_count = False
@@ -60,6 +66,9 @@ class App:
 			elif 'Bit rate' in l:
 				bitrate = float(l.split()[7])
 		
+		if self.BDRate:
+			self.printBDRateFile([bitrate, y_psnr, u_psnr,v_psnr,time],qp)
+
 		psnr = (4*y_psnr+u_psnr+v_psnr)/6.0
 		if self.valgrind:
 			valg = open('valgrind.out','r')
@@ -86,23 +95,8 @@ class App:
 
 	def printBDRateFile(self,tupl, qp):
 		self.BDRateFile = open(self.name+'_QPWise_Values.csv','a')
-		f = open('JM_out.txt','r')
-		count = 0
-		psnr_count = False
-
-		for l in (f.readlines()):
-			if 'Total encoding time' in l:
-				time = (l.split()[7]).strip('\n')
-			elif 'Y { PSNR' in l:
-				y_psnr = (l.split()[10].strip(',')).strip('\n')
-			elif 'U { PSNR' in l:
-				u_psnr = (l.split()[10].strip(',')).strip('\n')
-			elif 'V { PSNR' in l:
-				v_psnr = (l.split()[10].strip(',')).strip('\n')
-			elif 'Bit rate' in l:
-				bitrate = (l.split()[7]).strip('\n')
 		
-		print >> self.BDRateFile, '\t'.join([bitrate, y_psnr, u_psnr, v_psnr,time]),'\t\t',
+		print >> self.BDRateFile, '\t'.join([str(x) for x in tupl]),'\t\t',
 
 		if qp == self.QPs[-1]:
 			print >> self.BDRateFile,'\n'

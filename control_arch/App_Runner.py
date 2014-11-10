@@ -13,21 +13,32 @@ class App_Runner:
 		self.paramSkip = 0
 		self.lastSwitch = ''
 
-		self.cfgVector = []
-		self.switchVector = []
-		self.outputVector = []
-		self.sensitivityVector = []
+
+
 		self.inputVet = []
 
 		module = importlib.import_module(mod)
-		self.App = module.App(valgrind)
+		self.App = module.App(valgrind, True)
 		self.outputCsv = open(self.App.name+'_Results.csv','w')
 		self.outputCsv.close()
 
 		self.buildParamTable()
 		self.makeInputVector()
+		self.preparateTempFiles()
 		#self.Controller = gc.Genetic_Controller(self.paramTable, self.App)
 
+
+
+	def preparateTempFiles(self):
+		cfgFile = open('AppRunner_cfg','w')
+		switchFile = open('AppRunner_switch','w')
+		outputFile = open('AppRunner_output','w')
+		sensitivityFile = open('AppRunner_sense','w')
+
+		cfgFile.close()
+		switchFile.close()
+		outputFile.close()
+		sensitivityFile.close()
 
 
 
@@ -91,7 +102,6 @@ class App_Runner:
 
 	def sensitivityAnalysis(self, period, mode):
 
-		out_tuple = []
 		self.lastSwitch = 'c0'
 		cfg = self.buildFirstConfig()
 		ref_tuple = []
@@ -113,15 +123,32 @@ class App_Runner:
 				if (self.lastSwitch == 'c0' or mode == 'cumulative'): # update reference results if first run or if cumulative analysis
 					ref_tuple[i] = output
 
-			self.outputVector.append(output_tuple)
-			self.sensitivityVector.append(sense_tuple)
+			self.saveTempResults(output_tuple, sense_tuple, cfg)
 
-			self.cfgVector.append(' '.join(cfg))
-			self.switchVector.append(self.lastSwitch)
 			
 			cfg = self.switchSingleParam(cfg, mode)
 
 		self.printOutput()
+
+
+
+	def saveTempResults(self, output_tuple, sense_tuple, cfg):
+		cfgFile = open('AppRunner_cfg','a')
+		switchFile = open('AppRunner_switch','a')
+		outputFile = open('AppRunner_output','a')
+		sensitivityFile = open('AppRunner_sense','a')
+
+
+		print >> outputFile, ';'.join([(','.join([str(y) for y in x])) for x in output_tuple])
+		print >> sensitivityFile, ';'.join([(','.join([str(y) for y in x])) for x in sense_tuple])
+		
+		print >> cfgFile, ' '.join(cfg)
+		print >> switchFile, self.lastSwitch
+
+		cfgFile.close()
+		switchFile.close()
+		outputFile.close()
+		sensitivityFile.close()
 
 
 
@@ -146,6 +173,8 @@ class App_Runner:
 			actual = float(output[target_idx])
 			control.updateFitness((actual-SP)*(actual-SP))
 			print '\t', SP, '\t', actual
+
+
 
 	def switchSingleParam(self,cfg, mode):
 
@@ -189,7 +218,9 @@ class App_Runner:
 		print >> self.outputCsv, '\n'*10
 		
 		count = 0
-		for cfg in self.cfgVector:
+		cfgVector = self.makeVectorFromFile('AppRunner_cfg')
+
+		for cfg in cfgVector:
 			print >> self.outputCsv, 'c'+str(count)+'\t',cfg
 			count += 1
 		self.cleanUp()
@@ -218,21 +249,43 @@ class App_Runner:
 	def reportSensitivity(self):
 		self.printCsvHeader()
 
-		for cfg, cfg_out in zip(self.switchVector[1:], self.sensitivityVector[1:]):
+		switchVector = self.makeVectorFromFile('AppRunner_switch')
+		sensitivityVector = self.makeVectorFromFile('AppRunner_sense')
+
+		for cfg, cfg_out in zip(switchVector[1:], sensitivityVector[1:]):
 			print >> self.outputCsv, '\n'+cfg+'\t',
 			for seq in cfg_out:
 				for o in seq:
-					print >> self.outputCsv, ("%.2f" % o),'\t',
+					print >> self.outputCsv, ("%.2f" % float(o)),'\t',
+
+
+
+	def makeVectorFromFile(self,path):
+		f = open(path, 'r')
+		vet = []
+		for l in f.readlines():
+			row = []
+			l = l.strip('\n')
+			if ';' in l:
+				for i in l.split(';'):
+					row.append(i.split(','))
+			else:
+				row = l
+			vet.append(row)
+		return vet
+
 
 
 	def reportOutput(self):
+		switchVector = self.makeVectorFromFile('AppRunner_switch')
+		outputVector = self.makeVectorFromFile('AppRunner_output') 
 
 		self.printCsvHeader()
-		for cfg,cfg_out in zip(self.switchVector, self.outputVector):
+		for cfg,cfg_out in zip(switchVector, outputVector):
 			print >> self.outputCsv, '\n'+cfg+'\t',
 			for seq in cfg_out:
 				for o in seq:
-					print >> self.outputCsv, ("%.2f" % o),'\t',
+					print >> self.outputCsv, ("%.2f" % float(o)),'\t',
 
 
 	def round_to(self,n, precision):
