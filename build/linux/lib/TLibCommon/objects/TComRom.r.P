@@ -1,9 +1,9 @@
 ./objects/TComRom.r.o: \
-  /Users/mateusgrellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComRom.cpp \
+  /Users/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComRom.cpp \
   ../../../../source/Lib/TLibCommon/TComRom.h \
   ../../../../source/Lib/TLibCommon/CommonDef.h \
   ../../../../source/Lib/TLibCommon/TypeDef.h
-  /Users/mateusgrellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComRom.cpp :
+  /Users/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComRom.cpp :
   ../../../../source/Lib/TLibCommon/TComRom.h :
   ../../../../source/Lib/TLibCommon/CommonDef.h :
   ../../../../source/Lib/TLibCommon/TypeDef.h :

@@ -16,7 +16,7 @@ class App:
 		self.initConfig = '-d ../JM_bin/encoder_max_performance.cfg '
 
 		if self.BDRate:
-			self.QPs = ['30','35']
+			self.QPs = ['20','25','30','35']
 			self.makeBDRateFile()
 		else:
 			self.QPs = ['32']
@@ -33,7 +33,8 @@ class App:
 		inp = inp.split()
 		
 		for qp in self.QPs:
-			line = self.App + ' ' + self.initConfig + '-p Log2MaxFNumMinus4=-1 -p InputFile=/home/grellert/origCfP/cropped/' + inp[0]
+			line = self.App + ' ' + self.initConfig + '-p Log2MaxFNumMinus4=-1 -p InputFile=../../origCfP/cropped/' + inp[0]
+			line += ' -p QPISlice=' + qp + ' -p QPPSlice=' + qp +' -p QPBSlice=' + qp
 			line += ' -p SourceWidth=' + inp[1] + ' -p SourceHeight=' + inp[2] + ' -p FrameRate=' + inp[3] + ' -p RDOptimization=1' + ' ' + ' '.join(cfg)
 			line += ' -p IntraPeriod=30 -p FramesToBeEncoded=' + str(period)
 			line += ' > JM_out.txt 2> JM_warn.txt'
@@ -99,7 +100,7 @@ class App:
 		print >> self.BDRateFile, '\t'.join([str(x) for x in tupl]),'\t\t',
 
 		if qp == self.QPs[-1]:
-			print >> self.BDRateFile,'\n'
+			print >> self.BDRateFile,'\n',
 		self.BDRateFile.close()
 
 	def calculatePerformance(self,avg_br, avg_psnr):

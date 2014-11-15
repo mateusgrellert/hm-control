@@ -1,5 +1,5 @@
 ./objects/libmd5.r.o: \
-  /Users/mateusgrellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.c \
-  /Users/mateusgrellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.h
-  /Users/mateusgrellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.c :
-  /Users/mateusgrellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.h :
+  /Users/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.c \
+  /Users/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.h
+  /Users/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.c :
+  /Users/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.h :

@@ -1,5 +1,5 @@
 ./objects/TComLoopFilter.d.o: \
-  /Users/mateusgrellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComLoopFilter.cpp \
+  /Users/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComLoopFilter.cpp \
   ../../../../source/Lib/TLibCommon/TComLoopFilter.h \
   ../../../../source/Lib/TLibCommon/CommonDef.h \
   ../../../../source/Lib/TLibCommon/TypeDef.h \
@@ -17,7 +17,7 @@
   ../../../../source/Lib/TLibCommon/TComPicYuv.h \
   ../../../../source/Lib/TLibCommon/TComBitStream.h \
   ../../../../source/Lib/TLibCommon/SEI.h
-  /Users/mateusgrellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComLoopFilter.cpp :
+  /Users/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComLoopFilter.cpp :
   ../../../../source/Lib/TLibCommon/TComLoopFilter.h :
   ../../../../source/Lib/TLibCommon/CommonDef.h :
   ../../../../source/Lib/TLibCommon/TypeDef.h :

@@ -101,7 +101,7 @@ class App:
 		print >> self.BDRateFile, '\t'.join([str(x) for x in tupl]),'\t\t',
 
 		if qp == self.QPs[-1]:
-			print >> self.BDRateFile,'\n'
+			print >> self.BDRateFile,'\n',
 		self.BDRateFile.close()
 
 	def calculatePerformance(self,avg_br, avg_psnr):

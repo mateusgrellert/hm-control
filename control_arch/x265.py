@@ -101,7 +101,7 @@ class App:
 
 		print >> self.BDRateFile, '\t'.join([bitrate, y_psnr, u_psnr, v_psnr,time]),'\t\t',
 		if qp == self.QPs[-1]:
-			print >> self.BDRateFile,'\n'
+			print >> self.BDRateFile,'\n',
 		self.BDRateFile.close()
 		
 	def calculatePerformance(self,avg_br, avg_psnr):

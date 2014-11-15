@@ -1,5 +1,5 @@
 ./objects/TEncRateCtrl.d.o: \
-  /Users/mateusgrellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/TEncRateCtrl.cpp \
+  /Users/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/TEncRateCtrl.cpp \
   ../../../../source/Lib/TLibEncoder/TEncRateCtrl.h \
   ../../../../source/Lib/TLibEncoder/../TLibCommon/CommonDef.h \
   ../../../../source/Lib/TLibEncoder/../TLibCommon/TypeDef.h \
@@ -18,7 +18,7 @@
   ../../../../source/Lib/TLibEncoder/../TLibCommon/TComPicYuv.h \
   ../../../../source/Lib/TLibEncoder/../TLibCommon/TComBitStream.h \
   ../../../../source/Lib/TLibEncoder/../TLibCommon/SEI.h
-  /Users/mateusgrellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/TEncRateCtrl.cpp :
+  /Users/grellert/hm-control/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/TEncRateCtrl.cpp :
   ../../../../source/Lib/TLibEncoder/TEncRateCtrl.h :
   ../../../../source/Lib/TLibEncoder/../TLibCommon/CommonDef.h :
   ../../../../source/Lib/TLibEncoder/../TLibCommon/TypeDef.h :

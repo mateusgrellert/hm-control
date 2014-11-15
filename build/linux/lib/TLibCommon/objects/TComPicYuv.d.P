@@ -1,10 +1,10 @@
 ./objects/TComPicYuv.d.o: \
-  /Users/mateusgrellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComPicYuv.cpp \
+  /Users/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComPicYuv.cpp \
   ../../../../source/Lib/TLibCommon/TComPicYuv.h \
   ../../../../source/Lib/TLibCommon/CommonDef.h \
   ../../../../source/Lib/TLibCommon/TypeDef.h \
   ../../../../source/Lib/TLibCommon/TComRom.h
-  /Users/mateusgrellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComPicYuv.cpp :
+  /Users/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComPicYuv.cpp :
   ../../../../source/Lib/TLibCommon/TComPicYuv.h :
   ../../../../source/Lib/TLibCommon/CommonDef.h :
   ../../../../source/Lib/TLibCommon/TypeDef.h :

@@ -1,12 +1,12 @@
 ./objects/TComYuv.r.o: \
-  /Users/mateusgrellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComYuv.cpp \
+  /Users/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComYuv.cpp \
   ../../../../source/Lib/TLibCommon/CommonDef.h \
   ../../../../source/Lib/TLibCommon/TypeDef.h \
   ../../../../source/Lib/TLibCommon/TComYuv.h \
   ../../../../source/Lib/TLibCommon/TComPicYuv.h \
   ../../../../source/Lib/TLibCommon/TComRom.h \
   ../../../../source/Lib/TLibCommon/TComInterpolationFilter.h
-  /Users/mateusgrellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComYuv.cpp :
+  /Users/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComYuv.cpp :
   ../../../../source/Lib/TLibCommon/CommonDef.h :
   ../../../../source/Lib/TLibCommon/TypeDef.h :
   ../../../../source/Lib/TLibCommon/TComYuv.h :

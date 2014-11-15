@@ -1,5 +1,5 @@
 ./objects/TComRdCostWeightPrediction.d.o: \
-  /Users/mateusgrellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp \
+  /Users/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp \
   ../../../../source/Lib/TLibCommon/TComRdCost.h \
   ../../../../source/Lib/TLibCommon/CommonDef.h \
   ../../../../source/Lib/TLibCommon/TypeDef.h \
@@ -9,7 +9,7 @@
   ../../../../source/Lib/TLibCommon/TComRom.h \
   ../../../../source/Lib/TLibCommon/TComList.h \
   ../../../../source/Lib/TLibCommon/TComRdCostWeightPrediction.h
-  /Users/mateusgrellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp :
+  /Users/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp :
   ../../../../source/Lib/TLibCommon/TComRdCost.h :
   ../../../../source/Lib/TLibCommon/CommonDef.h :
   ../../../../source/Lib/TLibCommon/TypeDef.h :

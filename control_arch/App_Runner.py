@@ -24,7 +24,6 @@ class App_Runner:
 
 		self.buildParamTable()
 		self.makeInputVector()
-		self.preparateTempFiles()
 		#self.Controller = gc.Genetic_Controller(self.paramTable, self.App)
 
 
@@ -101,6 +100,7 @@ class App_Runner:
 
 
 	def sensitivityAnalysis(self, period, mode):
+		self.preparateTempFiles()
 
 		self.lastSwitch = 'c0'
 		cfg = self.buildFirstConfig()

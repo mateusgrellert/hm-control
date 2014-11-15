@@ -1,5 +1,5 @@
 ./objects/TComPrediction.r.o: \
-  /Users/mateusgrellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComPrediction.cpp \
+  /Users/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComPrediction.cpp \
   ../../../../source/Lib/TLibCommon/TComPrediction.h \
   ../../../../source/Lib/TLibCommon/TComPic.h \
   ../../../../source/Lib/TLibCommon/CommonDef.h \
@@ -22,7 +22,7 @@
   ../../../../source/Lib/TLibCommon/ContextTables.h \
   ../../../../source/Lib/TLibCommon/TComInterpolationFilter.h \
   ../../../../source/Lib/TLibCommon/TComWeightPrediction.h
-  /Users/mateusgrellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComPrediction.cpp :
+  /Users/grellert/hm-control/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComPrediction.cpp :
   ../../../../source/Lib/TLibCommon/TComPrediction.h :
   ../../../../source/Lib/TLibCommon/TComPic.h :
   ../../../../source/Lib/TLibCommon/CommonDef.h :

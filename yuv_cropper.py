@@ -88,14 +88,13 @@ def cropYuv(lines, dir_path):
 	yuv.close()
 	new_yuv.close()
 
-cfgs = os.listdir('/home/grellert/hm-cfgs/')
-cfg_path = '/home/grellert/hm-cfgs/cropped/'
-dir_path = '/home/grellert/origCfP/cropped/'
-
+cfgs = os.listdir('/Users/grellert/hm-cfgs/')
+cfg_path = '/Users/grellert/hm-cfgs/cropped/'
+dir_path = '/Users/grellert/origCfP/cropped/'
 
 for cfg in cfgs:
 	if '.cfg' in cfg:
-		f = open('/home/grellert/hm-cfgs/'+cfg,'r')
+		f = open('/Users/grellert/hm-cfgs/'+cfg,'r')
 		lines = f.readlines()
 		f.close()
 		cropYuv(lines, dir_path)
