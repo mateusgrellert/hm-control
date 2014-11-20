@@ -1,0 +1,163 @@
+	RaceHorses_832x480_30.yuv 832x480 30		
+	Time 	PSNR 	Bitrate 
+c0	81.81 	34.98 	2244.84 	
+me=umh	85.95 	34.96 	2237.97 	
+me=hex	52.31 	34.96 	2285.46 	
+me=dia	51.59 	34.96 	2299.83 	
+ctu=32	56.48 	34.94 	2244.33 	
+ctu=16	30.83 	34.90 	2289.78 	
+bframes=3	79.38 	34.98 	2244.84 	
+bframes=2	81.35 	35.00 	2267.67 	
+bframes=1	79.33 	35.01 	2293.86 	
+bframes=0	95.91 	35.12 	2412.99 	
+tu-inter-depth=2	76.04 	34.96 	2249.10 	
+tu-inter-depth=1	74.13 	34.95 	2242.80 	
+merange=32	60.39 	34.96 	2249.01 	
+merange=16	52.55 	34.96 	2278.29 	
+merange=8	49.06 	34.96 	2430.63 	
+merange=0	45.74 	34.74 	3196.89 	
+max-merge=4	78.42 	34.96 	2239.56 	
+max-merge=3	78.30 	34.97 	2250.36 	
+max-merge=2	77.91 	34.97 	2247.09 	
+max-merge=1	82.24 	34.96 	2265.81 	
+rdpenalty=1	81.98 	34.97 	2241.15 	
+rdpenalty=0	86.78 	34.97 	2240.40 	
+rd=4	49.28 	34.86 	2306.01 	
+rd=2	44.34 	34.88 	2477.04 	
+rd=1	12.81 	34.52 	3091.38 	
+rd=0	19.48 	24.22 	5078.04 	
+tu-intra-depth=2	80.26 	34.97 	2243.94 	
+tu-intra-depth=1	81.49 	34.95 	2243.61 	
+no-rect	35.46 	34.93 	2299.32 	
+no-amp	70.30 	34.96 	2255.25 	
+wpp	66.65 	34.96 	2252.28 	
+no-weightp	87.30 	34.98 	2244.75 	
+no-weightb	88.60 	34.98 	2244.54 	
+no-sao	86.07 	34.92 	2246.19 	
+tskip	89.63 	34.98 	2249.82 	
+tskip-fast	82.97 	34.98 	2244.84 	
+early-skip	65.07 	34.84 	2214.27 	
+fast-cbf	60.96 	34.92 	2236.44 	
+no-b-intra	75.07 	34.96 	2253.36 	
+fast-intra	79.17 	34.98 	2244.84 	
+no-lft	79.78 	34.89 	2247.18 	
+ref=4	80.99 	34.98 	2244.84 	
+ref=3	73.66 	34.98 	2244.39 	
+ref=2	64.93 	34.97 	2252.85 	
+ref=1	51.96 	34.95 	2260.08 	
+subme=6	82.61 	34.96 	2243.97 	
+subme=4	69.80 	34.95 	2247.78 	
+subme=2	74.20 	34.94 	2257.83 	
+subme=0	64.53 	34.90 	2284.32 	
+
+
+
+	RaceHorses_832x480_30.yuv 832x480 30		
+	Time 	PSNR 	Bitrate 
+me=umh	-0.05 	0.00 	0.00 	
+me=hex	0.36 	0.00 	-0.02 	
+me=dia	0.37 	0.00 	-0.02 	
+ctu=32	0.31 	0.00 	0.00 	
+ctu=16	0.62 	0.00 	-0.02 	
+bframes=3	0.03 	0.00 	0.00 	
+bframes=2	0.01 	-0.00 	-0.01 	
+bframes=1	0.03 	-0.00 	-0.02 	
+bframes=0	-0.17 	-0.00 	-0.07 	
+tu-inter-depth=2	0.07 	0.00 	-0.00 	
+tu-inter-depth=1	0.09 	0.00 	0.00 	
+merange=32	0.26 	0.00 	-0.00 	
+merange=16	0.36 	0.00 	-0.01 	
+merange=8	0.40 	0.00 	-0.08 	
+merange=0	0.44 	0.01 	-0.42 	
+max-merge=4	0.04 	0.00 	0.00 	
+max-merge=3	0.04 	0.00 	-0.00 	
+max-merge=2	0.05 	0.00 	-0.00 	
+max-merge=1	-0.01 	0.00 	-0.01 	
+rdpenalty=1	-0.00 	0.00 	0.00 	
+rdpenalty=0	-0.06 	0.00 	0.00 	
+rd=4	0.40 	0.00 	-0.03 	
+rd=2	0.46 	0.00 	-0.10 	
+rd=1	0.84 	0.01 	-0.38 	
+rd=0	0.76 	0.31 	-1.26 	
+tu-intra-depth=2	0.02 	0.00 	0.00 	
+tu-intra-depth=1	0.00 	0.00 	0.00 	
+no-rect	0.57 	0.00 	-0.02 	
+no-amp	0.14 	0.00 	-0.00 	
+wpp	0.19 	0.00 	-0.00 	
+no-weightp	-0.07 	0.00 	0.00 	
+no-weightb	-0.08 	0.00 	0.00 	
+no-sao	-0.05 	0.00 	-0.00 	
+tskip	-0.10 	-0.00 	-0.00 	
+tskip-fast	-0.01 	0.00 	0.00 	
+early-skip	0.20 	0.00 	0.01 	
+fast-cbf	0.25 	0.00 	0.00 	
+no-b-intra	0.08 	0.00 	-0.00 	
+fast-intra	0.03 	0.00 	0.00 	
+no-lft	0.02 	0.00 	-0.00 	
+ref=4	0.01 	0.00 	0.00 	
+ref=3	0.10 	0.00 	0.00 	
+ref=2	0.21 	0.00 	-0.00 	
+ref=1	0.36 	0.00 	-0.01 	
+subme=6	-0.01 	0.00 	0.00 	
+subme=4	0.15 	0.00 	-0.00 	
+subme=2	0.09 	0.00 	-0.01 	
+subme=0	0.21 	0.00 	-0.02 	
+
+
+
+
+
+
+
+
+
+
+c0	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c1	--me umh --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c2	--me hex --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c3	--me dia --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c4	--me star --ctu 32 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c5	--me star --ctu 16 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c6	--me star --ctu 64 --bframes 3 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c7	--me star --ctu 64 --bframes 2 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c8	--me star --ctu 64 --bframes 1 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c9	--me star --ctu 64 --bframes 0 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c10	--me star --ctu 64 --bframes 4 --tu-inter-depth 2 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c11	--me star --ctu 64 --bframes 4 --tu-inter-depth 1 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c12	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 32 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c13	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 16 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c14	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 8 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c15	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 0 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c16	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 4 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c17	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 3 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c18	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 2 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c19	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 1 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c20	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 1 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c21	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 0 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c22	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 4 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c23	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 2 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c24	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 1 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c25	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 0 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c26	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 2 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c27	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 1 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c28	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --no-rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c29	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --no-amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c30	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c31	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --no-weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c32	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --no-weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c33	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --no-sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c34	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c35	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c36	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c37	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 7
+c38	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --no-b-intra --no-fast-intra --lft --ref 5 --subme 7
+c39	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --fast-intra --lft --ref 5 --subme 7
+c40	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --no-lft --ref 5 --subme 7
+c41	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 4 --subme 7
+c42	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 3 --subme 7
+c43	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 2 --subme 7
+c44	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 1 --subme 7
+c45	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 6
+c46	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 4
+c47	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 2
+c48	--me star --ctu 64 --bframes 4 --tu-inter-depth 3 --merange 64 --max-merge 5 --rdpenalty 2 --rd 6 --tu-intra-depth 3 --rect --amp --no-wpp --weightp --weightb --sao --no-tskip --no-tskip-fast --no-early-skip --no-fast-cbf --b-intra --no-fast-intra --lft --ref 5 --subme 0

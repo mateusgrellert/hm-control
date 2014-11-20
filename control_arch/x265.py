@@ -35,7 +35,7 @@ class App:
 
 		for qp in self.QPs:
 			line = self.App + ' --qp ' + qp + ' --input-res ' + inp[1] + ' --fps ' + inp[2]
-			line += self.initConfig + ' ' + ' '.join(cfg) + ' --frames ' + str(period) + ' ../../origCfP/cropped/' + inp[0]
+			line += self.initConfig + ' ' + ' '.join(cfg) + ' --frames ' + str(period) + ' ../../origCfP/' + inp[0]
 			line += ' -o out.x265 > x265_out.txt 2> x265_warn.txt '
 
 			os.system('echo \"' + line + '\" >> cmd_line.log')

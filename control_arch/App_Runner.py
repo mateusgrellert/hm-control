@@ -18,7 +18,7 @@ class App_Runner:
 		self.inputVet = []
 
 		module = importlib.import_module(mod)
-		self.App = module.App(valgrind, True)
+		self.App = module.App(valgrind, False)
 		self.outputCsv = open(self.App.name+'_Results.csv','w')
 		self.outputCsv.close()
 
@@ -270,7 +270,10 @@ class App_Runner:
 				for i in l.split(';'):
 					row.append(i.split(','))
 			else:
-				row = l
+				if ',' in l:
+					row.append(l.split(','))
+				else:
+					row = l
 			vet.append(row)
 		return vet
 

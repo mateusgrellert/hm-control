@@ -1,0 +1,1026 @@
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.30 fps, 8003.04 kb/s, eta 0:00:23  [25.0%] 2/8 frames, 0.17 fps, 5373.72 kb/s, eta 0:00:34  [37.5%] 3/8 frames, 0.16 fps, 3937.52 kb/s, eta 0:00:31  [50.0%] 4/8 frames, 0.15 fps, 3154.26 kb/s, eta 0:00:27  [62.5%] 5/8 frames, 0.12 fps, 3095.57 kb/s, eta 0:00:25  [75.0%] 6/8 frames, 0.10 fps, 2791.92 kb/s, eta 0:00:19  [87.5%] 7/8 frames, 0.10 fps, 2492.81 kb/s, eta 0:00:10  [100.0%] 8/8 frames, 0.10 fps, 2271.99 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2801.64   PSNR Mean: Y:33.982 U:37.262 V:38.462
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 912.58    PSNR Mean: Y:33.536 U:37.230 V:38.524
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2244.84   PSNR Mean: Y:33.981 U:37.330 V:38.606
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : umh / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.30 fps, 8003.04 kb/s, eta 0:00:23  [25.0%] 2/8 frames, 0.17 fps, 5355.84 kb/s, eta 0:00:36  [37.5%] 3/8 frames, 0.14 fps, 3932.24 kb/s, eta 0:00:35  [50.0%] 4/8 frames, 0.12 fps, 3148.92 kb/s, eta 0:00:32  [62.5%] 5/8 frames, 0.12 fps, 3091.06 kb/s, eta 0:00:25  [75.0%] 6/8 frames, 0.10 fps, 2781.96 kb/s, eta 0:00:19  [87.5%] 7/8 frames, 0.09 fps, 2483.66 kb/s, eta 0:00:11  [100.0%] 8/8 frames, 0.09 fps, 2265.12 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2783.16   PSNR Mean: Y:33.978 U:37.259 V:38.418
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 908.98    PSNR Mean: Y:33.522 U:37.215 V:38.477
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2237.97   PSNR Mean: Y:33.971 U:37.319 V:38.565
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : hex / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.34 fps, 8003.04 kb/s, eta 0:00:20  [25.0%] 2/8 frames, 0.22 fps, 5416.80 kb/s, eta 0:00:27  [37.5%] 3/8 frames, 0.19 fps, 3982.32 kb/s, eta 0:00:26  [50.0%] 4/8 frames, 0.18 fps, 3185.16 kb/s, eta 0:00:22  [62.5%] 5/8 frames, 0.18 fps, 3149.33 kb/s, eta 0:00:16  [75.0%] 6/8 frames, 0.16 fps, 2842.32 kb/s, eta 0:00:12  [87.5%] 7/8 frames, 0.15 fps, 2537.76 kb/s, eta 0:00:06  [100.0%] 8/8 frames, 0.15 fps, 2312.61 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2917.32   PSNR Mean: Y:33.998 U:37.206 V:38.365
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 931.30    PSNR Mean: Y:33.527 U:37.185 V:38.465
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2285.46   PSNR Mean: Y:33.979 U:37.287 V:38.545
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : dia / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.34 fps, 8003.04 kb/s, eta 0:00:20  [25.0%] 2/8 frames, 0.21 fps, 5448.36 kb/s, eta 0:00:28  [37.5%] 3/8 frames, 0.19 fps, 3998.08 kb/s, eta 0:00:26  [50.0%] 4/8 frames, 0.18 fps, 3198.42 kb/s, eta 0:00:22  [62.5%] 5/8 frames, 0.17 fps, 3165.60 kb/s, eta 0:00:17  [75.0%] 6/8 frames, 0.16 fps, 2859.76 kb/s, eta 0:00:12  [87.5%] 7/8 frames, 0.15 fps, 2554.90 kb/s, eta 0:00:06  [100.0%] 8/8 frames, 0.16 fps, 2326.98 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2963.04   PSNR Mean: Y:33.985 U:37.234 V:38.397
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 936.00    PSNR Mean: Y:33.526 U:37.193 V:38.477
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2299.83   PSNR Mean: Y:33.975 U:37.299 V:38.560
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 32 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.42 fps, 7964.64 kb/s, eta 0:00:16  [25.0%] 2/8 frames, 0.23 fps, 5350.08 kb/s, eta 0:00:26  [37.5%] 3/8 frames, 0.24 fps, 3925.76 kb/s, eta 0:00:20  [50.0%] 4/8 frames, 0.22 fps, 3145.62 kb/s, eta 0:00:18  [62.5%] 5/8 frames, 0.15 fps, 3093.79 kb/s, eta 0:00:19  [75.0%] 6/8 frames, 0.15 fps, 2785.72 kb/s, eta 0:00:13  [87.5%] 7/8 frames, 0.15 fps, 2491.78 kb/s, eta 0:00:06  [100.0%] 8/8 frames, 0.14 fps, 2271.48 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7754.16   PSNR Mean: Y:36.150 U:37.974 V:39.295
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2810.04   PSNR Mean: Y:33.939 U:37.259 V:38.441
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 916.08    PSNR Mean: Y:33.493 U:37.176 V:38.515
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2244.33   PSNR Mean: Y:33.937 U:37.297 V:38.594
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 16 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.57 fps, 8008.80 kb/s, eta 0:00:12  [25.0%] 2/8 frames, 0.37 fps, 5397.36 kb/s, eta 0:00:16  [37.5%] 3/8 frames, 0.42 fps, 3975.04 kb/s, eta 0:00:11  [50.0%] 4/8 frames, 0.35 fps, 3192.78 kb/s, eta 0:00:11  [62.5%] 5/8 frames, 0.28 fps, 3134.35 kb/s, eta 0:00:10  [75.0%] 6/8 frames, 0.28 fps, 2829.04 kb/s, eta 0:00:07  [87.5%] 7/8 frames, 0.26 fps, 2535.94 kb/s, eta 0:00:03  [100.0%] 8/8 frames, 0.26 fps, 2316.90 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7798.56   PSNR Mean: Y:36.147 U:37.894 V:39.204
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2842.32   PSNR Mean: Y:33.892 U:37.198 V:38.363
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 967.01    PSNR Mean: Y:33.460 U:37.158 V:38.434
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2289.78   PSNR Mean: Y:33.904 U:37.260 V:38.513
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 3 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.32 fps, 8003.04 kb/s, eta 0:00:22  [25.0%] 2/8 frames, 0.17 fps, 5373.72 kb/s, eta 0:00:34  [37.5%] 3/8 frames, 0.16 fps, 3937.52 kb/s, eta 0:00:31  [50.0%] 4/8 frames, 0.15 fps, 3154.26 kb/s, eta 0:00:27  [62.5%] 5/8 frames, 0.12 fps, 3095.57 kb/s, eta 0:00:24  [75.0%] 6/8 frames, 0.10 fps, 2791.92 kb/s, eta 0:00:19  [87.5%] 7/8 frames, 0.10 fps, 2492.81 kb/s, eta 0:00:10  [100.0%] 8/8 frames, 0.10 fps, 2271.99 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2801.64   PSNR Mean: Y:33.982 U:37.262 V:38.462
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 912.58    PSNR Mean: Y:33.536 U:37.230 V:38.524
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2244.84   PSNR Mean: Y:33.981 U:37.330 V:38.606
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 2 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.31 fps, 8003.04 kb/s, eta 0:00:22  [25.0%] 2/8 frames, 0.17 fps, 5373.72 kb/s, eta 0:00:34  [37.5%] 3/8 frames, 0.16 fps, 3937.52 kb/s, eta 0:00:31  [50.0%] 4/8 frames, 0.15 fps, 3154.26 kb/s, eta 0:00:27  [62.5%] 5/8 frames, 0.13 fps, 2960.26 kb/s, eta 0:00:23  [75.0%] 6/8 frames, 0.12 fps, 2579.32 kb/s, eta 0:00:16  [87.5%] 7/8 frames, 0.11 fps, 2520.79 kb/s, eta 0:00:09  [100.0%] 8/8 frames, 0.10 fps, 2294.82 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      3, Avg QP:32.00  kb/s: 2365.12   PSNR Mean: Y:33.918 U:37.264 V:38.490
+x265 [info]: frame B:      4, Avg QP:33.75  kb/s: 813.36    PSNR Mean: Y:33.539 U:37.227 V:38.520
+x265 [info]: global :      8, Avg QP:32.50  kb/s: 2267.67   PSNR Mean: Y:34.014 U:37.332 V:38.606
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 25.0% 50.0% 25.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 1 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.32 fps, 8003.04 kb/s, eta 0:00:21  [25.0%] 2/8 frames, 0.19 fps, 5141.28 kb/s, eta 0:00:32  [37.5%] 3/8 frames, 0.18 fps, 3687.28 kb/s, eta 0:00:28  [50.0%] 4/8 frames, 0.18 fps, 3192.06 kb/s, eta 0:00:22  [62.5%] 5/8 frames, 0.14 fps, 2991.46 kb/s, eta 0:00:22  [75.0%] 6/8 frames, 0.13 fps, 2609.64 kb/s, eta 0:00:15  [87.5%] 7/8 frames, 0.11 fps, 2550.03 kb/s, eta 0:00:08  [100.0%] 8/8 frames, 0.10 fps, 2321.01 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      4, Avg QP:32.00  kb/s: 2090.88   PSNR Mean: Y:33.906 U:37.263 V:38.520
+x265 [info]: frame B:      3, Avg QP:34.00  kb/s: 731.60    PSNR Mean: Y:33.474 U:37.169 V:38.488
+x265 [info]: global :      8, Avg QP:32.38  kb/s: 2293.86   PSNR Mean: Y:34.031 U:37.315 V:38.606
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 40.0% 60.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 0 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 0 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.35 fps, 8000.40 kb/s, eta 0:00:20  [25.0%] 2/8 frames, 0.22 fps, 4800.48 kb/s, eta 0:00:27  [37.5%] 3/8 frames, 0.17 fps, 3784.88 kb/s, eta 0:00:29  [50.0%] 4/8 frames, 0.14 fps, 3268.20 kb/s, eta 0:00:28  [62.5%] 5/8 frames, 0.12 fps, 2938.18 kb/s, eta 0:00:25  [75.0%] 6/8 frames, 0.10 fps, 2712.92 kb/s, eta 0:00:20  [87.5%] 7/8 frames, 0.09 fps, 2555.52 kb/s, eta 0:00:11  [100.0%] 8/8 frames, 0.08 fps, 2439.81 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      7, Avg QP:32.00  kb/s: 1644.48   PSNR Mean: Y:33.890 U:37.242 V:38.487
+x265 [info]: global :      8, Avg QP:31.62  kb/s: 2412.99   PSNR Mean: Y:34.179 U:37.332 V:38.589
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 100.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 2 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.32 fps, 8003.04 kb/s, eta 0:00:21  [25.0%] 2/8 frames, 0.18 fps, 5369.76 kb/s, eta 0:00:32  [37.5%] 3/8 frames, 0.16 fps, 3944.32 kb/s, eta 0:00:30  [50.0%] 4/8 frames, 0.15 fps, 3160.80 kb/s, eta 0:00:26  [62.5%] 5/8 frames, 0.13 fps, 3102.00 kb/s, eta 0:00:23  [75.0%] 6/8 frames, 0.11 fps, 2794.16 kb/s, eta 0:00:18  [87.5%] 7/8 frames, 0.10 fps, 2496.10 kb/s, eta 0:00:09  [100.0%] 8/8 frames, 0.11 fps, 2276.25 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2800.68   PSNR Mean: Y:33.977 U:37.248 V:38.369
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 919.78    PSNR Mean: Y:33.534 U:37.187 V:38.438
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2249.10   PSNR Mean: Y:33.978 U:37.299 V:38.528
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 1 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.33 fps, 8003.04 kb/s, eta 0:00:21  [25.0%] 2/8 frames, 0.19 fps, 5367.96 kb/s, eta 0:00:30  [37.5%] 3/8 frames, 0.18 fps, 3943.20 kb/s, eta 0:00:28  [50.0%] 4/8 frames, 0.16 fps, 3154.56 kb/s, eta 0:00:24  [62.5%] 5/8 frames, 0.13 fps, 3094.75 kb/s, eta 0:00:22  [75.0%] 6/8 frames, 0.11 fps, 2787.88 kb/s, eta 0:00:17  [87.5%] 7/8 frames, 0.11 fps, 2489.93 kb/s, eta 0:00:09  [100.0%] 8/8 frames, 0.11 fps, 2269.95 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2793.24   PSNR Mean: Y:33.954 U:37.266 V:38.369
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 912.67    PSNR Mean: Y:33.508 U:37.216 V:38.520
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2242.80   PSNR Mean: Y:33.956 U:37.321 V:38.580
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 32 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.35 fps, 8003.04 kb/s, eta 0:00:19  [25.0%] 2/8 frames, 0.20 fps, 5372.88 kb/s, eta 0:00:29  [37.5%] 3/8 frames, 0.19 fps, 3939.76 kb/s, eta 0:00:26  [50.0%] 4/8 frames, 0.17 fps, 3157.68 kb/s, eta 0:00:23  [62.5%] 5/8 frames, 0.15 fps, 3106.61 kb/s, eta 0:00:20  [75.0%] 6/8 frames, 0.14 fps, 2799.08 kb/s, eta 0:00:14  [87.5%] 7/8 frames, 0.13 fps, 2499.50 kb/s, eta 0:00:07  [100.0%] 8/8 frames, 0.13 fps, 2276.16 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2821.56   PSNR Mean: Y:33.973 U:37.243 V:38.419
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 911.28    PSNR Mean: Y:33.522 U:37.187 V:38.497
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2249.01   PSNR Mean: Y:33.970 U:37.297 V:38.578
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 16 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.34 fps, 8003.04 kb/s, eta 0:00:20  [25.0%] 2/8 frames, 0.21 fps, 5418.60 kb/s, eta 0:00:28  [37.5%] 3/8 frames, 0.20 fps, 3974.80 kb/s, eta 0:00:25  [50.0%] 4/8 frames, 0.19 fps, 3183.54 kb/s, eta 0:00:21  [62.5%] 5/8 frames, 0.17 fps, 3144.72 kb/s, eta 0:00:17  [75.0%] 6/8 frames, 0.16 fps, 2833.88 kb/s, eta 0:00:12  [87.5%] 7/8 frames, 0.15 fps, 2531.69 kb/s, eta 0:00:06  [100.0%] 8/8 frames, 0.15 fps, 2305.44 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2910.84   PSNR Mean: Y:33.978 U:37.241 V:38.364
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 922.42    PSNR Mean: Y:33.528 U:37.206 V:38.474
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2278.29   PSNR Mean: Y:33.975 U:37.309 V:38.550
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 8 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.35 fps, 8002.80 kb/s, eta 0:00:19  [25.0%] 2/8 frames, 0.22 fps, 5712.36 kb/s, eta 0:00:27  [37.5%] 3/8 frames, 0.20 fps, 4194.64 kb/s, eta 0:00:24  [50.0%] 4/8 frames, 0.20 fps, 3351.18 kb/s, eta 0:00:20  [62.5%] 5/8 frames, 0.18 fps, 3350.54 kb/s, eta 0:00:16  [75.0%] 6/8 frames, 0.17 fps, 3028.72 kb/s, eta 0:00:11  [87.5%] 7/8 frames, 0.16 fps, 2699.86 kb/s, eta 0:00:06  [100.0%] 8/8 frames, 0.16 fps, 2457.75 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 3384.00   PSNR Mean: Y:33.966 U:37.134 V:38.263
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 976.90    PSNR Mean: Y:33.530 U:37.208 V:38.484
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2430.63   PSNR Mean: Y:33.973 U:37.283 V:38.531
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 0 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.36 fps, 8002.80 kb/s, eta 0:00:19  [25.0%] 2/8 frames, 0.24 fps, 6058.92 kb/s, eta 0:00:25  [37.5%] 3/8 frames, 0.22 fps, 4787.20 kb/s, eta 0:00:23  [50.0%] 4/8 frames, 0.20 fps, 4026.24 kb/s, eta 0:00:19  [62.5%] 5/8 frames, 0.20 fps, 3949.34 kb/s, eta 0:00:14  [75.0%] 6/8 frames, 0.18 fps, 3686.72 kb/s, eta 0:00:10  [87.5%] 7/8 frames, 0.18 fps, 3413.49 kb/s, eta 0:00:05  [100.0%] 8/8 frames, 0.17 fps, 3224.01 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 3877.44   PSNR Mean: Y:34.011 U:37.047 V:38.156
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 2005.54   PSNR Mean: Y:33.311 U:36.562 V:37.659
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 3196.89   PSNR Mean: Y:33.847 U:36.858 V:37.988
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 4
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.31 fps, 8003.04 kb/s, eta 0:00:22  [25.0%] 2/8 frames, 0.17 fps, 5367.60 kb/s, eta 0:00:34  [37.5%] 3/8 frames, 0.16 fps, 3930.40 kb/s, eta 0:00:30  [50.0%] 4/8 frames, 0.15 fps, 3150.18 kb/s, eta 0:00:26  [62.5%] 5/8 frames, 0.12 fps, 3092.11 kb/s, eta 0:00:24  [75.0%] 6/8 frames, 0.11 fps, 2783.16 kb/s, eta 0:00:18  [87.5%] 7/8 frames, 0.10 fps, 2486.13 kb/s, eta 0:00:09  [100.0%] 8/8 frames, 0.10 fps, 2266.71 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2795.04   PSNR Mean: Y:33.978 U:37.255 V:38.411
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 906.77    PSNR Mean: Y:33.512 U:37.208 V:38.491
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2239.56   PSNR Mean: Y:33.965 U:37.314 V:38.572
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 3
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.30 fps, 8003.04 kb/s, eta 0:00:23  [25.0%] 2/8 frames, 0.17 fps, 5374.56 kb/s, eta 0:00:34  [37.5%] 3/8 frames, 0.16 fps, 3942.64 kb/s, eta 0:00:31  [50.0%] 4/8 frames, 0.15 fps, 3160.74 kb/s, eta 0:00:27  [62.5%] 5/8 frames, 0.12 fps, 3099.17 kb/s, eta 0:00:24  [75.0%] 6/8 frames, 0.11 fps, 2796.08 kb/s, eta 0:00:18  [87.5%] 7/8 frames, 0.10 fps, 2499.70 kb/s, eta 0:00:10  [100.0%] 8/8 frames, 0.10 fps, 2277.51 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2798.52   PSNR Mean: Y:33.984 U:37.239 V:38.386
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 922.66    PSNR Mean: Y:33.534 U:37.206 V:38.471
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2250.36   PSNR Mean: Y:33.980 U:37.308 V:38.554
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 2
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.32 fps, 8003.04 kb/s, eta 0:00:21  [25.0%] 2/8 frames, 0.18 fps, 5369.16 kb/s, eta 0:00:33  [37.5%] 3/8 frames, 0.17 fps, 3941.92 kb/s, eta 0:00:30  [50.0%] 4/8 frames, 0.15 fps, 3155.88 kb/s, eta 0:00:26  [62.5%] 5/8 frames, 0.12 fps, 3099.17 kb/s, eta 0:00:24  [75.0%] 6/8 frames, 0.11 fps, 2792.96 kb/s, eta 0:00:18  [87.5%] 7/8 frames, 0.10 fps, 2495.11 kb/s, eta 0:00:09  [100.0%] 8/8 frames, 0.10 fps, 2274.24 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2802.84   PSNR Mean: Y:33.977 U:37.263 V:38.425
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 915.70    PSNR Mean: Y:33.529 U:37.208 V:38.498
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2247.09   PSNR Mean: Y:33.975 U:37.316 V:38.580
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 1
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.33 fps, 8003.04 kb/s, eta 0:00:21  [25.0%] 2/8 frames, 0.18 fps, 5374.68 kb/s, eta 0:00:32  [37.5%] 3/8 frames, 0.16 fps, 3944.56 kb/s, eta 0:00:30  [50.0%] 4/8 frames, 0.15 fps, 3170.16 kb/s, eta 0:00:27  [62.5%] 5/8 frames, 0.12 fps, 3109.06 kb/s, eta 0:00:24  [75.0%] 6/8 frames, 0.10 fps, 2807.56 kb/s, eta 0:00:19  [87.5%] 7/8 frames, 0.10 fps, 2513.14 kb/s, eta 0:00:10  [100.0%] 8/8 frames, 0.10 fps, 2292.96 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2804.52   PSNR Mean: Y:33.983 U:37.224 V:38.422
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 944.98    PSNR Mean: Y:33.524 U:37.169 V:38.492
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2265.81   PSNR Mean: Y:33.973 U:37.281 V:38.576
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 1
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.30 fps, 8003.04 kb/s, eta 0:00:23  [25.0%] 2/8 frames, 0.16 fps, 5367.00 kb/s, eta 0:00:36  [37.5%] 3/8 frames, 0.15 fps, 3934.16 kb/s, eta 0:00:32  [50.0%] 4/8 frames, 0.14 fps, 3150.36 kb/s, eta 0:00:28  [62.5%] 5/8 frames, 0.12 fps, 3091.01 kb/s, eta 0:00:25  [75.0%] 6/8 frames, 0.10 fps, 2785.16 kb/s, eta 0:00:19  [87.5%] 7/8 frames, 0.10 fps, 2488.15 kb/s, eta 0:00:10  [100.0%] 8/8 frames, 0.10 fps, 2268.30 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2791.32   PSNR Mean: Y:33.967 U:37.265 V:38.411
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 910.80    PSNR Mean: Y:33.533 U:37.210 V:38.484
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2241.15   PSNR Mean: Y:33.975 U:37.317 V:38.568
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.31 fps, 8003.04 kb/s, eta 0:00:22  [25.0%] 2/8 frames, 0.17 fps, 5367.24 kb/s, eta 0:00:35  [37.5%] 3/8 frames, 0.16 fps, 3937.28 kb/s, eta 0:00:32  [50.0%] 4/8 frames, 0.14 fps, 3148.86 kb/s, eta 0:00:27  [62.5%] 5/8 frames, 0.11 fps, 3084.58 kb/s, eta 0:00:26  [75.0%] 6/8 frames, 0.10 fps, 2782.96 kb/s, eta 0:00:20  [87.5%] 7/8 frames, 0.09 fps, 2488.18 kb/s, eta 0:00:11  [100.0%] 8/8 frames, 0.09 fps, 2267.55 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2778.48   PSNR Mean: Y:33.967 U:37.261 V:38.419
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 914.74    PSNR Mean: Y:33.526 U:37.221 V:38.498
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2240.40   PSNR Mean: Y:33.970 U:37.324 V:38.579
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=4 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.32 fps, 7974.00 kb/s, eta 0:00:21  [25.0%] 2/8 frames, 0.33 fps, 5431.92 kb/s, eta 0:00:18  [37.5%] 3/8 frames, 0.31 fps, 3993.60 kb/s, eta 0:00:16  [50.0%] 4/8 frames, 0.28 fps, 3201.00 kb/s, eta 0:00:14  [62.5%] 5/8 frames, 0.22 fps, 3170.74 kb/s, eta 0:00:13  [75.0%] 6/8 frames, 0.18 fps, 2867.56 kb/s, eta 0:00:10  [87.5%] 7/8 frames, 0.16 fps, 2560.56 kb/s, eta 0:00:06  [100.0%] 8/8 frames, 0.16 fps, 2333.16 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7763.52   PSNR Mean: Y:36.187 U:37.986 V:39.321
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2968.80   PSNR Mean: Y:33.788 U:37.209 V:38.363
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 949.39    PSNR Mean: Y:33.406 U:37.155 V:38.428
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2306.01   PSNR Mean: Y:33.849 U:37.272 V:38.523
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=2 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.43 fps, 9076.80 kb/s, eta 0:00:16  [25.0%] 2/8 frames, 0.39 fps, 5997.36 kb/s, eta 0:00:15  [37.5%] 3/8 frames, 0.34 fps, 4390.40 kb/s, eta 0:00:14  [50.0%] 4/8 frames, 0.30 fps, 3504.30 kb/s, eta 0:00:13  [62.5%] 5/8 frames, 0.24 fps, 3429.60 kb/s, eta 0:00:12  [75.0%] 6/8 frames, 0.20 fps, 3082.56 kb/s, eta 0:00:09  [87.5%] 7/8 frames, 0.18 fps, 2748.58 kb/s, eta 0:00:05  [100.0%] 8/8 frames, 0.18 fps, 2504.19 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 8866.32   PSNR Mean: Y:36.765 U:38.877 V:39.956
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 3023.40   PSNR Mean: Y:33.540 U:37.369 V:38.338
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 980.64    PSNR Mean: Y:33.326 U:37.363 V:38.455
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2477.04   PSNR Mean: Y:33.809 U:37.554 V:38.613
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [warning]: --rect disabled, requires --rdlevel 2 or higher
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rd=1 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.56 fps, 9110.16 kb/s, eta 0:00:12  [25.0%] 2/8 frames, 0.74 fps, 6265.08 kb/s, eta 0:00:08  [37.5%] 3/8 frames, 0.88 fps, 4833.60 kb/s, eta 0:00:05  [50.0%] 4/8 frames, 0.94 fps, 3971.76 kb/s, eta 0:00:04  [62.5%] 5/8 frames, 0.64 fps, 3944.54 kb/s, eta 0:00:04  [75.0%] 6/8 frames, 0.63 fps, 3670.84 kb/s, eta 0:00:03  [87.5%] 7/8 frames, 0.62 fps, 3356.74 kb/s, eta 0:00:01  [100.0%] 8/8 frames, 0.62 fps, 3118.71 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 8898.24   PSNR Mean: Y:36.756 U:38.916 V:39.974
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 3626.88   PSNR Mean: Y:33.338 U:37.471 V:38.529
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 1715.81   PSNR Mean: Y:32.647 U:37.318 V:38.391
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 3091.38   PSNR Mean: Y:33.334 U:37.556 V:38.623
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [warning]: --rect disabled, requires --rdlevel 2 or higher
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rd=0 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.55 fps, 9091.92 kb/s, eta 0:00:12  [25.0%] 2/8 frames, 0.68 fps, 7196.40 kb/s, eta 0:00:08  [37.5%] 3/8 frames, 0.61 fps, 6189.84 kb/s, eta 0:00:08  [50.0%] 4/8 frames, 0.56 fps, 5247.42 kb/s, eta 0:00:07  [62.5%] 5/8 frames, 0.55 fps, 5487.65 kb/s, eta 0:00:05  [75.0%] 6/8 frames, 0.47 fps, 5447.64 kb/s, eta 0:00:04  [87.5%] 7/8 frames, 0.40 fps, 5207.28 kb/s, eta 0:00:02  [100.0%] 8/8 frames, 0.41 fps, 5105.37 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 8880.00   PSNR Mean: Y:36.752 U:38.901 V:39.955
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 5873.76   PSNR Mean: Y:18.222 U:27.783 V:27.254
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 3999.36   PSNR Mean: Y:20.731 U:29.832 V:30.211
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 5078.04   PSNR Mean: Y:22.106 U:30.454 V:30.690
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 2
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.33 fps, 7986.96 kb/s, eta 0:00:21  [25.0%] 2/8 frames, 0.18 fps, 5358.84 kb/s, eta 0:00:33  [37.5%] 3/8 frames, 0.16 fps, 3930.24 kb/s, eta 0:00:31  [50.0%] 4/8 frames, 0.15 fps, 3145.92 kb/s, eta 0:00:27  [62.5%] 5/8 frames, 0.12 fps, 3089.81 kb/s, eta 0:00:24  [75.0%] 6/8 frames, 0.10 fps, 2790.12 kb/s, eta 0:00:19  [87.5%] 7/8 frames, 0.10 fps, 2492.26 kb/s, eta 0:00:10  [100.0%] 8/8 frames, 0.10 fps, 2271.09 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7776.48   PSNR Mean: Y:36.197 U:37.991 V:39.283
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2797.08   PSNR Mean: Y:33.980 U:37.315 V:38.441
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 916.18    PSNR Mean: Y:33.525 U:37.229 V:38.498
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2243.94   PSNR Mean: Y:33.973 U:37.346 V:38.582
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 1
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.34 fps, 8021.76 kb/s, eta 0:00:20  [25.0%] 2/8 frames, 0.18 fps, 5373.96 kb/s, eta 0:00:33  [37.5%] 3/8 frames, 0.16 fps, 3935.52 kb/s, eta 0:00:31  [50.0%] 4/8 frames, 0.15 fps, 3154.92 kb/s, eta 0:00:27  [62.5%] 5/8 frames, 0.12 fps, 3094.94 kb/s, eta 0:00:24  [75.0%] 6/8 frames, 0.10 fps, 2787.04 kb/s, eta 0:00:19  [87.5%] 7/8 frames, 0.10 fps, 2489.97 kb/s, eta 0:00:10  [100.0%] 8/8 frames, 0.10 fps, 2270.76 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7811.28   PSNR Mean: Y:36.201 U:37.907 V:39.222
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2789.64   PSNR Mean: Y:33.976 U:37.225 V:38.351
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 911.66    PSNR Mean: Y:33.522 U:37.181 V:38.441
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2243.61   PSNR Mean: Y:33.970 U:37.283 V:38.516
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.34 fps, 8004.48 kb/s, eta 0:00:20  [25.0%] 2/8 frames, 0.28 fps, 5406.84 kb/s, eta 0:00:21  [37.5%] 3/8 frames, 0.28 fps, 3984.64 kb/s, eta 0:00:18  [50.0%] 4/8 frames, 0.27 fps, 3199.50 kb/s, eta 0:00:14  [62.5%] 5/8 frames, 0.24 fps, 3149.23 kb/s, eta 0:00:12  [75.0%] 6/8 frames, 0.22 fps, 2847.80 kb/s, eta 0:00:08  [87.5%] 7/8 frames, 0.22 fps, 2550.58 kb/s, eta 0:00:04  [100.0%] 8/8 frames, 0.23 fps, 2326.65 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2877.72   PSNR Mean: Y:33.989 U:37.219 V:38.397
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 969.31    PSNR Mean: Y:33.477 U:37.149 V:38.431
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2299.32   PSNR Mean: Y:33.946 U:37.268 V:38.531
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.30 fps, 8003.76 kb/s, eta 0:00:23  [25.0%] 2/8 frames, 0.17 fps, 5370.72 kb/s, eta 0:00:34  [37.5%] 3/8 frames, 0.16 fps, 3943.36 kb/s, eta 0:00:31  [50.0%] 4/8 frames, 0.15 fps, 3160.68 kb/s, eta 0:00:26  [62.5%] 5/8 frames, 0.13 fps, 3102.86 kb/s, eta 0:00:23  [75.0%] 6/8 frames, 0.12 fps, 2799.08 kb/s, eta 0:00:17  [87.5%] 7/8 frames, 0.11 fps, 2502.65 kb/s, eta 0:00:09  [100.0%] 8/8 frames, 0.11 fps, 2282.49 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2803.68   PSNR Mean: Y:33.967 U:37.271 V:38.375
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 928.42    PSNR Mean: Y:33.523 U:37.211 V:38.465
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2255.25   PSNR Mean: Y:33.969 U:37.319 V:38.547
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 8 / 1 / 2
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.51 fps, 7992.24 kb/s, eta 0:00:13  [25.0%] 2/8 frames, 0.27 fps, 5374.08 kb/s, eta 0:00:22  [37.5%] 3/8 frames, 0.23 fps, 3943.44 kb/s, eta 0:00:21  [50.0%] 4/8 frames, 0.21 fps, 3159.36 kb/s, eta 0:00:19  [62.5%] 5/8 frames, 0.16 fps, 3099.26 kb/s, eta 0:00:18  [75.0%] 6/8 frames, 0.14 fps, 2797.08 kb/s, eta 0:00:14  [87.5%] 7/8 frames, 0.13 fps, 2500.05 kb/s, eta 0:00:07  [100.0%] 8/8 frames, 0.12 fps, 2279.34 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7782.48   PSNR Mean: Y:36.188 U:37.993 V:39.300
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2806.44   PSNR Mean: Y:33.983 U:37.225 V:38.365
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 924.58    PSNR Mean: Y:33.529 U:37.173 V:38.444
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2252.28   PSNR Mean: Y:33.975 U:37.288 V:38.531
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 0 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.28 fps, 8003.76 kb/s, eta 0:00:24  [25.0%] 2/8 frames, 0.15 fps, 5373.96 kb/s, eta 0:00:38  [37.5%] 3/8 frames, 0.14 fps, 3937.68 kb/s, eta 0:00:35  [50.0%] 4/8 frames, 0.13 fps, 3154.38 kb/s, eta 0:00:31  [62.5%] 5/8 frames, 0.11 fps, 3095.57 kb/s, eta 0:00:27  [75.0%] 6/8 frames, 0.10 fps, 2791.92 kb/s, eta 0:00:20  [87.5%] 7/8 frames, 0.09 fps, 2492.81 kb/s, eta 0:00:11  [100.0%] 8/8 frames, 0.09 fps, 2271.99 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2801.28   PSNR Mean: Y:33.982 U:37.262 V:38.462
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 912.58    PSNR Mean: Y:33.536 U:37.230 V:38.524
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2244.75   PSNR Mean: Y:33.981 U:37.330 V:38.606
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 0 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.27 fps, 8003.76 kb/s, eta 0:00:25  [25.0%] 2/8 frames, 0.15 fps, 5374.08 kb/s, eta 0:00:38  [37.5%] 3/8 frames, 0.14 fps, 3937.60 kb/s, eta 0:00:34  [50.0%] 4/8 frames, 0.13 fps, 3154.20 kb/s, eta 0:00:30  [62.5%] 5/8 frames, 0.11 fps, 3095.52 kb/s, eta 0:00:27  [75.0%] 6/8 frames, 0.09 fps, 2791.80 kb/s, eta 0:00:21  [87.5%] 7/8 frames, 0.09 fps, 2492.64 kb/s, eta 0:00:11  [100.0%] 8/8 frames, 0.09 fps, 2271.78 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2801.64   PSNR Mean: Y:33.982 U:37.262 V:38.462
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 912.10    PSNR Mean: Y:33.536 U:37.230 V:38.524
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2244.54   PSNR Mean: Y:33.981 U:37.330 V:38.606
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.31 fps, 7972.08 kb/s, eta 0:00:22  [25.0%] 2/8 frames, 0.16 fps, 5359.68 kb/s, eta 0:00:37  [37.5%] 3/8 frames, 0.15 fps, 3934.72 kb/s, eta 0:00:34  [50.0%] 4/8 frames, 0.13 fps, 3154.74 kb/s, eta 0:00:30  [62.5%] 5/8 frames, 0.11 fps, 3092.74 kb/s, eta 0:00:27  [75.0%] 6/8 frames, 0.10 fps, 2790.00 kb/s, eta 0:00:21  [87.5%] 7/8 frames, 0.09 fps, 2492.54 kb/s, eta 0:00:11  [100.0%] 8/8 frames, 0.09 fps, 2273.43 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7760.88   PSNR Mean: Y:36.157 U:37.886 V:39.231
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2795.04   PSNR Mean: Y:33.883 U:37.236 V:38.395
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 923.71    PSNR Mean: Y:33.479 U:37.197 V:38.489
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2246.19   PSNR Mean: Y:33.915 U:37.293 V:38.558
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp tskip 
+[12.5%] 1/8 frames, 0.26 fps, 7996.56 kb/s, eta 0:00:27  [25.0%] 2/8 frames, 0.15 fps, 5378.52 kb/s, eta 0:00:40  [37.5%] 3/8 frames, 0.13 fps, 3947.68 kb/s, eta 0:00:37  [50.0%] 4/8 frames, 0.13 fps, 3161.94 kb/s, eta 0:00:31  [62.5%] 5/8 frames, 0.10 fps, 3099.26 kb/s, eta 0:00:28  [75.0%] 6/8 frames, 0.09 fps, 2793.76 kb/s, eta 0:00:21  [87.5%] 7/8 frames, 0.09 fps, 2496.62 kb/s, eta 0:00:11  [100.0%] 8/8 frames, 0.09 fps, 2276.88 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7786.80   PSNR Mean: Y:36.217 U:37.993 V:39.289
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2803.56   PSNR Mean: Y:33.975 U:37.284 V:38.408
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 920.93    PSNR Mean: Y:33.550 U:37.217 V:38.496
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2249.82   PSNR Mean: Y:33.990 U:37.331 V:38.573
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.29 fps, 8002.32 kb/s, eta 0:00:24  [25.0%] 2/8 frames, 0.16 fps, 5373.36 kb/s, eta 0:00:38  [37.5%] 3/8 frames, 0.14 fps, 3937.28 kb/s, eta 0:00:35  [50.0%] 4/8 frames, 0.13 fps, 3154.08 kb/s, eta 0:00:30  [62.5%] 5/8 frames, 0.11 fps, 3095.42 kb/s, eta 0:00:27  [75.0%] 6/8 frames, 0.10 fps, 2791.80 kb/s, eta 0:00:20  [87.5%] 7/8 frames, 0.09 fps, 2492.71 kb/s, eta 0:00:10  [100.0%] 8/8 frames, 0.10 fps, 2271.90 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2801.64   PSNR Mean: Y:33.982 U:37.262 V:38.462
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 912.58    PSNR Mean: Y:33.536 U:37.230 V:38.524
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2244.84   PSNR Mean: Y:33.981 U:37.330 V:38.606
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 early-skip deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.33 fps, 8002.32 kb/s, eta 0:00:21  [25.0%] 2/8 frames, 0.18 fps, 5355.84 kb/s, eta 0:00:32  [37.5%] 3/8 frames, 0.18 fps, 3915.04 kb/s, eta 0:00:27  [50.0%] 4/8 frames, 0.18 fps, 3125.22 kb/s, eta 0:00:22  [62.5%] 5/8 frames, 0.13 fps, 3070.32 kb/s, eta 0:00:22  [75.0%] 6/8 frames, 0.12 fps, 2761.88 kb/s, eta 0:00:16  [87.5%] 7/8 frames, 0.12 fps, 2462.02 kb/s, eta 0:00:08  [100.0%] 8/8 frames, 0.12 fps, 2241.33 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2779.08   PSNR Mean: Y:33.927 U:37.245 V:38.398
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 872.69    PSNR Mean: Y:33.309 U:37.168 V:38.379
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2214.27   PSNR Mean: Y:33.825 U:37.286 V:38.499
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 fast-cbf deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.33 fps, 8002.32 kb/s, eta 0:00:20  [25.0%] 2/8 frames, 0.20 fps, 5369.28 kb/s, eta 0:00:30  [37.5%] 3/8 frames, 0.19 fps, 3932.24 kb/s, eta 0:00:25  [50.0%] 4/8 frames, 0.19 fps, 3147.84 kb/s, eta 0:00:21  [62.5%] 5/8 frames, 0.14 fps, 3090.77 kb/s, eta 0:00:21  [75.0%] 6/8 frames, 0.13 fps, 2784.76 kb/s, eta 0:00:15  [87.5%] 7/8 frames, 0.13 fps, 2484.55 kb/s, eta 0:00:07  [100.0%] 8/8 frames, 0.13 fps, 2263.50 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2798.40   PSNR Mean: Y:33.935 U:37.234 V:38.404
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 900.43    PSNR Mean: Y:33.451 U:37.170 V:38.453
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2236.44   PSNR Mean: Y:33.916 U:37.285 V:38.547
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide tmvp 
+[12.5%] 1/8 frames, 0.31 fps, 8003.04 kb/s, eta 0:00:22  [25.0%] 2/8 frames, 0.17 fps, 5373.72 kb/s, eta 0:00:34  [37.5%] 3/8 frames, 0.17 fps, 3944.48 kb/s, eta 0:00:29  [50.0%] 4/8 frames, 0.16 fps, 3163.74 kb/s, eta 0:00:25  [62.5%] 5/8 frames, 0.12 fps, 3101.04 kb/s, eta 0:00:24  [75.0%] 6/8 frames, 0.11 fps, 2800.56 kb/s, eta 0:00:18  [87.5%] 7/8 frames, 0.10 fps, 2502.45 kb/s, eta 0:00:09  [100.0%] 8/8 frames, 0.11 fps, 2280.51 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2796.36   PSNR Mean: Y:33.973 U:37.235 V:38.447
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 928.32    PSNR Mean: Y:33.525 U:37.159 V:38.458
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2253.36   PSNR Mean: Y:33.972 U:37.278 V:38.561
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra fast-intra tmvp 
+[12.5%] 1/8 frames, 0.32 fps, 8002.32 kb/s, eta 0:00:22  [25.0%] 2/8 frames, 0.17 fps, 5373.36 kb/s, eta 0:00:34  [37.5%] 3/8 frames, 0.16 fps, 3937.28 kb/s, eta 0:00:31  [50.0%] 4/8 frames, 0.15 fps, 3154.08 kb/s, eta 0:00:27  [62.5%] 5/8 frames, 0.12 fps, 3095.42 kb/s, eta 0:00:24  [75.0%] 6/8 frames, 0.11 fps, 2791.80 kb/s, eta 0:00:18  [87.5%] 7/8 frames, 0.10 fps, 2492.71 kb/s, eta 0:00:10  [100.0%] 8/8 frames, 0.10 fps, 2271.90 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2801.64   PSNR Mean: Y:33.982 U:37.262 V:38.462
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 912.58    PSNR Mean: Y:33.536 U:37.230 V:38.524
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2244.84   PSNR Mean: Y:33.981 U:37.330 V:38.606
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.32 fps, 8001.60 kb/s, eta 0:00:21  [25.0%] 2/8 frames, 0.17 fps, 5374.56 kb/s, eta 0:00:34  [37.5%] 3/8 frames, 0.16 fps, 3941.84 kb/s, eta 0:00:31  [50.0%] 4/8 frames, 0.15 fps, 3155.82 kb/s, eta 0:00:27  [62.5%] 5/8 frames, 0.12 fps, 3098.83 kb/s, eta 0:00:24  [75.0%] 6/8 frames, 0.10 fps, 2793.96 kb/s, eta 0:00:19  [87.5%] 7/8 frames, 0.10 fps, 2494.66 kb/s, eta 0:00:10  [100.0%] 8/8 frames, 0.10 fps, 2274.45 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7790.16   PSNR Mean: Y:36.151 U:37.855 V:39.160
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2808.24   PSNR Mean: Y:33.893 U:37.142 V:38.281
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 914.16    PSNR Mean: Y:33.447 U:37.161 V:38.408
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2247.18   PSNR Mean: Y:33.897 U:37.243 V:38.470
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 4
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.31 fps, 8003.04 kb/s, eta 0:00:22  [25.0%] 2/8 frames, 0.17 fps, 5373.72 kb/s, eta 0:00:34  [37.5%] 3/8 frames, 0.15 fps, 3937.52 kb/s, eta 0:00:32  [50.0%] 4/8 frames, 0.14 fps, 3154.26 kb/s, eta 0:00:28  [62.5%] 5/8 frames, 0.12 fps, 3095.57 kb/s, eta 0:00:25  [75.0%] 6/8 frames, 0.10 fps, 2791.92 kb/s, eta 0:00:19  [87.5%] 7/8 frames, 0.10 fps, 2492.81 kb/s, eta 0:00:10  [100.0%] 8/8 frames, 0.10 fps, 2271.99 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2801.64   PSNR Mean: Y:33.982 U:37.262 V:38.462
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 912.58    PSNR Mean: Y:33.536 U:37.230 V:38.524
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2244.84   PSNR Mean: Y:33.981 U:37.330 V:38.606
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 3
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.32 fps, 8003.04 kb/s, eta 0:00:22  [25.0%] 2/8 frames, 0.17 fps, 5373.72 kb/s, eta 0:00:34  [37.5%] 3/8 frames, 0.16 fps, 3937.52 kb/s, eta 0:00:31  [50.0%] 4/8 frames, 0.15 fps, 3154.26 kb/s, eta 0:00:27  [62.5%] 5/8 frames, 0.12 fps, 3095.57 kb/s, eta 0:00:24  [75.0%] 6/8 frames, 0.11 fps, 2791.92 kb/s, eta 0:00:18  [87.5%] 7/8 frames, 0.10 fps, 2491.71 kb/s, eta 0:00:09  [100.0%] 8/8 frames, 0.11 fps, 2271.54 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2801.64   PSNR Mean: Y:33.982 U:37.262 V:38.462
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 911.86    PSNR Mean: Y:33.532 U:37.222 V:38.523
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2244.39   PSNR Mean: Y:33.978 U:37.325 V:38.605
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 2
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.31 fps, 8003.04 kb/s, eta 0:00:22  [25.0%] 2/8 frames, 0.16 fps, 5373.72 kb/s, eta 0:00:36  [37.5%] 3/8 frames, 0.15 fps, 3937.52 kb/s, eta 0:00:34  [50.0%] 4/8 frames, 0.13 fps, 3154.26 kb/s, eta 0:00:30  [62.5%] 5/8 frames, 0.13 fps, 3102.48 kb/s, eta 0:00:23  [75.0%] 6/8 frames, 0.12 fps, 2795.76 kb/s, eta 0:00:17  [87.5%] 7/8 frames, 0.11 fps, 2499.12 kb/s, eta 0:00:09  [100.0%] 8/8 frames, 0.12 fps, 2280.00 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2818.92   PSNR Mean: Y:33.966 U:37.260 V:38.450
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 918.48    PSNR Mean: Y:33.533 U:37.222 V:38.509
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2252.85   PSNR Mean: Y:33.975 U:37.324 V:38.594
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 7 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 1
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.30 fps, 8003.04 kb/s, eta 0:00:23  [25.0%] 2/8 frames, 0.16 fps, 5373.72 kb/s, eta 0:00:37  [37.5%] 3/8 frames, 0.14 fps, 3937.52 kb/s, eta 0:00:35  [50.0%] 4/8 frames, 0.13 fps, 3154.26 kb/s, eta 0:00:30  [62.5%] 5/8 frames, 0.16 fps, 3110.21 kb/s, eta 0:00:19  [75.0%] 6/8 frames, 0.14 fps, 2806.64 kb/s, eta 0:00:14  [87.5%] 7/8 frames, 0.13 fps, 2506.59 kb/s, eta 0:00:07                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2838.24   PSNR Mean: Y:33.950 U:37.250 V:38.423
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 922.32    PSNR Mean: Y:33.498 U:37.205 V:38.512
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2260.08   PSNR Mean: Y:33.949 U:37.311 V:38.589
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 6 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.28 fps, 8003.04 kb/s, eta 0:00:25  [25.0%] 2/8 frames, 0.16 fps, 5369.88 kb/s, eta 0:00:36  [37.5%] 3/8 frames, 0.14 fps, 3939.60 kb/s, eta 0:00:34  [50.0%] 4/8 frames, 0.13 fps, 3153.78 kb/s, eta 0:00:29  [62.5%] 5/8 frames, 0.11 fps, 3093.26 kb/s, eta 0:00:27  [75.0%] 6/8 frames, 0.10 fps, 2789.00 kb/s, eta 0:00:20  [87.5%] 7/8 frames, 0.09 fps, 2492.50 kb/s, eta 0:00:10  [100.0%] 8/8 frames, 0.10 fps, 2271.12 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2793.00   PSNR Mean: Y:33.965 U:37.265 V:38.397
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 914.64    PSNR Mean: Y:33.520 U:37.209 V:38.496
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2243.97   PSNR Mean: Y:33.967 U:37.317 V:38.572
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 4 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.31 fps, 8003.04 kb/s, eta 0:00:22  [25.0%] 2/8 frames, 0.19 fps, 5374.56 kb/s, eta 0:00:31  [37.5%] 3/8 frames, 0.18 fps, 3942.16 kb/s, eta 0:00:28  [50.0%] 4/8 frames, 0.17 fps, 3154.62 kb/s, eta 0:00:24  [62.5%] 5/8 frames, 0.14 fps, 3096.53 kb/s, eta 0:00:22  [75.0%] 6/8 frames, 0.12 fps, 2790.76 kb/s, eta 0:00:16  [87.5%] 7/8 frames, 0.11 fps, 2493.74 kb/s, eta 0:00:08  [100.0%] 8/8 frames, 0.11 fps, 2274.93 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2804.16   PSNR Mean: Y:33.966 U:37.228 V:38.405
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 916.27    PSNR Mean: Y:33.509 U:37.198 V:38.480
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2247.78   PSNR Mean: Y:33.960 U:37.301 V:38.564
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 2 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.31 fps, 8003.04 kb/s, eta 0:00:22  [25.0%] 2/8 frames, 0.19 fps, 5379.00 kb/s, eta 0:00:32  [37.5%] 3/8 frames, 0.17 fps, 3943.68 kb/s, eta 0:00:28  [50.0%] 4/8 frames, 0.16 fps, 3161.28 kb/s, eta 0:00:24  [62.5%] 5/8 frames, 0.13 fps, 3103.73 kb/s, eta 0:00:23  [75.0%] 6/8 frames, 0.11 fps, 2801.12 kb/s, eta 0:00:17  [87.5%] 7/8 frames, 0.11 fps, 2506.59 kb/s, eta 0:00:09  [100.0%] 8/8 frames, 0.11 fps, 2284.98 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2813.28   PSNR Mean: Y:33.948 U:37.221 V:38.462
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 928.70    PSNR Mean: Y:33.488 U:37.191 V:38.520
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2257.83   PSNR Mean: Y:33.942 U:37.295 V:38.603
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
+yuv  [info]: 832x480 fps 30000/1000 i420p8 frames 0 - 7 of 300
+x265 [info]: HEVC encoder version 1.4+80-d059cfa88f1a
+x265 [info]: build info [Mac OS X][clang 6.0.0][64 bit] 8bpp
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-3 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 0 / 2 / 0
+x265 [info]: CTU size / RQT depth inter / intra  : 64 / 3 / 3
+x265 [info]: ME / range / subpel / merge         : star / 64 / 0 / 5
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Intra 32x32 TU penalty type         : 2
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 1 / 1 / 5
+x265 [info]: Rate Control / AQ-Strength / CUTree : CQP-32 / 0.0 / 0
+x265 [info]: tools: rect amp rd=6 deblock sao signhide b-intra tmvp 
+[12.5%] 1/8 frames, 0.30 fps, 8003.04 kb/s, eta 0:00:23  [25.0%] 2/8 frames, 0.18 fps, 5403.36 kb/s, eta 0:00:32  [37.5%] 3/8 frames, 0.18 fps, 3977.20 kb/s, eta 0:00:28  [50.0%] 4/8 frames, 0.18 fps, 3186.84 kb/s, eta 0:00:22  [62.5%] 5/8 frames, 0.14 fps, 3137.33 kb/s, eta 0:00:21  [75.0%] 6/8 frames, 0.12 fps, 2833.88 kb/s, eta 0:00:16  [87.5%] 7/8 frames, 0.12 fps, 2533.68 kb/s, eta 0:00:08  [100.0%] 8/8 frames, 0.12 fps, 2311.47 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      1, Avg QP:29.00  kb/s: 7792.56   PSNR Mean: Y:36.202 U:37.960 V:39.302
+x265 [info]: frame P:      2, Avg QP:32.00  kb/s: 2870.52   PSNR Mean: Y:33.919 U:37.232 V:38.396
+x265 [info]: frame B:      5, Avg QP:33.60  kb/s: 948.19    PSNR Mean: Y:33.417 U:37.182 V:38.466
+x265 [info]: global :      8, Avg QP:32.62  kb/s: 2284.32   PSNR Mean: Y:33.890 U:37.292 V:38.553
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: Weighted B-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 33.3% 0.0% 33.3% 33.3% 0.0% 
